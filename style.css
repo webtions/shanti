@@ -1,0 +1,94 @@
+/*
+Theme Name: Stretch Lite
+Theme URI: https://themeist.com/themes/wordpress/stretch-lite/
+Author: hchouhan
+Author URI: https://harishchouhan.com/
+Description: Stretch lite is a Full Site Editong block theme for the WordPress block editor
+Requires at least: 5.8
+Tested up to: 5.8.2
+Requires PHP: 7.0
+Version: 0.0.1
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
+Text Domain: stretch-lite
+Tags: blog, block-styles, featured-images, full-width-template, theme-options, custom-colors, custom-menu, custom-logo, translation-ready, threaded-comments, wide-blocks, block-patterns, full-site-editing
+
+Stretch Lite Theme, (C) 2021 Webtions OU.
+Stretch Lite is distributed under the terms of the GNU GPL.
+
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * '"fontSmoothing": true' in theme.json still does nothing
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Text link styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
+}
+
+a:hover,
+a:focus {
+	text-decoration-style: dashed;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+/*
+ * Search and File Block button styles.
+ * Necessary until the following issues are resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/36444
+ * https://github.com/WordPress/gutenberg/issues/27760
+ */
+
+.wp-block-search__button,
+.wp-block-file .wp-block-file__button {
+	background-color: var(--wp--preset--color--primary);
+	border-radius: 0;
+	border: none;
+	color: var(--wp--preset--color--background);
+	font-size: var(--wp--preset--typography--font-size--normal);
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
+}
+
+/*
+ * Button hover styles.
+ * Necessary until the following issue is resolved in Gutenberg:
+ * https://github.com/WordPress/gutenberg/issues/27075
+ */
+
+.wp-block-search__button:hover,
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-button__link:hover {
+	opacity: 0.90;
+} 
+
+
+/*
+ * Header Navigation menu additional styles.
+ * Can be used if the menu item has text that needs additional formatting.
+ */
+
+header .wp-block-navigation-item__content em {
+	font-size:  0.7rem;
+}
