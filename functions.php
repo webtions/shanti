@@ -6,7 +6,7 @@
  */
 
 
-if ( ! function_exists( 'stretch_lite_theme_setup' ) ) :
+if ( ! function_exists( 'shanti_setup' ) ) :
 
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -15,7 +15,7 @@ if ( ! function_exists( 'stretch_lite_theme_setup' ) ) :
 	 *
 	 * @return void
 	 */
-	function stretch_lite_theme_setup() {
+	function shanti_setup() {
 
 		// Add support for block styles.
 		add_theme_support( 'wp-block-styles' );
@@ -23,22 +23,47 @@ if ( ! function_exists( 'stretch_lite_theme_setup' ) ) :
 		// Register Navigation menus.
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary Menu', 'stretch-lite' ),
+				'primary' => esc_html__( 'Primary Menu', 'shanti' ),
 			)
 		);
 	}
 
 endif;
 
-add_action( 'after_setup_theme', 'stretch_lite_theme_setup' );
+add_action( 'after_setup_theme', 'shanti_setup' );
 
 
-/**
- * Enqueue scripts and styles.
- */
-function stretch_lite_scripts() {
+// Enqueue style sheet.
+add_action( 'wp_enqueue_scripts', 'shanti_enqueue_style_sheet' );
+function shanti_enqueue_style_sheet() {
 
-	// Theme stylesheet.
-	wp_enqueue_style( 'stretch-lite-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'shanti', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+
 }
-add_action( 'wp_enqueue_scripts', 'stretch_lite_scripts' );
+
+// Enqueue fonts.
+add_action( 'wp_enqueue_scripts', 'shanti_enqueue_fonts' );
+function shanti_enqueue_fonts() {
+
+	wp_enqueue_style( 'shanti-fonts', shanti_fonts_url(), array(), null );
+
+}
+
+
+// Define fonts.
+function shanti_fonts_url() {
+
+	// Allow child themes to disable to the default Frost fonts.
+	$dequeue_fonts = apply_filters( 'shanti_fonts_url', false );
+
+	if ( $dequeue_fonts ) {
+		return '';
+	}
+
+	$fonts = [
+		'family=Montserrat:ital,wght@0,400;0,500;0,600;1,500'
+	];
+
+	// Make a single request for all Google Fonts.
+	return esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', array_unique( $fonts ) ) . '&display=swap' );
+}
