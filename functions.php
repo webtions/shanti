@@ -61,7 +61,7 @@ function shanti_fonts_url() {
 	}
 
 	$fonts = [
-		'family=Montserrat:ital,wght@0,400;0,500;0,600;1,500'
+		'family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600'
 	];
 
 	// Make a single request for all Google Fonts.
