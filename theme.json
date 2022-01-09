@@ -12,7 +12,7 @@
 	],
 	"settings": {
 		"appearanceTools": true,
-		"layout": { "contentSize": "650px", "wideSize": "1000px"},
+		"layout": { "contentSize": "680px", "wideSize": "1120px"},
 		"spacing": {
 			"units": [
 				"%",
