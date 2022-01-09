@@ -61,6 +61,8 @@
 			"duotone": []
 		},
 		"typography": {
+			"customFontSize": true,
+			"dropCap": false,
 			"fontFamilies": [
 				{ "name": "System", "slug": "system-font", "fontFamily": "\"Montserrat\",sans-serif" },
 				{ "name": "Serif", "slug": "serif", "fontFamily": "Constantia, \"Lucida Bright\", Lucidabright, \"Lucida Serif\", Lucida, \"DejaVu Serif\", \"Bitstream Vera Serif\", \"Liberation Serif\", Georgia, serif" },
