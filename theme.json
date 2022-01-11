@@ -187,7 +187,7 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--system-font)",
 					"fontWeight": "600",
-					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
+					"lineHeight": "var(--wp--custom--typography--line-height--small)",
 					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
 				}
 			},
