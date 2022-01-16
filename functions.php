@@ -5,6 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  */
 
+
 if ( ! function_exists( 'shanti_setup' ) ) :
 
 	/**
@@ -28,7 +29,9 @@ if ( ! function_exists( 'shanti_setup' ) ) :
 	}
 
 endif;
+
 add_action( 'after_setup_theme', 'shanti_setup' );
+
 
 /**
  * Enqueue scripts and styles.
@@ -58,3 +61,25 @@ function shanti_fonts_url() {
 
 	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
 }
+
+// Add block patterns.
+require get_template_directory() . '/inc/block-patterns.php';
+
+
+// Define fonts.
+/*function shanti_fonts_url() {
+
+	// Allow child themes to disable to the default fonts.
+	$dequeue_fonts = apply_filters( 'shanti_fonts_url', false );
+
+	if ( $dequeue_fonts ) {
+		return '';
+	}
+
+	$fonts = [
+		'family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600'
+	];
+
+	// Make a single request for all Google Fonts.
+	return esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', array_unique( $fonts ) ) . '&display=swap' );
+}*/

@@ -141,3 +141,11 @@ body > .is-root-container,
     padding-right: var(--wp--custom--spacing--outer);
     padding-left: var(--wp--custom--spacing--outer);
 }
+
+
+/*
+ * Custom Styles for blocks
+ */
+.wp-block-separator {
+    opacity: 1;
+}
