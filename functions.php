@@ -1,53 +1,81 @@
 <?php
 /**
- * Stretch functions and definitions
+ * Shanti functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  */
 
 
-if ( ! function_exists( 'shanti_setup' ) ) :
-
+if ( ! function_exists( 'shanti_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
-	 * @since Stretch 0.0.1
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
+	 *
+	 * @since 0.1.0
 	 *
 	 * @return void
 	 */
 	function shanti_setup() {
 
+		// Make theme available for translation.
+		load_theme_textdomain( 'shanti', get_template_directory() . '/languages' );
+
 		// Add support for block styles.
 		add_theme_support( 'wp-block-styles' );
 
-		// Register Navigation menus.
-		register_nav_menus(
-			array(
-				'primary' => esc_html__( 'Primary Menu', 'shanti' ),
-			)
-		);
+		// Enqueue editor styles.
+		add_editor_style( 'style.css' );
+
 	}
-
-endif;
-
+}
 add_action( 'after_setup_theme', 'shanti_setup' );
 
 
 /**
- * Enqueue scripts and styles.
+ * Enqueue styles.
+ *
+ * @since 0.1.0
+ *
  */
-add_action( 'wp_enqueue_scripts', 'shanti_scripts' );
-function shanti_scripts() {
-	// Enqueue fonts stylesheet.
-	wp_enqueue_style( 'shanti-fonts', shanti_fonts_url(), array(), wp_get_theme()->get( 'Version' ) );
-	// Theme stylesheet.
-	wp_enqueue_style( 'shanti-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+function shanti_styles() {
+
+	$theme_version = wp_get_theme()->get( 'Version' );
+	$version_string = is_string( $theme_version ) ? $theme_version : false;
+
+	wp_register_style( 'shanti-style', get_template_directory_uri() . '/style.css', array(), $version_string );
+
+	// Add styles inline.
+	wp_add_inline_style( 'shanti-style', shanti_font_styles() );
+
+	// Enqueue theme stylesheet.
+	wp_enqueue_style( 'shanti-style' );
+
 }
+add_action( 'wp_enqueue_scripts', 'shanti_styles' );
+
+
+/**
+ * Enqueue editor styles.
+ *
+ * @since 0.1.0
+ *
+ */
+function shanti_editor_styles() {
+
+	// Add styles inline.
+	wp_add_inline_style( 'wp-block-library', shanti_font_styles() );
+
+}
+add_action( 'admin_init', 'shanti_editor_styles' );
+
 
 /**
  * Get Google fonts and save locally with WPTT Webfont Loader.
  */
-function shanti_fonts_url() {
+function shanti_font_styles() {
 	$font_families = array(
 		'Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600'
 	);
@@ -64,6 +92,20 @@ function shanti_fonts_url() {
 
 // Add block patterns.
 require get_template_directory() . '/inc/block-patterns.php';
+
+
+/**
+ * Enqueue scripts and styles.
+ */
+/*add_action( 'wp_enqueue_scripts', 'shanti_scripts' );
+function shanti_scripts() {
+	// Enqueue fonts stylesheet.
+	wp_enqueue_style( 'shanti-fonts', shanti_font_styles(), array(), wp_get_theme()->get( 'Version' ) );
+	// Theme stylesheet.
+	wp_enqueue_style( 'shanti-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+}*/
+
+
 
 
 // Define fonts.
