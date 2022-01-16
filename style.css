@@ -149,3 +149,18 @@ body > .is-root-container,
 .wp-block-separator {
     opacity: 1;
 }
+
+.wp-block-post-featured-image.alignfull img, 
+.wp-block-post-featured-image.alignwide img {
+    width: auto;
+    text-align: center !important;
+}
+
+.wp-site-blocks .wp-block-post-featured-image.alignfull {
+    text-align: center !important;
+}
+
+
+.entry-content h2 {
+    margin-top: 40px;
+}
