@@ -164,3 +164,7 @@ body > .is-root-container,
 .entry-content h2 {
     margin-top: 40px;
 }
+
+.page-numbers {
+    padding:  10px;
+}
