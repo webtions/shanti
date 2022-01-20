@@ -28,8 +28,104 @@ Use it to make something cool, have fun, and share what you've learned with othe
  */
 
 body {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Defaults
+---------------------------------------------------------------------------- */
+
+body {
+	overflow-x: hidden;
+}
+
+html {
+	box-sizing: border-box;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="submit"],
+textarea:focus,
+.wp-block-button__link {
+	transition: all 0.2s ease-in-out;
+}
+
+a,
+a:focus,
+a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+b,
+strong {
+	font-weight: var(--wp--custom--font-weight--medium);
+}
+
+blockquote {
+	margin: 0;
+}
+
+/*
+ * Alignment Styles - Originally from TT2.
+ * These rules are temporary, and should not
+ * be relied on or modified too heavily by
+ * themes or plugins that build on Shanti.
+ * These are meant to be a precursor to a
+ * global solution provided by the Block Editor.
+ *
+ * Relevant issues:
+ * https://github.com/WordPress/gutenberg/issues/35607
+ * https://github.com/WordPress/gutenberg/issues/35884
+---------------------------------------------*/
+
+body > .is-root-container,
+.edit-post-visual-editor__post-title-wrapper,
+.is-root-container .wp-block[data-align="full"] > .wp-block-group,
+.is-root-container .wp-block[data-align="full"] > .wp-block-cover,
+.wp-block-group.alignfull,
+.wp-block-cover.alignfull,
+.wp-site-blocks {
+	padding-left: var(--wp--custom--spacing--outer);
+	padding-right: var(--wp--custom--spacing--outer);
+}
+
+.is-root-container .wp-block[data-align="full"],
+.wp-site-blocks .alignfull {
+	margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
+	width: unset;
+}
+
+/*
+ * Temporary fix for pattern previews due to a
+ * Gutenberg bug. The .is-root-container is the
+ * first child in the Site Editor and is
+ * generally the third child in the Block Editor.
+ * Only in the preview component does it seem to
+ * be the second child, hence this CSS.
+---------------------------------------------*/
+
+body > .is-root-container:nth-child(2) {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /*
@@ -39,23 +135,23 @@ body {
  */
 
 a {
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.25ch;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25ch;
 }
 
 a:hover,
 a:focus {
-    text-decoration-style: dashed;
+	text-decoration-style: dashed;
 }
 
 a:active {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .wp-block-navigation .wp-block-navigation-item a:hover,
 .wp-block-navigation .wp-block-navigation-item a:focus {
-    text-decoration: underline;
-    text-decoration-style: solid;
+	text-decoration: underline;
+	text-decoration-style: solid;
 }
 
 /*
@@ -67,12 +163,12 @@ a:active {
 
 .wp-block-search__button,
 .wp-block-file .wp-block-file__button {
-    background-color: var(--wp--preset--color--primary);
-    border-radius: 0;
-    border: none;
-    color: var(--wp--preset--color--background);
-    font-size: var(--wp--preset--font-size--medium);
-    padding: calc(.667em + 2px) calc(1.333em + 2px);
+	background-color: var(--wp--preset--color--primary);
+	border-radius: 0;
+	border: none;
+	color: var(--wp--preset--color--background);
+	font-size: var(--wp--preset--font-size--medium);
+	padding: calc(.667em + 2px) calc(1.333em + 2px);
 }
 
 /*
@@ -84,49 +180,10 @@ a:active {
 .wp-block-search__button:hover,
 .wp-block-file .wp-block-file__button:hover,
 .wp-block-button__link:hover {
-    opacity: 0.90;
+	opacity: 0.90;
 }
 
-/*
- * Alignment styles.
- * These rules are temporary, and should not be relied on or
- * modified too heavily by themes or plugins that build on
- * Twenty Twenty-Two. These are meant to be a precursor to
- * a global solution provided by the Block Editor.
- *
- * Relevant issues:
- * https://github.com/WordPress/gutenberg/issues/35607
- * https://github.com/WordPress/gutenberg/issues/35884
- */
 
-.wp-site-blocks,
-body > .is-root-container,
-.edit-post-visual-editor__post-title-wrapper,
-.wp-block-group.alignfull,
-.wp-block-cover.alignfull,
-.is-root-container .wp-block[data-align="full"] > .wp-block-group,
-.is-root-container .wp-block[data-align="full"] > .wp-block-cover {
-    padding-left: var(--wp--custom--spacing--outer);
-    padding-right: var(--wp--custom--spacing--outer);
-}
-
-.wp-site-blocks .alignfull,
-.is-root-container .wp-block[data-align="full"] {
-    margin-left: calc(-1 * var(--wp--custom--spacing--outer)) !important;
-    margin-right: calc(-1 * var(--wp--custom--spacing--outer)) !important;
-    width: unset;
-}
-
-/* Blocks inside columns don't have negative margins. */
-.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
-.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
-/* We also want to avoid stacking negative margins. */
-.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
-.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    width: inherit;
-}
 
 /*
  * Responsive menu container padding.
@@ -136,10 +193,10 @@ body > .is-root-container,
  */
 
 .wp-block-navigation__responsive-container.is-menu-open {
-    padding-top: var(--wp--custom--spacing--outer);
-    padding-bottom: var(--wp--custom--spacing--large);
-    padding-right: var(--wp--custom--spacing--outer);
-    padding-left: var(--wp--custom--spacing--outer);
+	padding-top: var(--wp--custom--spacing--outer);
+	padding-bottom: var(--wp--custom--spacing--large);
+	padding-right: var(--wp--custom--spacing--outer);
+	padding-left: var(--wp--custom--spacing--outer);
 }
 
 
@@ -147,24 +204,24 @@ body > .is-root-container,
  * Custom Styles for blocks
  */
 .wp-block-separator {
-    opacity: 1;
+	opacity: 1;
 }
 
 .wp-block-post-featured-image.alignfull img, 
 .wp-block-post-featured-image.alignwide img {
-    width: auto;
-    text-align: center !important;
+	width: auto;
+	text-align: center !important;
 }
 
 .wp-site-blocks .wp-block-post-featured-image.alignfull {
-    text-align: center !important;
+	text-align: center !important;
 }
 
 
 .entry-content h2 {
-    margin-top: 40px;
+	margin-top: 40px;
 }
 
 .page-numbers {
-    padding:  10px;
+	padding:  10px;
 }
