@@ -82,7 +82,7 @@
 		},
 		"custom": {
 			"spacing": {
-				"small": "clamp(1.25rem, 80px, 5vw)",
+				"small": "clamp(1.25rem, 80px, 5rem)",
 				"medium": "clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)))",
 				"large": "clamp(4rem, 10vw, 8rem)",
 				"outer": "clamp(2.5rem, 80px, 5vw)"
