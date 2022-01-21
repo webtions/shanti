@@ -1,11 +1,5 @@
-# ignore dependency directories
 node_modules
 vendor/
-
-# ignore files
-*.log
-*.sql
-*.sqlite
 *.DS_Store
 *.zip
 *.rej
