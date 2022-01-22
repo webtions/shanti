@@ -9,10 +9,24 @@
  * Registers block patterns and categories.
  *
  * @since Shanti 0.1
+ *
+ * @return void
  */
 function shanti_register_block_patterns() {
+
 	$block_pattern_categories = array(
-		'shanti-footers' => array( 'label' => __( 'Shanti Footers', 'shanti' ) ),
+		'shanti-footer' => array(
+			'label'         => __( 'Shanti Footer', 'shanti' ),
+			'categoryTypes' => array( 'shanti' ),
+		),
+		'shanti-header' => array(
+			'label'         => __( 'Shanti Header', 'shanti' ),
+			'categoryTypes' => array( 'shanti' ),
+		),
+		'shanti-query'  => array(
+			'label'         => __( 'Shanti Query', 'shanti' ),
+			'categoryTypes' => array( 'shanti' ),
+		),
 	);
 
 	/**
@@ -37,7 +51,10 @@ function shanti_register_block_patterns() {
 	}
 
 	$block_patterns = array(
-		'footer-default',
+		'header/header-default',
+		'footer/footer-default',
+		'query/query-default',
+		'query/query-grid',
 	);
 
 	/**
@@ -50,10 +67,13 @@ function shanti_register_block_patterns() {
 	$block_patterns = apply_filters( 'shanti_block_patterns', $block_patterns );
 
 	foreach ( $block_patterns as $block_pattern ) {
+		$pattern_file = get_theme_file_path( '/inc/patterns/' . $block_pattern . '.php' );
+
 		register_block_pattern(
 			'shanti/' . $block_pattern,
-			include __DIR__ . '/patterns/' . $block_pattern . '.php'
+			require $pattern_file
 		);
 	}
+
 }
 add_action( 'init', 'shanti_register_block_patterns', 9 );
