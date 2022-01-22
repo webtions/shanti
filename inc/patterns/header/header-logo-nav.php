@@ -6,7 +6,7 @@
  */
 
 return array(
-	'title'      => __( 'Header with logo, site title, navigation.', 'shanti' ),
+	'title'      => __( 'Header with logo, navigation.', 'shanti' ),
 	'categories' => array( 'shanti-header' ),
 	'blockTypes' => array( 'core/template-part/header' ),
 	'content'    => '<!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
@@ -18,7 +18,6 @@ return array(
 									<!-- wp:group {"layout":{"type":"flex"}} -->
 									<div class="wp-block-group">
 										<!-- wp:site-logo {} /-->
-										<!-- wp:site-title /-->
 									</div>
 									<!-- /wp:group -->
 

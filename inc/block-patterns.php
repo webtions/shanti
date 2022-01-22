@@ -52,6 +52,7 @@ function shanti_register_block_patterns() {
 
 	$block_patterns = array(
 		'header/header-default',
+		'header/header-logo-nav',
 		'footer/footer-default',
 		'query/query-default',
 		'query/query-grid',
