@@ -182,7 +182,7 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--system-font)",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
-					"fontSize": "var(--wp--preset--font-size--normal)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
 					"fontWeight": "500"
 				}
 			},

@@ -40,6 +40,7 @@ body {
 }
 
 html {
+	scroll-behavior: smooth;
 	box-sizing: border-box;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -224,4 +225,24 @@ a:active {
 
 .page-numbers {
 	padding:  10px;
+}
+
+
+
+/* Styles
+--------------------------------------------- */
+
+.is-style-full-height {
+	align-items: center;
+	min-height: 100vh;
+	padding: 0;
+}
+
+.shanti-header-cover .wp-block-cover__inner-container {
+	width:  100% !important;
+}
+
+.shanti-header-cover .shanti-cover-text {
+	max-width: clamp(324px, 80vh, 720px);
+	margin-left: 0;
 }

@@ -9,7 +9,7 @@ return array(
 	'title'         => __( 'Grid of posts in three columns.', 'shanti' ),
 	'categories'    => array( 'shanti-query' ),
 	'viewportWidth' => 1370,
-	'content'       => '<!-- wp:query {"query":{"inherit":true,"perPage":10,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":""},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"inherit":false}} -->
+	'content'       => '<!-- wp:query {"queryId":1,"query":{"inherit":true,"perPage":9,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":""},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"inherit":false}} -->
 		<div class="wp-block-query alignwide">
 
 		<!-- wp:post-template {} -->
