@@ -91,7 +91,8 @@ function shanti_font_styles() {
 	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
 }
 
-// Add block patterns.
+// Register theme specific block patterns
 require get_template_directory() . '/inc/block-patterns.php';
 
-
+// Register theme specific block styles
+require get_template_directory() . '/inc/block-styles.php';
