@@ -6,7 +6,7 @@
  */
 
 
-if (! function_exists('shanti_setup') ) {
+if ( ! function_exists( 'shanti_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -18,21 +18,20 @@ if (! function_exists('shanti_setup') ) {
 	 *
 	 * @return void
 	 */
-	function shanti_setup()
-	{
+	function shanti_setup() {
 
 		// Make theme available for translation.
-		load_theme_textdomain('shanti', get_template_directory() . '/languages');
+		load_theme_textdomain( 'shanti', get_template_directory() . '/languages' );
 
 		// Add support for block styles.
-		add_theme_support('wp-block-styles');
+		add_theme_support( 'wp-block-styles' );
 
 		// Enqueue editor styles.
-		add_editor_style('style.css');
+		add_editor_style( 'style.css' );
 
 	}
 }
-add_action('after_setup_theme', 'shanti_setup');
+add_action( 'after_setup_theme', 'shanti_setup' );
 
 
 /**
@@ -40,22 +39,21 @@ add_action('after_setup_theme', 'shanti_setup');
  *
  * @since 0.1.0
  */
-function shanti_styles()
-{
+function shanti_styles() {
 
-	$theme_version = wp_get_theme()->get('Version');
-	$version_string = is_string($theme_version) ? $theme_version : false;
+	$theme_version  = wp_get_theme()->get( 'Version' );
+	$version_string = is_string( $theme_version ) ? $theme_version : false;
 
-	wp_register_style('shanti-style', get_template_directory_uri() . '/style.css', array(), $version_string);
+	wp_register_style( 'shanti-style', get_template_directory_uri() . '/style.css', array(), $version_string );
 
 	// Add styles inline.
-	wp_add_inline_style('shanti-style', shanti_font_styles());
+	wp_add_inline_style( 'shanti-style', shanti_font_styles() );
 
 	// Enqueue theme stylesheet.
-	wp_enqueue_style('shanti-style');
+	wp_enqueue_style( 'shanti-style' );
 
 }
-add_action('wp_enqueue_scripts', 'shanti_styles');
+add_action( 'wp_enqueue_scripts', 'shanti_styles' );
 
 
 /**
@@ -63,69 +61,37 @@ add_action('wp_enqueue_scripts', 'shanti_styles');
  *
  * @since 0.1.0
  */
-function shanti_editor_styles()
-{
+function shanti_editor_styles() {
 
 	// Add styles inline.
-	wp_add_inline_style('wp-block-library', shanti_font_styles());
+	wp_add_inline_style( 'wp-block-library', shanti_font_styles() );
 
 }
-add_action('admin_init', 'shanti_editor_styles');
+add_action( 'admin_init', 'shanti_editor_styles' );
 
 
 /**
  * Get Google fonts and save locally with WPTT Webfont Loader.
  */
-function shanti_font_styles()
-{
+function shanti_font_styles() {
 	$font_families = array(
-	'Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600'
+		'Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600',
 	);
 
 	$fonts_url = add_query_arg(
 		array(
-		'family' => implode('&family=', $font_families),
-		'display' => 'swap',
-		), 'https://fonts.googleapis.com/css2' 
+			'family'  => implode( '&family=', $font_families ),
+			'display' => 'swap',
+		),
+		'https://fonts.googleapis.com/css2'
 	);
 
-	include_once get_theme_file_path('inc/wptt-webfont-loader.php');
+	include_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
 
-	return wptt_get_webfont_url(esc_url_raw($fonts_url));
+	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
 }
 
 // Add block patterns.
 require get_template_directory() . '/inc/block-patterns.php';
 
 
-/**
- * Enqueue scripts and styles.
- */
-/*add_action( 'wp_enqueue_scripts', 'shanti_scripts' );
-function shanti_scripts() {
-	// Enqueue fonts stylesheet.
-	wp_enqueue_style( 'shanti-fonts', shanti_font_styles(), array(), wp_get_theme()->get( 'Version' ) );
-	// Theme stylesheet.
-	wp_enqueue_style( 'shanti-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
-}*/
-
-
-
-
-// Define fonts.
-/*function shanti_fonts_url() {
-
-	// Allow child themes to disable to the default fonts.
-	$dequeue_fonts = apply_filters( 'shanti_fonts_url', false );
-
-	if ( $dequeue_fonts ) {
-		return '';
-	}
-
-	$fonts = [
-		'family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600'
-	];
-
-	// Make a single request for all Google Fonts.
-	return esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', array_unique( $fonts ) ) . '&display=swap' );
-}*/

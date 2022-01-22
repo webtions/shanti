@@ -10,10 +10,9 @@
  *
  * @since Shanti 0.1
  */
-function shanti_register_block_patterns()
-{
+function shanti_register_block_patterns() {
 	$block_pattern_categories = array(
-	'shanti-footers' => array( 'label' => __('Shanti Footers', 'shanti') ),
+		'shanti-footers' => array( 'label' => __( 'Shanti Footers', 'shanti' ) ),
 	);
 
 	/**
@@ -31,14 +30,14 @@ function shanti_register_block_patterns()
 	 *     }
 	 * }
 	 */
-	$block_pattern_categories = apply_filters('shanti_block_pattern_categories', $block_pattern_categories);
+	$block_pattern_categories = apply_filters( 'shanti_block_pattern_categories', $block_pattern_categories );
 
 	foreach ( $block_pattern_categories as $name => $properties ) {
-		register_block_pattern_category($name, $properties);
+		register_block_pattern_category( $name, $properties );
 	}
 
 	$block_patterns = array(
-	'footer-default'
+		'footer-default',
 	);
 
 	/**
@@ -48,7 +47,7 @@ function shanti_register_block_patterns()
 	 *
 	 * @param $block_patterns array List of block patterns by name.
 	 */
-	$block_patterns = apply_filters('shanti_block_patterns', $block_patterns);
+	$block_patterns = apply_filters( 'shanti_block_patterns', $block_patterns );
 
 	foreach ( $block_patterns as $block_pattern ) {
 		register_block_pattern(
@@ -57,4 +56,4 @@ function shanti_register_block_patterns()
 		);
 	}
 }
-add_action('init', 'shanti_register_block_patterns', 9);
+add_action( 'init', 'shanti_register_block_patterns', 9 );

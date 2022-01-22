@@ -3,10 +3,10 @@
  * Default footer
  */
 return array(
-    'title'      => __('Default footer', 'shanti'),
-    'categories' => array( 'footer' ),
-    'blockTypes' => array( 'core/template-part/footer' ),
-    'content'    => '<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}}} -->
+	'title'      => __( 'Default footer', 'shanti' ),
+	'categories' => array( 'footer' ),
+	'blockTypes' => array( 'core/template-part/footer' ),
+	'content'    => '<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem"}}}} -->
 					<div class="wp-block-group alignwide" style="padding-top:4rem;padding-bottom:4rem">
 
 						<!-- wp:separator {"className":"is-style-default"} -->
