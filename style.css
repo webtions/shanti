@@ -169,7 +169,7 @@ a:active {
 	border: none;
 	color: var(--wp--preset--color--background);
 	font-size: var(--wp--preset--font-size--medium);
-	padding: calc(.667em + 2px) calc(1.333em + 2px);
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
 }
 
 /*
@@ -181,10 +181,8 @@ a:active {
 .wp-block-search__button:hover,
 .wp-block-file .wp-block-file__button:hover,
 .wp-block-button__link:hover {
-	opacity: 0.90;
+	opacity: 0.9;
 }
-
-
 
 /*
  * Responsive menu container padding.
@@ -200,7 +198,6 @@ a:active {
 	padding-left: var(--wp--custom--spacing--outer);
 }
 
-
 /*
  * Custom Styles for blocks
  */
@@ -208,7 +205,7 @@ a:active {
 	opacity: 1;
 }
 
-.wp-block-post-featured-image.alignfull img, 
+.wp-block-post-featured-image.alignfull img,
 .wp-block-post-featured-image.alignwide img {
 	width: auto;
 	text-align: center !important;
@@ -218,16 +215,13 @@ a:active {
 	text-align: center !important;
 }
 
-
 .entry-content h2 {
 	margin-top: 40px;
 }
 
 .page-numbers {
-	padding:  10px;
+	padding: 10px;
 }
-
-
 
 /* Styles
 --------------------------------------------- */
@@ -239,7 +233,7 @@ a:active {
 }
 
 .shanti-header-cover .wp-block-cover__inner-container {
-	width:  100% !important;
+	width: 100% !important;
 }
 
 .shanti-header-cover .shanti-cover-text {
