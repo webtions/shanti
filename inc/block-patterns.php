@@ -24,7 +24,7 @@ function shanti_register_block_patterns() {
 			'categoryTypes' => array( 'shanti' ),
 		),
 		'shanti-query'  => array(
-			'label'         => __( 'Shanti Query', 'shanti' ),
+			'label'         => __( 'Shanti Blog', 'shanti' ),
 			'categoryTypes' => array( 'shanti' ),
 		),
 	);
@@ -51,11 +51,11 @@ function shanti_register_block_patterns() {
 	}
 
 	$block_patterns = array(
+		'blog/blog-default',
+		'blog/blog-grid',
+		'footer/footer-default',
 		'header/header-default',
 		'header/header-logo-nav',
-		'footer/footer-default',
-		'query/query-default',
-		'query/query-grid',
 	);
 
 	/**

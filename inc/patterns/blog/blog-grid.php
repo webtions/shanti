@@ -1,13 +1,13 @@
 <?php
 /**
- * Shanti: Query grid with three columns
+ * Shanti: Blog with three columns
  *
  * @package Shanti
  */
 
 return array(
-	'title'         => __( 'Grid of posts in three columns.', 'shanti' ),
-	'categories'    => array( 'shanti-query' ),
+	'title'         => __( 'Blog posts in three columns.', 'shanti' ),
+	'categories'    => array( 'shanti-blog' ),
 	'viewportWidth' => 1370,
 	'content'       => '<!-- wp:query {"queryId":1,"query":{"inherit":true,"perPage":9,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":""},"displayLayout":{"type":"flex","columns":3},"align":"wide","layout":{"inherit":false}} -->
 		<div class="wp-block-query alignwide">

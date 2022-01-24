@@ -1,13 +1,13 @@
 <?php
 /**
- * Shanti: Query list with one column
+ * Shanti: Blog posts with one column
  *
  * @package Shanti
  */
 
 return array(
 	'title'         => __( 'List of posts in one column.', 'shanti' ),
-	'categories'    => array( 'shanti-query' ),
+	'categories'    => array( 'shanti-blog' ),
 	'viewportWidth' => 1370,
 	'content'       => '<!-- wp:query {"queryId":0,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":""},"align":"wide","layout":{"inherit":false}} -->
 							<div class="wp-block-query alignwide">
