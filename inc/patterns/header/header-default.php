@@ -22,7 +22,7 @@ return array(
 									</div>
 									<!-- /wp:group -->
 
-									<!-- wp:navigation {} /-->
+									<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} /-->
 
 								</div>
 								<!-- /wp:group -->
