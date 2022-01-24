@@ -12,13 +12,13 @@ return array(
 	'content'    => '<!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
 							<div class="wp-block-group alignwide">
 								
-								<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var(--wp--custom--spacing--large, 8rem)","top":"var(--wp--custom--spacing--small, 1.25rem)"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
-								<div class="wp-block-group alignwide" style="padding-top:var(--wp--custom--spacing--small, 1.25rem);padding-bottom:var(--wp--custom--spacing--large, 8rem)">
+								!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var(--wp--custom--spacing--outer, 80px)","top":"var(--wp--custom--spacing--outer, 80px)"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
+								<div class="wp-block-group alignwide" style="padding-top:var(--wp--custom--spacing--outer, 80px);padding-bottom:var(--wp--custom--spacing--outer, 80px)">
 
 									<!-- wp:group {"layout":{"type":"flex"}} -->
 									<div class="wp-block-group">
 										<!-- wp:site-logo {} /-->
-										<!-- wp:site-title /-->
+										<!-- wp:site-title {"fontSize":"large"} /-->
 									</div>
 									<!-- /wp:group -->
 
