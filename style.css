@@ -218,6 +218,36 @@ a:active {
 :root .wp-block-query-pagination a:focus {
 	text-decoration: underline;
 }
+
+
+/* ------------------------------------------- */
+/* Block: Site Title
+/* ------------------------------------------- */
+
+
+.wp-block-site-title a { text-decoration: none; }
+.wp-block-site-title a:focus,
+.wp-block-site-title a:hover { 
+	text-decoration: underline; 
+}
+
+
+/* ------------------------------------------- */
+/*	Site Footer
+/* ------------------------------------------- */
+
+
+.theme-credits-row {
+	gap: .25em !important;
+}
+
+.site-footer a { text-decoration: none; }
+.site-footer a:hover,
+.site-footer a:focus {
+	text-decoration: underline;
+}
+
+
 /*
  * Custom Styles for blocks
  */

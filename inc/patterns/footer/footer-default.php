@@ -40,13 +40,19 @@ return array(
 						<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 						<!-- /wp:spacer -->
 
+						<!-- wp:group {"layout":{"type":"flex","justifyContent":"center"}} -->
+						<div class="wp-block-group">
+							<!-- wp:paragraph {"fontSize":"small"} -->
+							<p class="has-small-font-size"><strong>© 2022</strong> </p>
+							<!-- /wp:paragraph -->
+							<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"fontSize":"small"} /-->
 						<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"16px"}}} -->
-						<p class="has-text-align-center" style="font-size:16px">© 2022 <a href="#">Your Website</a></p>
+						<p class="has-text-align-center" style="font-size:16px">• Made with <a href="https://wordpress.org" target="_blank" rel="noreferrer noopener">WordPress</a> & <a href="https://github.com/webtions/shanti" target="_blank" rel="noreferrer noopener">Shanti theme</a>.</p>
 						<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
 
-						<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"16px"}}} -->
-						<p class="has-text-align-center" style="font-size:16px">Made with <a href="https://wordpress.org" target="_blank" rel="noreferrer noopener">WordPress</a> & <a href="https://github.com/webtions/shanti" target="_blank" rel="noreferrer noopener">Shanti theme</a>.</p>
-						<!-- /wp:paragraph -->
+
 
 					</div>
 					<!-- /wp:group -->',
