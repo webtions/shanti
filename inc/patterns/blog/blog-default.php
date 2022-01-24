@@ -6,7 +6,7 @@
  */
 
 return array(
-	'title'         => __( 'List of posts in one column.', 'shanti' ),
+	'title'         => __( 'Blog posts in one column.', 'shanti' ),
 	'categories'    => array( 'shanti-blog' ),
 	'viewportWidth' => 1370,
 	'content'       => '<!-- wp:query {"queryId":0,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":""},"align":"wide","layout":{"inherit":false}} -->
