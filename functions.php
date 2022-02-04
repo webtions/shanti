@@ -1,10 +1,12 @@
 <?php
 /**
- * Shanti functions and definitions
+ * This file adds functions to the Shanti theme for WordPress.
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ * @package Shanti
+ * @author  Themeist
+ * @license GNU General Public License v3 or later
+ * @link    https://shanti.themeist.com/
  */
-
 
 if ( ! function_exists( 'shanti_setup' ) ) {
 	/**
@@ -23,8 +25,18 @@ if ( ! function_exists( 'shanti_setup' ) ) {
 		// Make theme available for translation.
 		load_theme_textdomain( 'shanti', get_template_directory() . '/languages' );
 
+		// Register Navigation menus.
+		register_nav_menus(
+			array(
+				'primary' => esc_html__( 'Primary Menu', 'shanti' ),
+			)
+		);
+
 		// Add support for block styles.
 		add_theme_support( 'wp-block-styles' );
+
+		// Remove core block patterns.
+		remove_theme_support( 'core-block-patterns' );
 
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
@@ -33,6 +45,15 @@ if ( ! function_exists( 'shanti_setup' ) ) {
 }
 add_action( 'after_setup_theme', 'shanti_setup' );
 
+
+/**
+ * Restores the Customizer since we still rely on it.
+ */
+function shanti_restore_customizer() {
+	// There's no need to return anything.
+	// The empty callback will do the trick.
+}
+add_action( 'customize_register', 'shanti_restore_customizer' );
 
 /**
  * Enqueue styles.
@@ -90,6 +111,7 @@ function shanti_font_styles() {
 
 	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
 }
+
 
 // Register theme specific block patterns
 require get_template_directory() . '/inc/block-patterns.php';

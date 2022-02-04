@@ -9,11 +9,11 @@ return array(
 	'title'      => __( 'Header with logo, navigation.', 'shanti' ),
 	'categories' => array( 'shanti-header' ),
 	'blockTypes' => array( 'core/template-part/header' ),
-	'content'    => '<!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
-							<div class="wp-block-group alignwide">
+	'content'    => '<!-- wp:group {"layout":{"inherit":true}} -->
+							<div class="wp-block-group">
 								
-								<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"bottom":"var(--wp--custom--spacing--outer, 80px)","top":"var(--wp--custom--spacing--outer, 80px)"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
-								<div class="wp-block-group alignwide" style="padding-top:var(--wp--custom--spacing--outer, 80px);padding-bottom:var(--wp--custom--spacing--outer, 80px)">
+								<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+								<div class="wp-block-group alignwide">
 
 									<!-- wp:group {"layout":{"type":"flex"}} -->
 									<div class="wp-block-group">
@@ -21,7 +21,9 @@ return array(
 									</div>
 									<!-- /wp:group -->
 
-									<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} /-->
+									<!-- wp:navigation {"isResponsive":true,"layout":{"type":"flex","orientation":"horizontal","justifyContent":"right"}} -->
+									<!-- wp:page-list {"isNavigationChild":true,"showSubmenuIcon":true,"openSubmenusOnClick":false} /-->
+									<!-- /wp:navigation -->
 
 								</div>
 								<!-- /wp:group -->
