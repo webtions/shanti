@@ -158,7 +158,13 @@
 			"text": "var(--wp--preset--color--foreground)"
 		},
 		"spacing": {
-			"blockGap": "1.5rem"
+			"blockGap": "1.5rem",
+			"margin": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px",
+				"left": "0px"
+			}
 		},
 		"typography": {
 			"fontSmoothing": true,

@@ -9,11 +9,11 @@ return array(
 	'title'      => __( 'Cover with text and background image', 'shanti' ),
 	'categories' => array( 'shanti-hero' ),
 	'blockTypes' => array( 'core/template-part/header' ),
-	'content'    => '<!-- wp:cover {"url":"https://harishchouhan.test/wp-content/uploads/2022/01/website-cover.svg","dimRatio":0,"contentPosition":"center left","isDark":false,"align":"full","className":"is-position-center-left is-style-full-height shanti-header-cover","style":{"color":{"duotone":["#E5E5E5","#F8CD5F"]}}} -->
+	'content'    => '<!-- wp:cover {"url":"' . esc_url( get_template_directory_uri() ) . '/assets/images/shanti-cover.svg","dimRatio":0,"contentPosition":"center left","isDark":false,"align":"full","className":"shanti-header-cover is-style-full-height"} -->
 						<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-center-left shanti-header-cover is-style-full-height">
 
 							<span aria-hidden="true" class="has-background-dim-0 wp-block-cover__gradient-background has-background-dim"></span>
-							<img class="wp-block-cover__image-background" alt="" src="https://harishchouhan.test/wp-content/uploads/2022/01/website-cover.svg" data-object-fit="cover"/>
+							<img class="wp-block-cover__image-background" alt="" src="' . esc_url( get_template_directory_uri() ) . '/assets/images/shanti-cover.svg" data-object-fit="cover"/>
 
 							<div class="wp-block-cover__inner-container">
 
@@ -31,7 +31,7 @@ return array(
 		<!-- /wp:spacer -->
 
 											<!-- wp:heading {"level":1,"fontSize":"xx-large"} -->
-											<h1 class="has-xx-large-font-size" id="a-record-of-my-journey-to-discover-the-world-and-myself">A record of my journey to discover the world and myself.</h1>
+											<h1 class="has-xx-large-font-size">A minimalist purpose-built blog theme for WordPress powered by blocks.</h1>
 											<!-- /wp:heading -->
 
 											<!-- wp:paragraph {"textColor":"secondary","className":"scroll-to","fontSize":"large"} -->
