@@ -15,23 +15,23 @@
 function shanti_register_block_patterns() {
 
 	$block_pattern_categories = array(
-		'shanti-blog'   => array(
+		'shanti-blog'    => array(
 			'label'         => __( 'Shanti Blog', 'shanti' ),
 			'categoryTypes' => array( 'shanti' ),
 		),
-		'shanti-footer' => array(
+		'shanti-footer'  => array(
 			'label'         => __( 'Shanti Footer', 'shanti' ),
 			'categoryTypes' => array( 'shanti' ),
 		),
-		'shanti-general'   => array(
+		'shanti-general' => array(
 			'label'         => __( 'Shanti General', 'shanti' ),
 			'categoryTypes' => array( 'shanti' ),
 		),
-		'shanti-hero'   => array(
+		'shanti-hero'    => array(
 			'label'         => __( 'Shanti Hero', 'shanti' ),
 			'categoryTypes' => array( 'shanti' ),
 		),
-		'shanti-header' => array(
+		'shanti-header'  => array(
 			'label'         => __( 'Shanti Header', 'shanti' ),
 			'categoryTypes' => array( 'shanti' ),
 		),
@@ -62,7 +62,7 @@ function shanti_register_block_patterns() {
 		'blog/blog-default',
 		'blog/blog-grid',
 		'footer/footer-default',
-		'general/general-heading',		
+		'general/general-heading',
 		'header/header-default',
 		'header/header-logo-nav',
 		'hero/hero-cover',
