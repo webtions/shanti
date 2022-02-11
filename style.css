@@ -15,27 +15,20 @@ Tags: blog, block-styles, featured-images, full-width-template, wide-blocks, blo
 
 Shanti, (C) 2022 Webtions OU.
 Shanti is distributed under the terms of the GNU GPL.
-
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/* ------------------------------------------- */
+/* Defaults
+/* ------------------------------------------- */
 
 html {
 	scroll-behavior: smooth;
-	-ms-word-wrap: break-word;
 }
-
-/*
- * Font smoothing.
- * This is a niche setting that will not be available via Global Styles.
- * https://github.com/WordPress/gutenberg/issues/35934
- */
 
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	/* overflow-x: hidden; */
+	word-break: break-word;
 }
 
 /*
@@ -44,15 +37,19 @@ body {
  * https://github.com/WordPress/gutenberg/issues/27075
  */
 
-a {
-	text-decoration-thickness: 1px;
-	text-underline-offset: 0.4ch;
+a,
+a:focus,
+a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 0.2ch;
 	text-decoration-color: var(--wp--preset--color--primary);
 }
 
 a:hover,
 a:focus {
 	text-decoration-thickness: 2px;
+	text-decoration-color: var(--wp--preset--color--foreground);
 }
 
 a:active {
@@ -65,35 +62,9 @@ a:active {
 	text-decoration-style: solid;
 }
 
-/*
- * Search and File Block button styles.
- * Necessary until the following issues are resolved in Gutenberg:
- * https://github.com/WordPress/gutenberg/issues/36444
- * https://github.com/WordPress/gutenberg/issues/27760
- */
-
-.wp-block-search__button,
-.wp-block-file .wp-block-file__button {
-	background-color: var(--wp--preset--color--foreground);
-	border-radius: 0;
-	border: none;
-	color: var(--wp--preset--color--background);
-	font-size: var(--wp--preset--font-size--medium);
-	padding: calc(.667em + 2px) calc(1.333em + 2px);
-}
-
-/*
- * Button hover styles.
- * Necessary until the following issue is resolved in Gutenberg:
- * https://github.com/WordPress/gutenberg/issues/27075
- */
-
-.wp-block-search__button:hover,
-.wp-block-file .wp-block-file__button:hover,
-.wp-block-button__link:hover {
-	border: none;
-	background-color: var(--wp--preset--color--primary);
-	color: var(--wp--preset--color--foreground);
+b,
+strong {
+	font-weight: var(--wp--custom--font-weight--semi-bold);
 }
 
 /*
@@ -135,17 +106,6 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	width: unset;
 }
 
-/* Blocks inside columns don't have negative margins. */
-.wp-site-blocks .wp-block-columns .wp-block-column .alignfull,
-.is-root-container .wp-block-columns .wp-block-column .wp-block[data-align="full"],
-
-/* We also want to avoid stacking negative margins. */
-.wp-site-blocks .alignfull:not(.wp-block-group) .alignfull,
-.is-root-container .wp-block[data-align="full"] > *:not(.wp-block-group) .wp-block[data-align="full"] {
-	margin-left: auto !important;
-	margin-right: auto !important;
-	width: inherit;
-}
 
 /*
  * Responsive menu container padding.
@@ -161,200 +121,103 @@ body > .is-root-container > .wp-block-template-part > .wp-block-cover,
 	padding-left: var(--wp--custom--spacing--outer);
 }
 
-.wp-block-post-content.alignfull>:not(.alignfull):not([data-align=full]) {
-	margin-left: auto;
-	margin-right: auto;
-	width: calc(100% - 2 * var(--wp--style--block-gap))!important;
-}
 
-/*
- * Basic default styling
- */
+/* ------------------------------------------- */
+/* Block: Buttons
+/* ------------------------------------------- */
 
-
-/* main {
-	padding-left: var(--wp--custom--spacing--outer);
-	padding-right: var(--wp--custom--spacing--outer);
-}
- */
-
-pre {
-	white-space: pre-wrap;
-}
-
-ul,
-ol {
-	margin: calc( 1.5 * var( --wp--style--block-gap ) ) 0 calc( 1.5 * var( --wp--style--block-gap ) ) 0;
-	padding: 0;
-}
-
-/* li {
-	margin: calc( .5 * var( --wp--style--block-gap ) ) 0 calc( .5 * var( --wp--style--block-gap ) ) 1.25em;
-} */
-
-li > ul,
-li > ol {
-	margin-bottom: calc( .5 * var( --wp--custom--spacing--baseline ) );
-	margin-top: calc( .5 * var( --wp--custom--spacing--baseline ) );
-}
-
-dt {
-	font-weight: 600;
-}
-
-dt + dd { margin-top: 5px; }
-dd + dt { margin-top: 15px; }
-
-
-hr {
-	background-color: var( --wp--preset--color--foreground );
-	border: none !important;
-	height: 2px;
-	opacity: 1 !important;
-}
-
-iframe, img, embed, object, svg {
-	display: block;
-}
-
-img, embed, object {
-	height: auto;
-	max-width: 100%;
-}
-
-figcaption {
-	color: inherit;
-	display: block;
-	font-size: 1rem;
-	font-weight:  400;
-	line-height: inherit;
-	margin-bottom: 0;
-	margin-top: 10px;
-	text-align: left;
-}
-/*
- * Form styling
- */
-
-label {
-	display: block;
-	font-size: var(--wp--preset--font-size--extra-small);
-	margin-bottom: 0;
-	font-weight: 600;
-}
-
-input,
-select,
-textarea {
+input[type="button"],
+input[type="submit"],
+.wp-block-button__link,
+.wp-block-post-comments input[type="submit"],
+.wp-block-search__button {
+	background-color: var(--wp--preset--color--foreground);
+	border: 1px solid var(--wp--preset--color--foreground);
 	border-radius: 0;
-	width: 100%;
-	padding: 10px;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-	width: 20px;
-	height: 20px;
-	flex-shrink: 0;
-	display: inline-block;
-	margin: 0;
-	margin-right: 10px;
-	text-align: center;
-	vertical-align: middle;
 	cursor: pointer;
-	border: 0;
+	color: var(--wp--preset--color--background);
+	font-size: var(--wp--preset--font-size--medium);
+	padding: 10px 20px;
 }
 
-/*
- * Comment Form styling
- */
-
-.comment-respond {
-	background-color: var(--wp--preset--color--secondary);
-	padding: var(--wp--custom--spacing--outer);
-	/* margin-top: calc(2 * var(--wp--style--block-gap)); */
-}
-.logged-in-as,
-.comment-notes,
-#cancel-comment-reply-link {
-	font-size: 16px;
-}
-
-.required-field-message {
-	display: none;
-}
-
-.comment-respond .required {
-	color: var(--wp--preset--color--vivid-red);
-	font-size: 1.125rem;
-}
-
-.comment-form-cookies-consent label {
-	font-size: 16px;
-	font-weight: inherit;
-}
-
-.comment-respond a {
-	text-decoration-color: transparent;
-}
-
-.comment-reply-title small a {
-	display: block;
-	text-decoration-color: var(--wp--preset--color--primary);
-}
-
-.wp-block-post-comments .commentlist {
-	margin-bottom:  40px;
-}
-
-.wp-block-post-comments > h3,
-.comment-reply-title {
-	margin: 0;
-}
-
-@media (min-width: 700px) {
-	.comment-form .comment-form-author,
-	.comment-form .comment-form-email {
-		float: left;
-		width: calc(50% - 10px);
-	}
-}
-
-@media (min-width: 700px) {
-	.comment-form .comment-form-email {
-		margin-left: calc(2 * 10px);
-	}
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover,
+.wp-block-button__link:focus,
+.wp-block-button__link:hover,
+.wp-block-post-comments input[type="submit"]:focus,
+.wp-block-post-comments input[type="submit"]:hover,
+.wp-block-search__button:focus,
+.wp-block-search__button:hover {
+	background-color: transparent;
+	border: 1px solid var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--foreground);
+	text-decoration: none;
 }
 
 
+/* Button Style: OUTLINE */
 
-
-
-/* Quotes -------------------------- */
-
-blockquote,
-.wp-block-quote {
-	display:  block;
-	border-left: solid 2px var(--wp--preset--color--primary);
-	padding-left:  40px;
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	color: var(--wp--preset--color--foreground);
+	padding: 10px 20px;
 }
 
-cite {
-	font-style: normal;
-	font-weight: 600;
-	text-align: inherit;
-	text-transform: uppercase;
-}
-
-blockquote cite {
-	display: block;
-	margin-top: 20px;
+.wp-block-button.is-style-outline .wp-block-button__link:focus,
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--background);
 }
 
 
+/* Table
+--------------------------------------------- */
 
-/* Site Header -------------------------- */
+.wp-block-table.is-style-stripes {
+	border-bottom: none;
+}
 
+.wp-block-table table {
+	border-collapse: collapse;
+}
+
+.wp-block-table thead {
+	border-bottom: 3px solid var(--wp--preset--color--foreground);
+}
+
+.wp-block-table tfoot {
+	border-top: 3px solid var(--wp--preset--color--black);
+}
+
+.wp-block-table td,
+.wp-block-table th,
+.wp-block-table tr,
+.wp-block-table.is-style-stripes td,
+.wp-block-table.is-style-stripes th,
+.wp-block-table.is-style-stripes tr {
+	border: 1px solid var(--wp--preset--color--black);
+}
+
+.wp-block-table th {
+	font-weight: var(--wp--custom--font-weight--medium);
+}
+
+.wp-block-table td,
+.wp-block-table th {
+	padding: 5px;
+}
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background-color: var(--wp--preset--color--gray);
+}
+/* ------------------------------------------- */
+/* Custom
+/* ------------------------------------------- */
+
+
+/* Header: Custom Cover Style */
 
 .shanti-header-cover .wp-block-cover__inner-container {
 	width: 100% !important;
@@ -364,7 +227,6 @@ blockquote cite {
 	max-width: clamp(324px, 90vw, 720px);
 	margin-left: 0;
 }
-
 
 .is-style-no-spacing {
 	margin: 0!important;
@@ -400,32 +262,18 @@ blockquote cite {
 	width: 100%;
 }
 
-.wp-block-cover .wp-block-cover__gradient-background {
-	bottom: 0;
-	left: 0;
-	opacity: .5;
-	position: absolute;
-	right: 0;
-	top: 0;
-	z-index: 0;
-}
-
 .site-header {
 	position: relative;
 	z-index: 2;
 }
 
-/* Post Navigation
---------------------------------------------- */
+
+/* Post Navigation */
 
 .post-navigation-link__label {
 	display:  block;
 	text-transform: uppercase;
 	font-weight:  400;
-}
-
-.wp-block-post-navigation-link {
-    /* font-size: 50px; */
 }
 
 .post-nav-links,
@@ -441,13 +289,13 @@ blockquote cite {
 	text-align: right;
 }
 
+/* ------------------------------------------- */
 /* Styles
---------------------------------------------- */
+/* ------------------------------------------- */
 
 .is-style-full-height {
 	align-items: center;
 	min-height: 100vh;
-	/* padding: 0; */
 }
 
 
@@ -456,65 +304,4 @@ blockquote cite {
 	top: 0;
 	width: 100%;
 	z-index: 1;
-}
-
-/* :root {
-  filter: invert(100%);
-} */
-
-/* html {
-  filter: invert(1) hue-rotate(180deg)
-}
-
-img, picture, video {
-  filter: invert(1) hue-rotate(180deg)
-} */
-
-
-.wp-block-post-featured-image img {
-	height: auto;
-	max-width: 100%;
-	vertical-align: bottom;
-	width: 100%;
-}
-.wp-block-post-featured-image img, 
-.alignfull.wp-block-post-featured-image img, 
-.wp-block-post-featured-image.alignwide img {
-   width:  auto !important;
-   text-align: center !important;
-   margin: auto;
-} 
-
-
-.wp-block-post-title,
-.wp-block-group {
-    word-wrap: break-word;
-}
-
-
-.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
-    background-color: var(--wp--preset--color--foreground);
-    color: var(--wp--preset--color--background);
-    border: 1px solid rgba(0,0,0,.15);
-}
-.wp-block-navigation__submenu-container li {
-    margin: 0.5em 1em 0em;
-}
-
-
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-    background-color: var(--wp--preset--color--foreground);
-    color: var(--wp--preset--color--background);
-}
-
-.wp-block-post-comments .commentlist li {
-    border-top: 1px solid var(--wp--preset--color--text-lighter);
-    margin: var(--wp--style--block-gap) 0 0 0;
-    padding: var(--wp--style--block-gap) 0 0 0;
-}
-
-.comment-metadata a {
-    text-decoration: none;
-    font-size: var(--wp--preset--font-size--small);
-    color: var(--wp--preset--color--text-light);
 }
