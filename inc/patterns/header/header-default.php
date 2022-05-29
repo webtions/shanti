@@ -22,9 +22,7 @@ return array(
 									</div>
 									<!-- /wp:group -->
 
-									<!-- wp:navigation {"isResponsive":true,"layout":{"type":"flex","orientation":"horizontal","justifyContent":"right"}} -->
-									<!-- wp:page-list {"isNavigationChild":true,"showSubmenuIcon":true,"openSubmenusOnClick":false} /-->
-									<!-- /wp:navigation -->
+									<!-- wp:navigation {"isResponsive":true,"layout":{"type":"flex","orientation":"horizontal","justifyContent":"right"}} /-->
 
 								</div>
 								<!-- /wp:group -->
