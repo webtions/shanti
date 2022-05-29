@@ -64,7 +64,6 @@ function shanti_register_block_patterns() {
 		'footer/footer-default',
 		'general/general-heading',
 		'header/header-default',
-		'header/header-logo-nav',
 		'hero/hero-cover',
 	);
 
