@@ -50,7 +50,7 @@ return array(
 						<!-- /wp:group -->
 
 						<!-- wp:paragraph {"fontSize":"extra-small"} -->
-						<p class="has-extra-small-font-size has-text-align-center">Made with <a href="https://wordpress.org" target="_blank" rel="noreferrer noopener">WordPress</a> &amp; <a href="https://github.com/webtions/shanti" target="_blank" rel="noreferrer noopener">Shanti theme</a>.</p>
+						<p class="has-extra-small-font-size has-text-align-center">Made with <a href="https://wordpress.org" target="_blank" rel="noreferrer noopener">WordPress</a> &amp; <a href="https://github.com/webtions/shanti" target="_blank" rel="noreferrer noopener" title="Shanti Theme">Shanti</a>.</p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:spacer {"height":40} -->
