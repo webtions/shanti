@@ -1,34 +1,35 @@
 <?xml version="1.0"?>
-<ruleset name="themes">
-	<description>Apply WordPress Coding Standards to all PHP files</description>
+<ruleset name="Shanti Theme Standards">
+	<description>Apply WordPress Coding Standards to all PHP files in the Shanti theme.</description>
 
-	<!-- Only scan PHP files. -->
+	<!-- Only scan PHP files -->
 	<arg name="extensions" value="php"/>
 
-	<!-- Whenever possible, cache the scan results and re-use those for unchanged files on the next scan. -->
+	<!-- Use cache to improve performance -->
 	<arg name="cache"/>
 
-	<!-- Set the memory limit to 256M.
-		 For most standard PHP configurations, this means the memory limit will temporarily be raised.
-		 Ref: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#specifying-phpini-settings
-	-->
+	<!-- Set memory limit -->
 	<ini name="memory_limit" value="256M"/>
 
-	<!-- Strip the filepaths down to the relevant bit. -->
+	<!-- Show relative file paths -->
 	<arg name="basepath" value="./"/>
 
-	<!-- Check up to 20 files simultaneously. -->
-	<arg name="parallel" value="20"/>
-
-	<!-- Show sniff codes in all reports. -->
+	<!-- Show sniff codes in reports -->
 	<arg value="ps"/>
 
+	<!-- Run up to 20 files in parallel -->
+	<arg name="parallel" value="20"/>
+
+	<!-- Scan the whole theme directory -->
 	<file>.</file>
 
-	<rule ref="WordPress-Core"/>
+	<!-- Apply the full WordPress ruleset (Core + Docs + Extra) -->
+	<rule ref="WordPress"/>
+
+	<!-- Add extra rule explicitly -->
 	<rule ref="WordPress.CodeAnalysis.EmptyStatement"/>
 
-	<!-- These rules are being set as warnings instead of errors, so we can error check the entire codebase. -->
+	<!-- Downgrade strict rules to warnings (for smoother development) -->
 	<rule ref="WordPress.PHP.YodaConditions.NotYoda">
 		<type>warning</type>
 	</rule>
@@ -45,17 +46,19 @@
 		<type>warning</type>
 	</rule>
 
-	<!-- Directories and third party library exclusions. -->
-	<exclude-pattern>/vendor/*</exclude-pattern>
-	<exclude-pattern>/node_modules/*</exclude-pattern>
+	<!-- Exclude third-party and build folders -->
+	<exclude-pattern>vendor/*</exclude-pattern>
+	<exclude-pattern>node_modules/*</exclude-pattern>
+	<exclude-pattern>assets/*</exclude-pattern>
+	<exclude-pattern>styles/*</exclude-pattern>
 
-	<!-- Assignments in while conditions are a valid method of looping over iterables. -->
-	<rule ref="WordPress.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition">
+	<!-- Skip file naming rule (we won't rename existing files) -->
+	<rule ref="WordPress.Files.FileName">
 		<exclude-pattern>*</exclude-pattern>
 	</rule>
 
-	<!-- We're not going to rename files. -->
-	<rule ref="WordPress.Files.FileName">
+	<!-- Skip 'assignment in while condition' warning -->
+	<rule ref="WordPress.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition">
 		<exclude-pattern>*</exclude-pattern>
 	</rule>
 </ruleset>
