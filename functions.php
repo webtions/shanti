@@ -1,11 +1,8 @@
 <?php
 /**
- * This file adds functions to the Shanti theme for WordPress.
+ * Theme functions for the Shanti WordPress theme.
  *
  * @package Shanti
- * @author  Themeist
- * @license GNU General Public License v3 or later
- * @link    https://shanti.themeist.com/
  */
 
 if ( ! function_exists( 'shanti_setup' ) ) {
@@ -47,12 +44,15 @@ add_action( 'after_setup_theme', 'shanti_setup' );
 
 /**
  * Restores the Customizer since we still rely on it.
+ *
+ * @since 0.1.0
  */
 function shanti_restore_customizer() {
 	// There's no need to return anything.
 	// The empty callback will do the trick.
 }
 add_action( 'customize_register', 'shanti_restore_customizer' );
+
 
 /**
  * Enqueue styles.
@@ -89,6 +89,10 @@ add_action( 'admin_init', 'shanti_editor_styles' );
 
 /**
  * Get Google fonts and save locally with WPTT Webfont Loader.
+ *
+ * @since 0.1.0
+ *
+ * @return string Webfont URL.
  */
 function shanti_font_styles() {
 	$font_families = array(
@@ -109,8 +113,16 @@ function shanti_font_styles() {
 }
 
 
-// Register theme specific block patterns
+/**
+ * Require theme-specific block patterns.
+ *
+ * @since 0.1.0
+ */
 require get_template_directory() . '/inc/block-patterns.php';
 
-// Register theme specific block styles
+/**
+ * Require theme-specific block styles.
+ *
+ * @since 0.1.0
+ */
 require get_template_directory() . '/inc/block-styles.php';
