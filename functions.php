@@ -61,8 +61,7 @@ add_action( 'customize_register', 'shanti_restore_customizer' );
  */
 function shanti_styles() {
 
-	$theme_version  = wp_get_theme()->get( 'Version' );
-	$version_string = is_string( $theme_version ) ? $theme_version : false;
+	$version_string = wp_get_theme()->get( 'Version' );
 
 	wp_register_style( 'shanti-style', get_template_directory_uri() . '/style.css', array(), $version_string );
 
