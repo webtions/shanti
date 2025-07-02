@@ -14,7 +14,8 @@ Thumbs.db
 # ─────────────────────────────
 # Editor / Project Settings
 # ─────────────────────────────
-.vscode/
+.vscode/*
+!.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 .idea/
