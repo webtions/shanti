@@ -1,21 +1,35 @@
-# Handle line endings.
-# See https://help.github.com/articles/dealing-with-line-endings/
-
+# Handle line endings
 * text=auto
 
-# Denote all files that are truly binary and should not be modified.
-*.gif binary
-*.ico binary
-*.jpg binary
+# Binary files — avoid line-ending changes or diffs
+*.gif  binary
+*.ico  binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
 *.webp binary
-*.png binary
-*.svg binary
+*.svg  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.eot  binary
+*.zip  binary
 
-
-.gitattributes export-ignore
-.gitignore export-ignore
-/.github export-ignore
-phpcs.xml export-ignore
-composer.json export-ignore
-composer.lock export-ignore
-README.md export-ignore
+# Ignore dev/build files when generating GitHub ZIP exports
+.gitattributes          export-ignore
+.gitignore              export-ignore
+.editorconfig           export-ignore
+.prettierrc             export-ignore
+.prettierignore         export-ignore
+.eslintignore           export-ignore
+phpcs.xml               export-ignore
+phpcs.xml.dist          export-ignore
+phpstan.neon.dist       export-ignore
+composer.json           export-ignore
+composer.lock           export-ignore
+package.json            export-ignore
+package-lock.json       export-ignore
+.vscode/                export-ignore
+.github/                export-ignore
+README.md               export-ignore
+SECURITY.md             export-ignore
