@@ -1,64 +1,18 @@
 <?xml version="1.0"?>
 <ruleset name="Shanti Theme Standards">
-	<description>Apply WordPress Coding Standards to all PHP files in the Shanti theme.</description>
+	<description>WordPress Coding Standards for the Shanti theme</description>
 
-	<!-- Only scan PHP files -->
-	<arg name="extensions" value="php"/>
+	<rule ref="WordPress-Core"/>
+	<rule ref="WordPress-Docs"/>
+	<rule ref="WordPress-Extra"/>
 
-	<!-- Use cache to improve performance -->
-	<arg name="cache"/>
-
-	<!-- Set memory limit -->
-	<ini name="memory_limit" value="256M"/>
-
-	<!-- Show relative file paths -->
-	<arg name="basepath" value="./"/>
-
-	<!-- Show sniff codes in reports -->
-	<arg value="ps"/>
-
-	<!-- Run up to 20 files in parallel -->
-	<arg name="parallel" value="20"/>
-
-	<!-- Scan the whole theme directory -->
+	<!-- Paths to scan -->
 	<file>.</file>
 
-	<!-- Apply the full WordPress ruleset (Core + Docs + Extra) -->
-	<rule ref="WordPress"/>
-
-	<!-- Add extra rule explicitly -->
-	<rule ref="WordPress.CodeAnalysis.EmptyStatement"/>
-
-	<!-- Downgrade strict rules to warnings (for smoother development) -->
-	<rule ref="WordPress.PHP.YodaConditions.NotYoda">
-		<type>warning</type>
-	</rule>
-	<rule ref="WordPress.NamingConventions.ValidVariableName.VariableNotSnakeCase">
-		<type>warning</type>
-	</rule>
-	<rule ref="WordPress.DB.PreparedSQL.InterpolatedNotPrepared">
-		<type>warning</type>
-	</rule>
-	<rule ref="WordPress.DB.PreparedSQL.NotPrepared">
-		<type>warning</type>
-	</rule>
-	<rule ref="WordPress.Files.FileName.InvalidClassFileName">
-		<type>warning</type>
-	</rule>
-
-	<!-- Exclude third-party and build folders -->
+	<!-- Ignore vendor and build assets -->
 	<exclude-pattern>vendor/*</exclude-pattern>
 	<exclude-pattern>node_modules/*</exclude-pattern>
 	<exclude-pattern>assets/*</exclude-pattern>
 	<exclude-pattern>styles/*</exclude-pattern>
-
-	<!-- Skip file naming rule (we won't rename existing files) -->
-	<rule ref="WordPress.Files.FileName">
-		<exclude-pattern>*</exclude-pattern>
-	</rule>
-
-	<!-- Skip 'assignment in while condition' warning -->
-	<rule ref="WordPress.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition">
-		<exclude-pattern>*</exclude-pattern>
-	</rule>
+	<exclude-pattern>build/*</exclude-pattern>
 </ruleset>

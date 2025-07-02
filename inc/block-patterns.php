@@ -84,6 +84,5 @@ function shanti_register_block_patterns() {
 			require $pattern_file
 		);
 	}
-
 }
 add_action( 'init', 'shanti_register_block_patterns', 9 );

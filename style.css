@@ -233,11 +233,11 @@ input[type="submit"]:hover,
 	padding:  0;
 }
 
-.wp-block-cover-image.has-background-dim:not(.has-background-gradient):before, 
-.wp-block-cover-image .has-background-dim:not(.has-background-gradient):before, 
-.wp-block-cover-image .wp-block-cover__gradient-background, 
-.wp-block-cover.has-background-dim:not(.has-background-gradient):before, 
-.wp-block-cover .has-background-dim:not(.has-background-gradient):before, 
+.wp-block-cover-image.has-background-dim:not(.has-background-gradient):before,
+.wp-block-cover-image .has-background-dim:not(.has-background-gradient):before,
+.wp-block-cover-image .wp-block-cover__gradient-background,
+.wp-block-cover.has-background-dim:not(.has-background-gradient):before,
+.wp-block-cover .has-background-dim:not(.has-background-gradient):before,
 .wp-block-cover .wp-block-cover__gradient-background {
 	bottom: 0;
 	left: 0;

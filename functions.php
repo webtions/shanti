@@ -40,7 +40,6 @@ if ( ! function_exists( 'shanti_setup' ) ) {
 
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
-
 	}
 }
 add_action( 'after_setup_theme', 'shanti_setup' );
@@ -72,7 +71,6 @@ function shanti_styles() {
 
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'shanti-style' );
-
 }
 add_action( 'wp_enqueue_scripts', 'shanti_styles' );
 
@@ -86,7 +84,6 @@ function shanti_editor_styles() {
 
 	// Add styles inline.
 	wp_add_inline_style( 'wp-block-library', shanti_font_styles() );
-
 }
 add_action( 'admin_init', 'shanti_editor_styles' );
 
