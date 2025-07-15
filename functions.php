@@ -148,7 +148,45 @@ if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 }
 add_action( 'init', 'shanti_register_block_styles' );
 
-/**
- * Include theme-specific block patterns.
- */
-require get_template_directory() . '/inc/block-patterns.php';
+if ( ! function_exists( 'shanti_register_block_pattern_categories' ) ) {
+	/**
+	 * Register block pattern categories.
+	 *
+	 * @since 0.1.0
+	 *
+	 * @return void
+	 */
+	function shanti_register_block_pattern_categories() {
+		register_block_pattern_category(
+			'shanti-blog',
+			array(
+				'label' => __( 'Shanti Blog', 'shanti' ),
+			)
+		);
+		register_block_pattern_category(
+			'shanti-footer',
+			array(
+				'label' => __( 'Shanti Footer', 'shanti' ),
+			)
+		);
+		register_block_pattern_category(
+			'shanti-general',
+			array(
+				'label' => __( 'Shanti General', 'shanti' ),
+			)
+		);
+		register_block_pattern_category(
+			'shanti-hero',
+			array(
+				'label' => __( 'Shanti Hero', 'shanti' ),
+			)
+		);
+		register_block_pattern_category(
+			'shanti-header',
+			array(
+				'label' => __( 'Shanti Header', 'shanti' ),
+			)
+		);
+	}
+}
+add_action( 'init', 'shanti_register_block_pattern_categories' );
