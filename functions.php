@@ -1,8 +1,9 @@
 <?php
 /**
- * Theme functions for the Shanti WordPress theme.
+ * This file adds functions to the Shanti WordPress theme.
  *
  * @package Shanti
+ * @author  Shanti
  */
 
 if ( ! function_exists( 'shanti_setup' ) ) {
@@ -65,9 +66,6 @@ function shanti_styles() {
 
 	wp_register_style( 'shanti-style', get_template_directory_uri() . '/style.css', array(), $version_string );
 
-	// Add styles inline.
-	wp_add_inline_style( 'shanti-style', shanti_font_styles() );
-
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'shanti-style' );
 }
@@ -85,32 +83,6 @@ function shanti_editor_styles() {
 	wp_add_inline_style( 'wp-block-library', shanti_font_styles() );
 }
 add_action( 'admin_init', 'shanti_editor_styles' );
-
-
-/**
- * Get Google fonts and save locally with WPTT Webfont Loader.
- *
- * @since 0.1.0
- *
- * @return string Webfont URL.
- */
-function shanti_font_styles() {
-	$font_families = array(
-		'Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600',
-	);
-
-	$fonts_url = add_query_arg(
-		array(
-			'family'  => implode( '&family=', $font_families ),
-			'display' => 'swap',
-		),
-		'https://fonts.googleapis.com/css2'
-	);
-
-	include_once get_theme_file_path( 'inc/wptt-webfont-loader.php' );
-
-	return wptt_get_webfont_url( esc_url_raw( $fonts_url ) );
-}
 
 
 /**
