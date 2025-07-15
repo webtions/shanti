@@ -1,9 +1,8 @@
 <?php
 /**
  * Title: Cover with text and background image
- * Slug: shanti/header-cover
+ * Slug: shanti/hero-cover
  * Categories: shanti-hero
- * Block Types: core/template-part/header
  */
 ?>
 
