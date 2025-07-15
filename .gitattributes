@@ -16,6 +16,7 @@
 *.zip  binary
 
 # Ignore dev/build files when generating GitHub ZIP exports
+.deployignore           export-ignore
 .gitattributes          export-ignore
 .gitignore              export-ignore
 .editorconfig           export-ignore
@@ -25,11 +26,18 @@
 phpcs.xml               export-ignore
 phpcs.xml.dist          export-ignore
 phpstan.neon.dist       export-ignore
+phpci.yml               export-ignore
+phpunit.xml             export-ignore
 composer.json           export-ignore
 composer.lock           export-ignore
 package.json            export-ignore
 package-lock.json       export-ignore
+Gruntfile.js            export-ignore
 .vscode/                export-ignore
 .github/                export-ignore
 README.md               export-ignore
 SECURITY.md             export-ignore
+/.wordpress-org/        export-ignore
+/build/                 export-ignore
+/assets/                export-ignore
+/tests/                 export-ignore
