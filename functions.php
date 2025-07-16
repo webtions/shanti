@@ -113,41 +113,6 @@ if ( ! function_exists( 'shanti_restore_customizer' ) ) {
 }
 add_action( 'customize_register', 'shanti_restore_customizer' );
 
-
-if ( ! function_exists( 'shanti_register_block_styles' ) ) {
-	/**
-	 * Register block styles.
-	 *
-	 * @since 0.1.0
-	 *
-	 * @return void
-	 */
-	function shanti_register_block_styles() {
-
-		$block_styles = array(
-			'core/group' => array(
-				'full-height' => __( 'Full height', 'shanti' ),
-			),
-			'core/cover' => array(
-				'full-height' => __( 'Full height', 'shanti' ),
-			),
-		);
-
-		foreach ( $block_styles as $block => $styles ) {
-			foreach ( $styles as $style_name => $style_label ) {
-				register_block_style(
-					$block,
-					array(
-						'name'  => $style_name,
-						'label' => $style_label,
-					)
-				);
-			}
-		}
-	}
-}
-add_action( 'init', 'shanti_register_block_styles' );
-
 if ( ! function_exists( 'shanti_register_block_pattern_categories' ) ) {
 	/**
 	 * Register block pattern categories.
@@ -190,3 +155,37 @@ if ( ! function_exists( 'shanti_register_block_pattern_categories' ) ) {
 	}
 }
 add_action( 'init', 'shanti_register_block_pattern_categories' );
+
+if ( ! function_exists( 'shanti_register_block_styles' ) ) {
+	/**
+	 * Register block styles.
+	 *
+	 * @since 0.1.0
+	 *
+	 * @return void
+	 */
+	function shanti_register_block_styles() {
+
+		$block_styles = array(
+			'core/group' => array(
+				'full-height' => __( 'Full height', 'shanti' ),
+			),
+			'core/cover' => array(
+				'fullscreen-cover' => __( 'Fullscreen Cover', 'shanti' ),
+			),
+		);
+
+		foreach ( $block_styles as $block => $styles ) {
+			foreach ( $styles as $style_name => $style_label ) {
+				register_block_style(
+					$block,
+					array(
+						'name'  => $style_name,
+						'label' => $style_label,
+					)
+				);
+			}
+		}
+	}
+}
+add_action( 'init', 'shanti_register_block_styles' );

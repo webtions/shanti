@@ -6,8 +6,8 @@
  */
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() . '/assets/images/shanti-cover.svg' ); ?>","dimRatio":0,"contentPosition":"center left","isDark":false,"align":"full","className":"shanti-header-cover is-style-full-height"} -->
-<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-center-left shanti-header-cover is-style-full-height">
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() . '/assets/images/shanti-cover.svg' ); ?>","dimRatio":0,"contentPosition":"center left","isDark":false,"align":"full","className":"shanti-header-cover is-style-fullscreen-cover"} -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-center-left shanti-header-cover is-style-fullscreen-cover">
 
 	<span aria-hidden="true" class="has-background-dim-0 wp-block-cover__gradient-background has-background-dim"></span>
 	<img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/shanti-cover.svg' ); ?>" data-object-fit="cover"/>
