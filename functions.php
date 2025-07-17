@@ -168,7 +168,7 @@ if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 
 		$block_styles = array(
 			'core/group' => array(
-				'full-height' => __( 'Full height', 'shanti' ),
+
 			),
 			'core/cover' => array(
 				'fullscreen-cover' => __( 'Fullscreen Cover', 'shanti' ),
