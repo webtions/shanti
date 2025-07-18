@@ -38,38 +38,62 @@ The theme includes a set of templates, reusable parts, and block patterns design
 
 ### Templates
 
-| Template          | Description                                  |
-| ----------------- | -------------------------------------------- |
-| `index.html`      | Fallback template for all content            |
-| `single.html`     | Default template for single posts            |
-| `page.html`       | Default template for static pages            |
-| `page-front.html` | Custom template for the homepage             |
-| `archive.html`    | Template for archives (categories, etc.)     |
-| `search.html`     | Search results template                      |
-| `404.html`        | Template for not found pages                 |
-| `blank.html`      | A completely empty canvas (no header/footer) |
-| `no-title.html`   | Template without the post/page title         |
+<table>
+  <thead>
+    <tr>
+      <th style="width: 200px;">Template</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>index.html</code></td><td>Fallback template for all content</td></tr>
+    <tr><td><code>single.html</code></td><td>Default template for single posts</td></tr>
+    <tr><td><code>page.html</code></td><td>Default template for static pages</td></tr>
+    <tr><td><code>page-front.html</code></td><td>Custom template for the homepage</td></tr>
+    <tr><td><code>archive.html</code></td><td>Template for archives (categories, etc.)</td></tr>
+    <tr><td><code>search.html</code></td><td>Search results template</td></tr>
+    <tr><td><code>404.html</code></td><td>Template for not found pages</td></tr>
+    <tr><td><code>blank.html</code></td><td>A completely empty canvas (no header/footer)</td></tr>
+    <tr><td><code>no-title.html</code></td><td>Template without the post/page title</td></tr>
+  </tbody>
+</table>
 
 ### Template Parts
 
-| Template Part | Purpose     |
-| ------------- | ----------- |
-| `header.html` | Site header |
-| `footer.html` | Site footer |
+<table>
+  <thead>
+    <tr>
+      <th style="width: 200px;">Template Part</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>header.html</code></td><td>Site header</td></tr>
+    <tr><td><code>footer.html</code></td><td>Site footer</td></tr>
+  </tbody>
+</table>
 
 ### Block Patterns
 
-| Pattern File          | Description                                   |
-| --------------------- | --------------------------------------------- |
-| `footer-default.php`  | Default footer block layout                   |
-| `general-heading.php` | Standalone heading block                      |
-| `header-default.php`  | Default header block layout                   |
-| `hero-cover.php`      | Fullscreen hero section with background image |
-| `posts-featured.php`  | Sticky post followed by grid layout           |
-| `posts-gallery.php`   | Grid of image-focused posts                   |
-| `posts-grid.php`      | Standard post grid                            |
-| `posts.php`           | Classic post list layout                      |
-| `posts.related.php`   | Related post suggestions                      |
+<table>
+  <thead>
+    <tr>
+      <th style="width: 200px;">Pattern File</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>footer-default.php</code></td><td>Default footer block layout</td></tr>
+    <tr><td><code>general-heading.php</code></td><td>Standalone heading block</td></tr>
+    <tr><td><code>header-default.php</code></td><td>Default header block layout</td></tr>
+    <tr><td><code>hero-cover.php</code></td><td>Fullscreen hero section with background image</td></tr>
+    <tr><td><code>posts-featured.php</code></td><td>Sticky post followed by grid layout</td></tr>
+    <tr><td><code>posts-gallery.php</code></td><td>Grid of image-focused posts</td></tr>
+    <tr><td><code>posts-grid.php</code></td><td>Standard post grid</td></tr>
+    <tr><td><code>posts.php</code></td><td>Classic post list layout</td></tr>
+    <tr><td><code>posts.related.php</code></td><td>Related post suggestions</td></tr>
+  </tbody>
+</table>
 
 ---
 
