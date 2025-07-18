@@ -1,46 +1,50 @@
 === Shanti ===
-Contributors: hchouhan, webtions
-Requires at least: 5.8
-Tested up to: 5.8.2
-Requires PHP: 7.0
-Stable tag: 0.0.2
+Contributors: hchouhan
+Requires at least: 6.7
+Tested up to: 6.8
+Requires PHP: 7.4
+Stable tag: 0.1.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
-Shanti is a experiment full site editing block theme
+A minimalist purpose-built blog theme for WordPress powered by blocks.
 
 == Description ==
-Shanti is an experimental Full Site Editing block theme for the WordPress block editor and supports WordPress 5.9. To use with WP version 5.8, you will need to use Gutenberg plugin. 
+A purpose-built block theme for personal blogs, built around portrait featured images and crafted for calm, readable storytelling.
 
-You can find more information and updates on https://themeist.com/themes/wordpress/stretch-lite/.
+Shanti is designed for individuals who use blogging as a way to document their lives, travels, and thoughts. It avoids the visual clutter found in many modern themes and instead focuses on simplicity, generous spacing, and typography that invites reading.
 
-== Copyright ==
+Built entirely with WordPress blocks and Full Site Editing, Shanti gives you full creative control — while staying out of the way of your words.
 
-Shanti Theme, (C) 2022 Webtions OU.
-Shanti is distributed under the terms of the GNU GPL.
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
-
-== Frequently Asked Questions ==
-
-= What is required for this theme to work =
-
-Shanti is an experimental Full Site Editing block theme for the WordPress block editor and supports WordPress 5.9. To use it with WP version 5.8, you will need to use the Gutenberg plugin.
+GitHub repository: https://github.com/webtions/shanti
 
 == Changelog ==
 
-= 0.0.2 =
-09-01-2022
-* Change of theme name
+= 0.1.0 =
+18-07-2025
+* Work in progress – more updates coming soon
 
 = 0.0.1 =
 29-12-2021
-* Initial Release with base structure based on TT2
+* Initial release.
+
+
+== Copyright ==
+
+Shanti WordPress Theme, (C) 2025 Harish Chouhan
+Shanti is distributed under the terms of the GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+
+=== Fonts ===
+
+Montserrat
+Copyright 2011 The Montserrat Project Authors
+License: SIL Open Font License, 1.1 — https://opensource.org/licenses/OFL-1.1
+Source: https://fonts.google.com/specimen/Montserrat
+GitHub: https://github.com/JulietaUla/Montserrat
+
+=== Images ===
+
+"shanti-cover.svg"
+Created by Harish Chouhan
+License: GPLv3 or later

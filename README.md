@@ -140,10 +140,7 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### 0.1.0 (2025-07-18)
 
-- Rebuilt as a full block theme
-- New pattern system
-- Template and layout improvements
-- Renamed theme to Shanti
+- Work in progress – more updates coming soon
 
 ### 0.0.1 (2021-12-29)
 
