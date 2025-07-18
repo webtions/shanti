@@ -38,62 +38,32 @@ The theme includes a set of templates, reusable parts, and block patterns design
 
 ### Templates
 
-<table>
-  <thead>
-    <tr>
-      <th style="width: 200px;">Template</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><code>index.html</code></td><td>Fallback template for all content</td></tr>
-    <tr><td><code>single.html</code></td><td>Default template for single posts</td></tr>
-    <tr><td><code>page.html</code></td><td>Default template for static pages</td></tr>
-    <tr><td><code>page-front.html</code></td><td>Custom template for the homepage</td></tr>
-    <tr><td><code>archive.html</code></td><td>Template for archives (categories, etc.)</td></tr>
-    <tr><td><code>search.html</code></td><td>Search results template</td></tr>
-    <tr><td><code>404.html</code></td><td>Template for not found pages</td></tr>
-    <tr><td><code>blank.html</code></td><td>A completely empty canvas (no header/footer)</td></tr>
-    <tr><td><code>no-title.html</code></td><td>Template without the post/page title</td></tr>
-  </tbody>
-</table>
+- **_index.html_** – Fallback template for all content
+- **_single.html_** – Default template for single posts
+- **_page.html_** – Default template for static pages
+- **_page-front.html_** – Custom template for the homepage
+- **_archive.html_** – Template for archives (categories, etc.)
+- **_search.html_** – Search results template
+- **_404.html_** – Template for not found pages
+- **_blank.html_** – A completely empty canvas (no header/footer)
+- **_no-title.html_** – Template without the post/page title
 
 ### Template Parts
 
-<table>
-  <thead>
-    <tr>
-      <th style="width: 200px;">Template Part</th>
-      <th>Purpose</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><code>header.html</code></td><td>Site header</td></tr>
-    <tr><td><code>footer.html</code></td><td>Site footer</td></tr>
-  </tbody>
-</table>
+- **_header.html_** – Site header
+- **_footer.html_** – Site footer
 
 ### Block Patterns
 
-<table>
-  <thead>
-    <tr>
-      <th style="width: 200px;">Pattern File</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td><code>footer-default.php</code></td><td>Default footer block layout</td></tr>
-    <tr><td><code>general-heading.php</code></td><td>Standalone heading block</td></tr>
-    <tr><td><code>header-default.php</code></td><td>Default header block layout</td></tr>
-    <tr><td><code>hero-cover.php</code></td><td>Fullscreen hero section with background image</td></tr>
-    <tr><td><code>posts-featured.php</code></td><td>Sticky post followed by grid layout</td></tr>
-    <tr><td><code>posts-gallery.php</code></td><td>Grid of image-focused posts</td></tr>
-    <tr><td><code>posts-grid.php</code></td><td>Standard post grid</td></tr>
-    <tr><td><code>posts.php</code></td><td>Classic post list layout</td></tr>
-    <tr><td><code>posts.related.php</code></td><td>Related post suggestions</td></tr>
-  </tbody>
-</table>
+- **_footer-default.php_** – Default footer block layout
+- **_general-heading.php_** – Standalone heading block
+- **_header-default.php_** – Default header block layout
+- **_hero-cover.php_** – Fullscreen hero section with background image
+- **_posts-featured.php_** – Sticky post followed by grid layout
+- **_posts-gallery.php_** – Grid of image-focused posts
+- **_posts-grid.php_** – Standard post grid
+- **_posts.php_** – Classic post list layout
+- **_posts.related.php_** – Related post suggestions
 
 ---
 
