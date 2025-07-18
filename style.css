@@ -1,19 +1,19 @@
 /*
 Theme Name: Shanti
-Theme URI: https://shanti.themeist.com
-Author: hchouhan
-Author URI: https://harishchouhan.com/
-Description: Shanti is a Full Site Editing block theme for the WordPress block editor.
-Requires at least: 5.9
-Tested up to: 5.9
+Theme URI: https://themeist.com/themes/wordpress/shanti/
+Author: Themeist
+Author URI: https://themeist.com
+Description: A minimal block theme for WordPress, optimised for portrait featured images and clean typography.
+Requires at least: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
 Version: 0.1.0
-License: GPLv3 or later
+License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Text Domain: shanti
-Tags: blog, block-styles, featured-images, full-width-template, wide-blocks, block-patterns, full-site-editing
+Tags: full-site-editing, editor-style, wide-blocks, custom-logo, one-column, blog, featured-images
 
-Shanti, (C) 2022 Webtions OU. Distributed under the GNU GPL.
+Copyright (C) 2025 Themeist. All rights reserved.
 */
 
 /* ------------------------------------------- */
@@ -221,14 +221,14 @@ input[type='submit']:focus,
 	z-index: 1;
 }
 
-/* .shanti-header-cover .wp-block-cover__inner-container {
+.shanti-header-cover .wp-block-cover__inner-container {
 	width: 100% !important;
-} */
+}
 
-/* .shanti-header-cover .shanti-cover-text {
+.shanti-header-cover .shanti-cover-text {
 	max-width: clamp(324px, 90vw, 720px);
 	margin-left: 0;
-} */
+}
 
 /* ------------------------------------------- */
 /* Post Navigation
@@ -287,23 +287,7 @@ input[type='submit']:focus,
 }
 .wp-block-cover.is-style-custom-cover .wp-block-cover__image-background {
 	object-fit: contain;
-
-	/* object-position: right bottom; */
 }
-/* .wp-block-cover__image-background[src*='website-cover'] {
-	object-fit: contain;
-	object-position: right bottom;
-} */
-
-/* @media (max-width: 767px) {
-	.wp-block-cover__image-background {
-		object-fit: contain !important;
-		object-position: right bottom !important;
-		width: 100% !important;
-		height: auto !important;
-		aspect-ratio: auto !important;
-	}
-} */
 
 @media (max-width: 767px) {
 	/* .wp-block-cover {
