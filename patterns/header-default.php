@@ -6,20 +6,19 @@
  * Block Types: core/template-part/header
  */
 ?>
+<!-- wp:group {"align":"full","layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--outer)","right":"var(--wp--custom--spacing--outer)","bottom":"var(--wp--custom--spacing--outer)","left":"var(--wp--custom--spacing--outer)"}}}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--custom--spacing--outer);padding-right:var(--wp--custom--spacing--outer);padding-bottom:var(--wp--custom--spacing--outer);padding-left:var(--wp--custom--spacing--outer)">
 
-<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"padding":{"top":"var(--wp--custom--spacing--outer)","bottom":"var(--wp--custom--spacing--outer)"}}}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--custom--spacing--outer);padding-bottom:var(--wp--custom--spacing--outer)">
+	<!-- wp:group {"align":"wide","className":"is-layout-flex","layout":{"type":"flex","justifyContent":"space-between","orientation":"horizontal"}} -->
+	<div class="wp-block-group alignwide is-layout-flex">
 
-	<!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
-	<div class="wp-block-group alignwide">
-
-		<!-- wp:group {"layout":{"type":"flex"}} -->
-		<div class="wp-block-group">
+		<!-- wp:group {"className":"is-layout-flex","layout":{"type":"flex"}} -->
+		<div class="wp-block-group is-layout-flex">
 			<!-- wp:site-logo /-->
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:navigation {"isResponsive":true,"layout":{"type":"flex","orientation":"horizontal","justifyContent":"right"}} /-->
+		<!-- wp:navigation {"isResponsive":true,"layout":{"type":"flex"}} /-->
 
 	</div>
 	<!-- /wp:group -->
