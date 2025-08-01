@@ -167,11 +167,11 @@ if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 	function shanti_register_block_styles() {
 
 		$block_styles = array(
-			'core/group' => array(
-
-			),
 			'core/cover' => array(
-				'fullscreen-cover' => __( 'Fullscreen Cover', 'shanti' ),
+				'fullscreen' => __( 'FullScreen', 'shanti' ),
+			),
+			'core/template-part' => array(
+				'transparent' => __( 'Transparent', 'shanti' ),
 			),
 		);
 
@@ -189,3 +189,28 @@ if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 	}
 }
 add_action( 'init', 'shanti_register_block_styles' );
+
+
+// Add Appearance > Shanti Info menu item
+add_action( 'admin_menu', function() {
+	add_theme_page(
+		'Shanti Theme Info',
+		'Shanti Info',
+		'manage_options',
+		'shanti-info',
+		'shanti_theme_info_page'
+	);
+} );
+
+// Enqueue scripts + load content file only for that page
+add_action( 'admin_enqueue_scripts', function( $hook ) {
+	if ( $hook === 'appearance_page_shanti-info' ) {
+		wp_enqueue_style( 'plugin-install' );
+		wp_enqueue_script( 'plugin-install' );
+		wp_enqueue_script( 'updates' );
+		add_thickbox();
+
+		// Load the page render code
+		require_once get_theme_file_path( 'includes/theme-info.php' );
+	}
+} );
