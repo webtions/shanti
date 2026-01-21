@@ -1,0 +1,122 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+	"title": "Crimson Pro & Open Sans",
+	"slug": "typography-preset-1",
+	"settings": {
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Crimson Pro",
+					"slug": "crimson-pro",
+					"fontFamily": "\"Crimson Pro\", serif",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/CrimsonPro-VariableFont_wght.ttf"
+							],
+							"fontWeight": "200 900",
+							"fontStyle": "normal",
+							"fontFamily": "\"Crimson Pro\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/CrimsonPro-Italic-VariableFont_wght.ttf"
+							],
+							"fontWeight": "200 900",
+							"fontStyle": "italic",
+							"fontFamily": "\"Crimson Pro\""
+						}
+					]
+				},
+				{
+					"name": "Open Sans",
+					"slug": "open-sans",
+					"fontFamily": "\"Open Sans\", sans-serif",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf"
+							],
+							"fontWeight": "300 800",
+							"fontStyle": "normal",
+							"fontFamily": "\"Open Sans\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf"
+							],
+							"fontWeight": "300 800",
+							"fontStyle": "italic",
+							"fontFamily": "\"Open Sans\""
+						}
+					]
+				},
+				{
+					"name": "Monospace",
+					"slug": "monospace",
+					"fontFamily": "Consolas,Menlo,Monaco,\"SF Mono\",\"DejaVu Sans Mono\",\"Roboto Mono\",\"Courier New\",Courier,monospace"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var:preset|font-family|open-sans",
+			"fontSize": "var:preset|font-size|medium",
+			"lineHeight": "1.6"
+		},
+		"blocks": {
+			"core/heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|crimson-pro"
+				}
+			}
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|crimson-pro",
+					"fontWeight": "600",
+					"lineHeight": "1.3"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|crimson-pro",
+					"fontSize": "var:preset|font-size|colossal"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|crimson-pro",
+					"fontSize": "var:preset|font-size|gigantic"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|crimson-pro",
+					"fontSize": "var:preset|font-size|huge"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|crimson-pro",
+					"fontSize": "var:preset|font-size|x-large"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|crimson-pro",
+					"fontSize": "var:preset|font-size|large"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|crimson-pro",
+					"fontSize": "var:preset|font-size|medium"
+				}
+			}
+		}
+	}
+}
