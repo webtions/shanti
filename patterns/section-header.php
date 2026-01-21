@@ -11,8 +11,8 @@
 <div class="wp-block-group alignwide"
 	style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--30)">
 
-	<!-- wp:heading {"level":2,"style":{"typography":{"fontWeight":"600","fontSize":"2rem"}},"fontFamily":"system-serif"} -->
-	<h2 class="wp-block-heading has-system-serif-font-family" style="font-size:2rem;font-weight:600">
+	<!-- wp:heading {"level":2,"style":{"typography":{"fontWeight":"600","fontSize":"2rem"}}} -->
+	<h2 class="wp-block-heading" style="font-size:2rem;font-weight:600">
 		Latest Posts</h2>
 	<!-- /wp:heading -->
 
@@ -27,6 +27,6 @@
 <!-- /wp:group -->
 
 <!-- wp:separator {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}},"backgroundColor":"border-light","className":"is-style-wide"} -->
-<hr class="wp-block-separator alignwide has-text-color has-border-light-background-color has-background is-style-wide"
+<hr class="wp-block-separator alignwide has-text-color has-border-light-color has-alpha-channel-opacity has-border-light-background-color has-background is-style-wide"
 	style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40)" />
 <!-- /wp:separator -->
