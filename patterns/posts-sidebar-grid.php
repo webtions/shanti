@@ -21,6 +21,12 @@
 					style="margin-bottom:var(--wp--preset--spacing--30);font-size:2rem;font-weight:600">Featured</h2>
 				<!-- /wp:heading -->
 
+				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}},"textColor":"contrast-medium"} -->
+				<p class="has-contrast-medium-color has-text-color"
+					style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">Explore curated content from our
+					most popular categories and recent posts.</p>
+				<!-- /wp:paragraph -->
+
 				<!-- wp:separator {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}},"backgroundColor":"border-light"} -->
 				<hr class="wp-block-separator has-text-color has-border-light-color has-alpha-channel-opacity has-border-light-background-color has-background"
 					style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)" />

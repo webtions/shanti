@@ -178,65 +178,65 @@
 			"fontSizes": [
 				{
 					"name": "Extra Small",
-					"size": "16px",
-					"slug": "extra-small",
+					"size": "0.875rem",
+					"slug": "x-small",
 					"fluid": {
-						"min": "14px",
-						"max": "16px"
+						"min": "0.875rem",
+						"max": "1rem"
 					}
 				},
 				{
 					"name": "Small",
-					"size": "19px",
+					"size": "1.125rem",
 					"slug": "small",
 					"fluid": {
-						"min": "17px",
-						"max": "19px"
+						"min": "1rem",
+						"max": "1.125rem"
 					}
 				},
 				{
 					"name": "Medium",
-					"size": "22px",
+					"size": "1.25rem",
 					"slug": "medium",
 					"fluid": {
-						"min": "20px",
-						"max": "22px"
+						"min": "1.125rem",
+						"max": "1.375rem"
 					}
 				},
 				{
 					"name": "Large",
-					"size": "32px",
+					"size": "2rem",
 					"slug": "large",
 					"fluid": {
-						"min": "28px",
-						"max": "32px"
-					}
-				},
-				{
-					"name": "Huge",
-					"size": "clamp(1.5rem, 2vw, 40px)",
-					"slug": "huge",
-					"fluid": {
-						"min": "1.5rem",
-						"max": "40px"
-					}
-				},
-				{
-					"name": "Gigantic",
-					"size": "clamp(1.75rem, 3vw, 50px)",
-					"slug": "gigantic",
-					"fluid": {
 						"min": "1.75rem",
-						"max": "50px"
+						"max": "2rem"
 					}
 				},
 				{
-					"name": "Colossal",
-					"size": "clamp(2.5rem, 4vw, 72px)",
-					"slug": "colossal",
+					"name": "Extra Large",
+					"size": "2.5rem",
+					"slug": "x-large",
 					"fluid": {
-						"min": "2.5rem",
-						"max": "72px"
+						"min": "2.25rem",
+						"max": "3rem"
+					}
+				},
+				{
+					"name": "2X Large",
+					"size": "3.5rem",
+					"slug": "xx-large",
+					"fluid": {
+						"min": "3rem",
+						"max": "4rem"
+					}
+				},
+				{
+					"name": "3X Large",
+					"size": "4.5rem",
+					"slug": "xxx-large",
+					"fluid": {
+						"min": "4rem",
+						"max": "5rem"
 					}
 				}
 			],
@@ -503,7 +503,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--colossal)",
+					"fontSize": "var(--wp--preset--font-size--xxx-large)",
 					"lineHeight": "var(--wp--custom--line-height--small)"
 				},
 				"elements": {
@@ -582,7 +582,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--colossal)",
+					"fontSize": "var(--wp--preset--font-size--xxx-large)",
 					"lineHeight": "var(--wp--custom--line-height--small)"
 				}
 			},
@@ -621,7 +621,7 @@
 					"style": "none"
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--huge)",
+					"fontSize": "var(--wp--preset--font-size--xx-large)",
 					"lineHeight": "var(--wp--custom--line-height--tight)",
 					"fontWeight": "var(--wp--custom--font-weight--bold)"
 				}
@@ -878,7 +878,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--huge)"
+					"fontSize": "var(--wp--preset--font-size--xx-large)"
 				}
 			},
 			"core/comment-author-name": {
@@ -1058,7 +1058,7 @@
 			"h1": {
 				"typography": {
 					"fontWeight": "var(--wp--custom--font-weight--semi-bold)",
-					"fontSize": "var(--wp--preset--font-size--gigantic)",
+					"fontSize": "var(--wp--preset--font-size--xxx-large)",
 					"lineHeight": "var(--wp--custom--line-height--tight)",
 					"letterSpacing": "-0.02em"
 				}
@@ -1066,7 +1066,7 @@
 			"h2": {
 				"typography": {
 					"fontWeight": "var(--wp--custom--font-weight--semi-bold)",
-					"fontSize": "var(--wp--preset--font-size--huge)",
+					"fontSize": "var(--wp--preset--font-size--xx-large)",
 					"lineHeight": "var(--wp--custom--line-height--tight)",
 					"letterSpacing": "-0.02em"
 				}
@@ -1092,7 +1092,7 @@
 			},
 			"h6": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--extra-small)",
+					"fontSize": "var(--wp--preset--font-size--x-small)",
 					"fontWeight": "var(--wp--custom--font-weight--semi-bold)",
 					"textTransform": "uppercase"
 				}
@@ -1101,8 +1101,7 @@
 		"typography": {
 			"fontSmoothing": true,
 			"fontFamily": "var(--wp--preset--font-family--montserrat)",
-			"fontSize": "var(--wp--preset--font-size--small)",
-			"fontWeight": "var(--wp--custom--font-weight--medium)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
 			"lineHeight": "var(--wp--custom--line-height--normal)"
 		}
 	},
