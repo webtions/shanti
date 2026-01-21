@@ -1,76 +1,45 @@
 <?php
 /**
- * Title: Featured + 4 Recent Posts (Side-by-Side)
- * Slug: shanti/posts-featured
+ * Title: Posts Grid (3 Columns)
+ * Slug: shanti/posts-grid-3-columns
  * Categories: shanti-blog
  * Inserter: true
  */
 ?>
 
-<!-- wp:columns {"align":"wide","className":"shanti-featured-wrapper"} -->
-<div class="wp-block-columns alignwide shanti-featured-wrapper">
+<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide"
+	style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)">
 
-	<!-- wp:column {"width":"60%"} -->
-	<div class="wp-block-column" style="flex-basis:60%">
+	<!-- wp:query {"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date"},"align":"wide","layout":{"type":"default"}} -->
+	<div class="wp-block-query alignwide">
 
-		<!-- wp:query {"query":{"perPage":1,"postType":"post","order":"desc","orderBy":"date"},"displayLayout":{"type":"list"},"layout":{"type":"default"}} -->
-		<div class="wp-block-query">
+		<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|70"}},"layout":{"type":"grid","columnCount":3}} -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
+		<div class="wp-block-group" style="gap:var(--wp--preset--spacing--20)">
 
-			<!-- wp:post-template -->
-				<!-- wp:group {"className":"shanti-featured-post"} -->
-				<div class="wp-block-group shanti-featured-post">
+			<!-- wp:post-featured-image {"aspectRatio":"4/5","isLink":true,"width":"100%","style":{"border":{"radius":"0px","width":"8px","color":"var(--wp--preset--color--border-light)"}}} /-->
 
-					<!-- wp:post-featured-image {"aspectRatio":"3/4","isLink":true,"width":"100%"} /-->
-					<!-- wp:post-title {"isLink":true,"fontSize":"x-large"} /-->
-					<!-- wp:post-excerpt {"moreText":"Read More"} /-->
-					<!-- wp:post-date {"format":"F j, Y"} /-->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"8px","margin":{"top":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group" style="gap:8px;margin-top:var(--wp--preset--spacing--20)">
+				<!-- wp:post-terms {"term":"post_tag","style":{"typography":{"fontSize":"11px","textTransform":"uppercase","letterSpacing":"0.5px"}},"textColor":"contrast-medium"} /-->
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"11px"}},"textColor":"contrast-medium"} -->
+				<p class="has-contrast-medium-color has-text-color" style="font-size:11px">•</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:post-date {"format":"M j, Y","style":{"typography":{"fontSize":"11px"}},"textColor":"contrast-medium"} /-->
+			</div>
+			<!-- /wp:group -->
 
-				</div>
-				<!-- /wp:group -->
-			<!-- /wp:post-template -->
+			<!-- wp:post-title {"level":3,"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}},"typography":{"lineHeight":"1.2","fontWeight":"400"}},"fontSize":"large","fontFamily":"system-serif"} /-->
 
-		</div>
-		<!-- /wp:query -->
-
-	</div>
-	<!-- /wp:column -->
-
-	<!-- wp:column {"width":"40%"} -->
-	<div class="wp-block-column" style="flex-basis:40%">
-
-		<!-- wp:query {"query":{"perPage":4,"postType":"post","order":"desc","orderBy":"date","offset":1},"displayLayout":{"type":"list"},"layout":{"type":"default"}} -->
-		<div class="wp-block-query">
-
-			<!-- wp:post-template -->
-				<!-- wp:group {"className":"shanti-small-post"} -->
-				<div class="wp-block-group shanti-small-post">
-
-					<!-- wp:columns -->
-					<div class="wp-block-columns">
-						<!-- wp:column {"width":"40%"} -->
-						<div class="wp-block-column" style="flex-basis:40%">
-							<!-- wp:post-featured-image {"aspectRatio":"3/4","isLink":true,"width":"100%"} /-->
-						</div>
-						<!-- /wp:column -->
-
-						<!-- wp:column -->
-						<div class="wp-block-column">
-							<!-- wp:post-title {"isLink":true} /-->
-							<!-- wp:post-date {"format":"F j, Y"} /-->
-						</div>
-						<!-- /wp:column -->
-					</div>
-					<!-- /wp:columns -->
-
-				</div>
-				<!-- /wp:group -->
-			<!-- /wp:post-template -->
+			<!-- wp:post-excerpt {"excerptLength":25,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"textColor":"contrast-medium"} /-->
 
 		</div>
-		<!-- /wp:query -->
+		<!-- /wp:group -->
+		<!-- /wp:post-template -->
 
 	</div>
-	<!-- /wp:column -->
+	<!-- /wp:query -->
 
 </div>
-<!-- /wp:columns -->
+<!-- /wp:group -->

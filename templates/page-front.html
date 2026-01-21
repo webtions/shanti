@@ -2,58 +2,38 @@
 
 <!-- wp:pattern {"slug":"shanti/hero-cover"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var(--wp--custom--spacing--outer)","right":"var(--wp--custom--spacing--outer)","bottom":"var(--wp--custom--spacing--outer)","left":"var(--wp--custom--spacing--outer)"}}} -->
-<main class="wp-block-group"
-	style="margin-top:0;padding-top:var(--wp--custom--spacing--outer);padding-right:var(--wp--custom--spacing--outer);padding-bottom:var(--wp--custom--spacing--outer);padding-left:var(--wp--custom--spacing--outer)">
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"left":"var(--wp--custom--spacing--outer)","right":"var(--wp--custom--spacing--outer)"}}}} -->
+<main class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-left:var(--wp--custom--spacing--outer);padding-right:var(--wp--custom--spacing--outer)">
 
-	<!-- wp:spacer {"height":80} -->
-	<div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
+		<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var(--wp--custom--spacing--outer)","right":"var(--wp--custom--spacing--outer)"}}},"backgroundColor":"accent-light","layout":{"type":"constrained"}} -->
+		<div class="wp-block-group alignfull has-accent-light-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--custom--spacing--outer);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--custom--spacing--outer)">
+			<!-- wp:pattern {"slug":"shanti/posts-sidebar-grid"} /-->
+		</div>
+		<!-- /wp:group -->
 
 	<!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
 	<div class="wp-block-group alignwide" id="site-content">
 
-
 		<!-- wp:group {"align":"wide","layout":{"inherit":false}} -->
 		<div class="wp-block-group alignwide">
 
-			<!-- wp:pattern {"slug":"shanti/general-heading"} /-->
+			<!-- wp:pattern {"slug":"shanti/section-header"} /-->
 
-			<!-- wp:group {"align":"wide","layout":{"inherit":false}} -->
-			<div class="wp-block-group alignwide">
+			<!-- wp:pattern {"slug":"shanti/posts-grid-3-columns"} /-->
 
-				<!-- wp:query {"queryId":0,"query":{"perPage":"3","pages":1,"offset":0,"postType":"post","categoryIds":[],"tagIds":[],"order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"displayLayout":{"type":"flex","columns":3}} -->
-				<div class="wp-block-query">
-
-					<!-- wp:post-template -->
-						<!-- wp:post-featured-image {"isLink":true,"width":"","height":"310px"} /-->
-						<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
-						<!-- wp:post-excerpt /-->
-						<!-- wp:post-date {"fontSize":"small"} /-->
-					<!-- /wp:post-template -->
-
-				</div>
-				<!-- /wp:query -->
-
-			</div>
-			<!-- /wp:group -->
-
-			<!-- wp:spacer {"height":40} -->
+			<!-- wp:spacer {"height":"40px"} -->
 			<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
 			<!-- /wp:spacer -->
 
 			<!-- wp:paragraph {"align":"center","fontSize":"medium"} -->
-			<p class="has-text-align-center has-medium-font-size"><a href="#">View all Posts</a></p>
+			<p class="has-text-align-center has-medium-font-size"><a href="/blog">View all Posts</a></p>
 			<!-- /wp:paragraph -->
-
 
 		</div>
 		<!-- /wp:group -->
 
-
 	</div>
 	<!-- /wp:group -->
-
 
 </main>
 <!-- /wp:group -->
