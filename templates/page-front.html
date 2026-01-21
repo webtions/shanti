@@ -1,9 +1,10 @@
-<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header is-style-transparent"} /-->
 
 <!-- wp:pattern {"slug":"shanti/hero-cover"} /-->
 
-<!-- wp:group {"tagName":"main","className":"is-style-no-spacing"} -->
-<main class="wp-block-group is-style-no-spacing">
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var(--wp--custom--spacing--outer)","right":"var(--wp--custom--spacing--outer)","bottom":"var(--wp--custom--spacing--outer)","left":"var(--wp--custom--spacing--outer)"}}} -->
+<main class="wp-block-group"
+	style="margin-top:0;padding-top:var(--wp--custom--spacing--outer);padding-right:var(--wp--custom--spacing--outer);padding-bottom:var(--wp--custom--spacing--outer);padding-left:var(--wp--custom--spacing--outer)">
 
 	<!-- wp:spacer {"height":80} -->
 	<div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -56,5 +57,20 @@
 
 </main>
 <!-- /wp:group -->
+
+<!-- wp:cover {"url":"https://harishchouhan.test/wp-content/uploads/2019/03/e-residency-kit-1024x724.jpg","id":1118,"dimRatio":50,"customOverlayColor":"#bac6ce","isUserOverlayColor":false,"contentPosition":"center left","isDark":false,"sizeSlug":"large","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover is-light has-custom-content-position is-position-center-left"><img
+		class="wp-block-cover__image-background wp-image-1118 size-large" alt=""
+		src="https://harishchouhan.test/wp-content/uploads/2019/03/e-residency-kit-1024x724.jpg"
+		data-object-fit="cover" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim"
+		style="background-color:#bac6ce"></span>
+	<div class="wp-block-cover__inner-container">
+		<!-- wp:paragraph {"align":"left","placeholder":"Write title…","fontSize":"large"} -->
+		<p class="has-text-align-left has-large-font-size"><br>A minimalist purpose-built blog theme for WordPress
+			powered by blocks.</p>
+		<!-- /wp:paragraph -->
+	</div>
+</div>
+<!-- /wp:cover -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->
