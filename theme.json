@@ -6,7 +6,7 @@
 		"useRootPaddingAwareAlignments": true,
 		"layout": {
 			"contentSize": "640px",
-			"wideSize": "1280px"
+			"wideSize": "1580px"
 		},
 		"color": {
 			"custom": true,
@@ -65,6 +65,11 @@
 					"slug": "border-dark",
 					"color": "#4E4E60",
 					"name": "Border Dark"
+				},
+				{
+					"slug": "accent-light",
+					"color": "#F9F3E3",
+					"name": "Accent Light"
 				},
 				{
 					"slug": "transparent",
@@ -444,9 +449,12 @@
 				}
 			},
 			"core/post-featured-image": {
+				"border": {
+					"radius": "0"
+				},
 				"spacing": {
 					"margin": {
-						"bottom": "var(--wp--preset--spacing--40)",
+						"bottom": "var(--wp--preset--spacing--30)",
 						"top": "0"
 					}
 				}
