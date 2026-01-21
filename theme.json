@@ -1,10 +1,11 @@
 {
-	"version": 2,
+	"version": 3,
 	"settings": {
 		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
 		"layout": {
-			"contentSize": "680px",
-			"wideSize": "1200px"
+			"contentSize": "640px",
+			"wideSize": "1280px"
 		},
 		"color": {
 			"custom": true,
@@ -64,12 +65,6 @@
 					"name": "Black and Yellow"
 				}
 			]
-		},
-		"spacing": {
-			"blockGap": "2rem",
-			"margin": true,
-			"padding": true,
-			"units": ["px", "em", "rem", "vh", "vw", "%"]
 		},
 		"typography": {
 			"dropCap": false,
@@ -136,12 +131,18 @@
 			],
 			"lineHeight": true
 		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"units": ["px", "em", "rem", "vh", "vw", "%"]
+		},
 		"custom": {
 			"spacing": {
 				"small": "clamp(1rem, 40px, 2rem)",
 				"medium": "clamp(2rem, 8vw, calc(4 * var(--wp--style--block-gap)))",
 				"large": "clamp(4rem, 10vw, 8rem)",
-				"outer": "clamp(30px, 5vw, 80px)"
+				"outer": "clamp(30px, 5vw, 80px)",
+				"gap": "clamp(20px, 4vw, 40px)"
 			},
 			"line-height": {
 				"tiny": 1.1,
@@ -158,6 +159,13 @@
 		"blocks": {}
 	},
 	"styles": {
+		"spacing": {
+			"blockGap": "var(--wp--custom--spacing--gap)",
+			"padding": {
+				"top": "0px",
+				"bottom": "0px"
+			}
+		},
 		"blocks": {
 			"core/button": {
 				"border": {
@@ -192,10 +200,10 @@
 			"core/cover": {
 				"spacing": {
 					"padding": {
-						"top": "40px",
-						"right": "40px",
-						"bottom": "40px",
-						"left": "40px"
+						"top": "var(--wp--custom--spacing--outer)",
+						"right": "var(--wp--custom--spacing--outer)",
+						"bottom": "var(--wp--custom--spacing--outer)",
+						"left": "var(--wp--custom--spacing--outer)"
 					}
 				}
 			},
