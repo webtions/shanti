@@ -126,17 +126,48 @@
 				{
 					"name": "Montserrat",
 					"slug": "montserrat",
-					"fontFamily": "\"Montserrat\",sans-serif"
+					"fontFamily": "\"Montserrat\", sans-serif",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/Montserrat-VariableFont_wght.ttf"
+							],
+							"fontWeight": "100 900",
+							"fontStyle": "normal",
+							"fontFamily": "\"Montserrat\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf"
+							],
+							"fontWeight": "100 900",
+							"fontStyle": "italic",
+							"fontFamily": "\"Montserrat\""
+						}
+					]
 				},
 				{
-					"name": "System Sans",
-					"slug": "system-sans",
-					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif"
-				},
-				{
-					"name": "System Serif",
-					"slug": "system-serif",
-					"fontFamily": "\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif"
+					"name": "Playfair Display",
+					"slug": "playfair-display",
+					"fontFamily": "\"Playfair Display\", serif",
+					"fontFace": [
+						{
+							"src": [
+								"file:./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf"
+							],
+							"fontWeight": "400 900",
+							"fontStyle": "normal",
+							"fontFamily": "\"Playfair Display\""
+						},
+						{
+							"src": [
+								"file:./assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf"
+							],
+							"fontWeight": "400 900",
+							"fontStyle": "italic",
+							"fontFamily": "\"Playfair Display\""
+						}
+					]
 				},
 				{
 					"name": "Monospace",
@@ -323,6 +354,11 @@
 				"bottom": "0px"
 			}
 		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|montserrat",
+			"fontSize": "var:preset|font-size|medium",
+			"lineHeight": "1.6"
+		},
 		"blocks": {
 			"core/button": {
 				"border": {
@@ -397,7 +433,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--montserrat)",
+					"fontFamily": "var(--wp--preset--font-family--playfair-display)",
 					"fontWeight": "var(--wp--custom--font-weight--semi-bold)",
 					"lineHeight": "var(--wp--custom--line-height--small)"
 				}
@@ -965,6 +1001,43 @@
 					"color": {
 						"background": "var(--wp--preset--color--primary)"
 					}
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|playfair-display",
+					"fontWeight": "600",
+					"lineHeight": "1.2"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|playfair-display"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|playfair-display"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|playfair-display"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|playfair-display"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|playfair-display"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|playfair-display"
 				}
 			},
 			"caption": {
