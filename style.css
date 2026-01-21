@@ -16,12 +16,60 @@ Tags: full-site-editing, editor-style, wide-blocks, custom-logo, one-column, blo
 Copyright (C) 2025 Webtions OÜ
 Licensed under the GNU General Public License v3.0 or later
 */
-/* Fix inner spacing of hero to match site layout */
-/* .shanti-header-cover .wp-block-cover__inner-container {
-	padding-left: var(--wp--custom--spacing--outer);
-	padding-right: var(--wp--custom--spacing--outer);
-} */
 
+/* Navigation: emphasize current/active item */
 .wp-block-navigation em {
 	font-weight: var(--wp--custom--font-weight--semi-bold);
+}
+
+/* Hero Cover: constrain inner content width */
+.shanti-header-cover .constrain-text {
+	max-width: 700px;
+	position: relative; /* needed for absolutely positioned scroll arrow */
+}
+
+/* Hero Cover: position and style scroll arrow */
+.shanti-header-cover .scroll-to {
+	position: absolute;
+	left: 0;
+	z-index: 2;
+}
+
+.shanti-header-cover .scroll-to a {
+	color: var(--wp--preset--color--foreground);
+	text-decoration: none;
+	font-size: var(--wp--preset--font-size--large);
+	line-height: 1;
+}
+
+/* .wp-block-cover.is-style-fullscreen-cover {
+	position: relative;
+	z-index: 0;
+	height: 100vh;
+} */
+
+.wp-block-template-part.is-style-transparent {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: transparent;
+	z-index: 10;
+}
+
+.wp-block-cover.is-style-fullscreen {
+	position: relative;
+	z-index: 0;
+	min-height: 100vh !important;
+	min-height: 100dvh !important;
+}
+
+body.admin-bar .wp-block-template-part.is-style-transparent {
+	top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+	body.admin-bar .wp-block-template-part.is-style-transparent {
+		top: 46px;
+	}
 }
