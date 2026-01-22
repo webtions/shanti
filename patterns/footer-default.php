@@ -7,54 +7,42 @@
  */
 ?>
 
-<!-- wp:group {"align":"wide"} -->
-<div class="wp-block-group alignwide">
+<!-- wp:group {"layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group">
+	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}}} -->
+	<div class="wp-block-group alignwide"
+		style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)">
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
+		<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":3} -->
+			<h3 class="wp-block-heading has-text-align-center" id="stay-in-touch">Stay in touch</h3>
+			<!-- /wp:heading -->
 
-	<!-- wp:spacer {"height":80} -->
-	<div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
+			<!-- wp:social-links {"iconColor":"background","iconBackgroundColor":"foreground","openInNewTab":true,"className":"has-icon-color has-icon-background-color is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","justifyContent":"center"}} -->
+			<ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default">
+				<!-- wp:social-link {"url":"#","service":"twitter"} /-->
 
-	<!-- wp:separator {"className":"is-style-default"} -->
-	<hr class="wp-block-separator aligncenter is-style-default"/>
-	<!-- /wp:separator -->
+				<!-- wp:social-link {"url":"#","service":"instagram"} /-->
 
-	<!-- wp:spacer {"height":20} -->
-	<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
+				<!-- wp:social-link {"service":"goodreads"} /-->
+			</ul>
+			<!-- /wp:social-links -->
+		</div>
+		<!-- /wp:group -->
 
-	<!-- wp:heading {"textAlign":"center","level":3,"fontSize":"medium"} -->
-	<h3 class="has-text-align-center has-medium-font-size" id="stay-in-touch">Stay in touch</h3>
-	<!-- /wp:heading -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
+		<div class="wp-block-group"><!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">© 2026</p>
+			<!-- /wp:paragraph -->
 
-	<!-- wp:social-links {"iconColor":"background","iconColorValue":"#ffffff","iconBackgroundColor":"foreground","iconBackgroundColorValue":"#000000","openInNewTab":true,"className":"has-icon-color has-icon-background-color is-style-default","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"20px"}}} -->
-	<ul class="wp-block-social-links has-icon-color has-icon-background-color is-style-default">
-		<!-- wp:social-link {"url":"#","service":"twitter"} /-->
-		<!-- wp:social-link {"url":"#","service":"instagram"} /-->
-		<!-- wp:social-link {"service":"goodreads"} /-->
-	</ul>
-	<!-- /wp:social-links -->
+			<!-- wp:site-title {"level":0,"style":{"typography":{"fontWeight":"400"}},"fontSize":"small"} /-->
 
-	<!-- wp:spacer {"height":40} -->
-	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
-
-	<!-- wp:group {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"5px"}}} -->
-	<div class="wp-block-group">
-		<!-- wp:paragraph {"fontSize":"extra-small"} -->
-		<p class="has-extra-small-font-size"><strong>© 2022</strong> </p>
-		<!-- /wp:paragraph -->
-
-		<!-- wp:site-title {"level":0,"style":{"typography":{"fontStyle":"extra-small","fontWeight":"600"}},"fontSize":"extra-small"} /-->
+			<!-- wp:paragraph {"fontSize":"small"} -->
+			<p class="has-small-font-size">· Theme by <a href="https://github.com/webtions/shanti" target="_blank"
+					rel="noreferrer noopener">Shanti</a></p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
-
-	<!-- wp:paragraph {"fontSize":"extra-small"} -->
-	<p class="has-extra-small-font-size has-text-align-center">Made with <a href="https://wordpress.org" target="_blank" rel="noreferrer noopener">WordPress</a> &amp; <a href="https://github.com/webtions/shanti" target="_blank" rel="noreferrer noopener" title="Shanti Theme">Shanti</a>.</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:spacer {"height":40} -->
-	<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-	<!-- /wp:spacer -->
-
 </div>
 <!-- /wp:group -->
