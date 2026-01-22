@@ -23,16 +23,11 @@
 
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}},"textColor":"contrast-medium"} -->
 				<p class="has-contrast-medium-color has-text-color"
-					style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">Explore curated content from our
-					most popular categories and recent posts.</p>
+					style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">Showcase posts from your chosen
+					category or tag, with a tag cloud or category list to guide visitors to more content.</p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:separator {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}},"backgroundColor":"border-light"} -->
-				<hr class="wp-block-separator has-text-color has-border-light-color has-alpha-channel-opacity has-border-light-background-color has-background"
-					style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)" />
-				<!-- /wp:separator -->
-
-				<!-- wp:categories {"showHierarchy":true,"showPostCounts":true,"style":{"typography":{"fontSize":"14px","lineHeight":"2"}}} /-->
+				<!-- wp:tag-cloud {"numberOfTags":20,"smallestFontSize":"1rem","largestFontSize":"1rem","className":"has-hashtag-prefix","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"},"blockGap":"var:preset|spacing|20"}}} /-->
 			</div>
 			<!-- /wp:column -->
 
