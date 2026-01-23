@@ -138,6 +138,28 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
+### 0.2.0 (2026-01-23)
+
+**New Features:**
+- Added default featured image fallback with diagonal stripe pattern
+- Added gallery and related posts patterns
+- Added font pairing support with multiple typography presets
+- Added variable font files (Crimson Pro, Open Sans, Montserrat, Playfair Display)
+
+**Improvements:**
+- Implemented standardized cross-theme font size system (7-size scale)
+- Consolidated spacing system to 7 semantic presets
+- Refined footer pattern with spacing presets
+- Refined posts grid layouts and styling
+- Updated templates to use semantic spacing presets
+- Styled tag cloud with hashtag prefix and improved typography
+- Increased wide layout width and added new accent color
+
+**Bug Fixes:**
+- Fixed spacing consistency in post grid patterns
+- Fixed duplicate wrapper in front page template
+- Fixed FSE editor issues in multiple patterns
+
 ### 0.1.0 (2025-07-18)
 
 - Work in progress – more updates coming soon
