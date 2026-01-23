@@ -3,7 +3,7 @@ Contributors: hchouhan
 Requires at least: 6.7
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 0.1.0
+Stable tag: 0.2.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -19,6 +19,23 @@ Built entirely with WordPress blocks and Full Site Editing, Shanti gives you ful
 GitHub repository: https://github.com/webtions/shanti
 
 == Changelog ==
+
+= 0.2.0 =
+23-01-2026
+* Added default featured image fallback with diagonal stripe pattern
+* Added gallery and related posts patterns
+* Added font pairing support with multiple typography presets
+* Added variable font files (Crimson Pro, Open Sans, Montserrat, Playfair Display)
+* Implemented standardized cross-theme font size system (7-size scale)
+* Consolidated spacing system to 7 semantic presets
+* Refined footer pattern with spacing presets
+* Refined posts grid layouts and styling
+* Updated templates to use semantic spacing presets
+* Styled tag cloud with hashtag prefix and improved typography
+* Increased wide layout width and added new accent color
+* Fixed spacing consistency in post grid patterns
+* Fixed duplicate wrapper in front page template
+* Fixed FSE editor issues in multiple patterns
 
 = 0.1.0 =
 18-07-2025
