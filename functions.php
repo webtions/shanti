@@ -226,7 +226,7 @@ if (!function_exists('shanti_default_featured_image')) {
 	/**
 	 * Provide a default featured image when none is set.
 	 *
-	 * @since 0.1.0
+	 * @since 0.2.0
 	 *
 	 * @param string       $html              The post thumbnail HTML.
 	 * @param int          $post_id           The post ID.
