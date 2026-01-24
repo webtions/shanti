@@ -5,7 +5,7 @@
 		"appearanceTools": true,
 		"useRootPaddingAwareAlignments": true,
 		"layout": {
-			"contentSize": "640px",
+			"contentSize": "680px",
 			"wideSize": "1580px"
 		},
 		"color": {
@@ -336,7 +336,7 @@
 				"snug": 1.2,
 				"small": 1.1,
 				"medium": 1.5,
-				"body": 1.6,
+				"body": 1.65,
 				"normal": 1.75,
 				"relaxed": 1.85,
 				"loose": 2
@@ -365,7 +365,7 @@
 			"fontSmoothing": true,
 			"fontFamily": "var(--wp--preset--font-family--montserrat)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
-			"lineHeight": "var(--wp--custom--line-height--medium)"
+			"lineHeight": "var(--wp--custom--line-height--body)"
 		},
 		"blocks": {
 			"core/button": {
