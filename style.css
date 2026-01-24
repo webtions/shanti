@@ -17,6 +17,12 @@ Copyright (C) 2026 Webtions OÜ
 Licensed under the GNU General Public License v3.0 or later
 */
 
+/* All links: underline offset */
+a {
+	text-underline-offset: 0.15em !important;
+}
+
+
 /* Navigation: emphasize current/active item */
 .wp-block-navigation em {
 	font-weight: var(--wp--custom--font-weight--semi-bold);
@@ -69,7 +75,7 @@ body.admin-bar .wp-block-template-part.is-style-transparent {
 }
 
 /* Icon system - CSS mask based */
-.shanti-icon {
+ .shanti-icon {
 	display: inline-block;
 	width: 1em;
 	height: 1em;
@@ -88,4 +94,3 @@ body.admin-bar .wp-block-template-part.is-style-transparent {
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='9 10 4 15 9 20'/%3E%3Cpath d='M20 4v7a4 4 0 0 1-4 4H4'/%3E%3C/svg%3E");
 	margin-left: 0.5em;
 }
-
