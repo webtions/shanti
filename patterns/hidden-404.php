@@ -35,11 +35,11 @@
 
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 			<div class="wp-block-buttons">
-				<!-- wp:button {"className":"is-style-ghost"} -->
-				<div class="wp-block-button is-style-ghost"><a class="wp-block-button__link wp-element-button" href="/">Return to
-						Homepage <span class="shanti-icon shanti-icon-return" aria-hidden="true"></span></a>
-				</div>
-				<!-- /wp:button -->
+			<!-- wp:button {"className":"is-style-ghost"} -->
+			<div class="wp-block-button is-style-ghost"><a class="wp-block-button__link wp-element-button" href="/">Return to
+					Homepage <span class="shanti-icon shanti-icon-return" aria-hidden="true"></span></a>
+			</div>
+			<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
 		</div>
