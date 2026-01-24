@@ -279,23 +279,23 @@
 				},
 				{
 					"name": "Large",
-					"size": "clamp(3rem, 5vw, 4rem)",
+					"size": "clamp(2rem, 4vw, 3rem)",
 					"slug": "large"
 				},
 				{
 					"name": "X-Large",
-					"size": "clamp(4rem, 6vw, 6rem)",
+					"size": "clamp(2.5rem, 5vw, 4rem)",
 					"slug": "x-large"
 				},
 				{
 					"name": "XX-Large",
-					"size": "clamp(5rem, 8vw, 8rem)",
+					"size": "clamp(3rem, 6vw, 5rem)",
 					"slug": "xx-large"
 				},
 				{
-					"name": "XXX-Large",
-					"size": "clamp(30px, 5vw, 80px)",
-					"slug": "xxx-large"
+					"name": "Outer",
+					"size": "clamp(1.875rem, 5vw, 5rem)",
+					"slug": "outer"
 				}
 			]
 		},
@@ -445,10 +445,10 @@
 			"core/cover": {
 				"spacing": {
 					"padding": {
-						"top": "var:preset|spacing|xxx-large",
-						"right": "var:preset|spacing|xxx-large",
-						"bottom": "var:preset|spacing|xxx-large",
-						"left": "var:preset|spacing|xxx-large"
+						"top": "var:preset|spacing|outer",
+						"right": "var:preset|spacing|outer",
+						"bottom": "var:preset|spacing|outer",
+						"left": "var:preset|spacing|outer"
 					}
 				},
 				"elements": {
