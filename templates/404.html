@@ -1,23 +1,8 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
 
-<!-- wp:group {"tagName":"main","className":"site-content","style":{"spacing":{"padding":{"right":"var(--wp--preset--spacing--small)","left":"var(--wp--preset--spacing--small)"}}}} -->
-<main class="wp-block-group" style="padding-right:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)">
-
-	<!-- wp:group {"layout":{"inherit":true}} -->
-	<div class="wp-block-group">
-
-		<!-- wp:heading {"style":{"typography":{"fontSize":"clamp(4rem, 40vw, 20rem)","fontWeight":"200","lineHeight":"1"}},"className":"has-text-align-center"} -->
-		<h2 class="has-text-align-center" style="font-size:clamp(4rem, 40vw, 20rem);font-weight:200;line-height:1">404</h2>
-		<!-- /wp:heading -->
-		
-		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center">This page could not be found. Maybe try a search?</p>
-		<!-- /wp:paragraph -->
-		
-		<!-- wp:search {"label":"Search","showLabel":false,"width":50,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true,"align":"center"} /-->
-	</div>
-	<!-- /wp:group -->
-
+<!-- wp:group {"tagName":"main","className":"site-content","style":{"spacing":{"padding":{"right":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group site-content" style="padding-right:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)">
+	<!-- wp:pattern {"slug":"shanti/hidden-404"} /-->
 </main>
 <!-- /wp:group -->
 
