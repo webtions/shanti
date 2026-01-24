@@ -3,6 +3,7 @@
  * Title: Cover with text and background image
  * Slug: shanti/hero-cover
  * Categories: shanti-hero
+ * Inserter: true
  */
 ?>
 
