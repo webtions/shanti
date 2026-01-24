@@ -180,6 +180,9 @@ if (!function_exists('shanti_register_block_styles')) {
 			'core/template-part' => array(
 				'transparent' => __('Transparent', 'shanti'),
 			),
+			'core/button' => array(
+				'ghost' => __('Ghost', 'shanti'),
+			),
 		);
 
 		foreach ($block_styles as $block => $styles) {
