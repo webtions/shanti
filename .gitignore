@@ -68,3 +68,8 @@ dist/
 * old.*
 *-old.*
 .ignore
+
+# ─────────────────────────────
+# Internal Documentation
+# ─────────────────────────────
+_docs-private/
