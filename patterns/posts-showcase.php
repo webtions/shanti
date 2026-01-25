@@ -1,40 +1,47 @@
 <?php
 /**
- * Title: Posts with Sidebar (2x2 Grid)
- * Slug: shanti/posts-sidebar-grid
+ * Title: Posts showcase
+ * Slug: shanti/posts-showcase
  * Categories: shanti-blog
  * Inserter: true
+ * Description: Showcase section with text and info alongside a 2×2 posts grid.
  */
 ?>
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var(--wp--preset--spacing--xxx-large)","right":"var(--wp--preset--spacing--xxx-large)"}}},"backgroundColor":"accent-light","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var(--wp--preset--spacing--outer)","right":"var(--wp--preset--spacing--outer)"}}},"backgroundColor":"accent-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-accent-light-background-color has-background"
-	style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--xxx-large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--xxx-large)">
+	style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--outer);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--outer)">
 	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group alignwide"
-		style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)">
+		style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)">
 		<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|x-large"}}}} -->
 		<div class="wp-block-columns alignwide"><!-- wp:column {"width":"33.33%"} -->
 			<div class="wp-block-column" style="flex-basis:33.33%">
-				<!-- wp:heading {"level":2,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"fontSize":"xx-large"} -->
-				<h2 class="wp-block-heading has-xx-large-font-size"
-					style="margin-bottom:var(--wp--preset--spacing--30)">
-					Featured</h2>
+				<!-- wp:heading {"level":2,"fontSize":"xx-large"} -->
+				<h2 class="wp-block-heading has-xx-large-font-size">Featured</h2>
 				<!-- /wp:heading -->
 
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|small"}}},"textColor":"contrast-medium"} -->
-				<p class="has-contrast-medium-color has-text-color"
-					style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">Showcase posts from your chosen
-					category or tag, with a tag cloud or category list to guide visitors to more content.</p>
+				<!-- wp:paragraph {"textColor":"contrast-medium"} -->
+				<p class="has-contrast-medium-color has-text-color">Highlight your latest or featured posts with a
+					custom heading and call-to-action button. Customize the query to show posts from a specific category
+					or tag.</p>
 				<!-- /wp:paragraph -->
 
-				<!-- wp:tag-cloud {"numberOfTags":20,"smallestFontSize":"1rem","largestFontSize":"1rem","className":"has-hashtag-prefix","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|x-small"}}} /-->
+				<!-- wp:buttons -->
+				<div class="wp-block-buttons">
+					<!-- wp:button -->
+					<div class="wp-block-button">
+						<a class="wp-block-button__link wp-element-button">View all</a>
+					</div>
+					<!-- /wp:button -->
+				</div>
+				<!-- /wp:buttons -->
 			</div>
 			<!-- /wp:column -->
 
 			<!-- wp:column {"width":"66.66%"} -->
 			<div class="wp-block-column" style="flex-basis:66.66%">
-				<!-- wp:query {"queryId":27,"query":{"perPage":4,"postType":"post","order":"desc","orderBy":"date"},"align":"wide","layout":{"type":"default"}} -->
+				<!-- wp:query {"query":{"perPage":4,"postType":"post","order":"desc","orderBy":"date"},"align":"wide","layout":{"type":"default"}} -->
 				<div class="wp-block-query alignwide">
 					<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|x-large"}},"layout":{"type":"grid","columnCount":2}} -->
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
