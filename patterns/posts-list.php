@@ -26,7 +26,7 @@
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:post-excerpt {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} /-->
+		<!-- wp:post-excerpt {"excerptLength":34,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} /-->
 
 	</div>
 	<!-- /wp:group -->
