@@ -40,7 +40,7 @@
 
 			<!-- wp:site-title {"level":0,"style":{"typography":{"fontWeight":"400"}},"fontSize":"small"} /-->
 
-			<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size">-   Theme by <a href="https://github.com/webtions/shanti" target="_blank" rel="noreferrer noopener">Shanti</a></p>
+			<!-- wp:paragraph {"fontSize":"small"} --><p class="has-small-font-size">- Made with <a href="https://themeist.com/themes/shanti/" target="_blank" rel="noreferrer noopener">Shanti Theme</a></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
