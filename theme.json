@@ -548,6 +548,9 @@
 				}
 			},
 		"core/post-date": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast-medium)"
+				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
 				},

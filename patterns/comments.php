@@ -31,7 +31,7 @@
 				<!-- wp:comment-author-name /-->
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 				<div class="wp-block-group">
-					<!-- wp:comment-date {"textColor":"contrast-medium","style":{"typography":{"fontStyle":"italic","fontWeight":"400"}}} /-->
+					<!-- wp:comment-date /-->
 					<!-- wp:comment-edit-link {"textColor":"contrast-medium","fontSize":"small"} /-->
 				</div>
 				<!-- /wp:group -->
