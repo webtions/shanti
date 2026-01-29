@@ -26,7 +26,7 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 		<div class="wp-block-group">
 			<!-- wp:post-date {"format":"M j, Y"} /-->
-			<!-- wp:post-terms {"term":"post_tag","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.5px"}},"textColor":"contrast-medium"} /-->
+			<!-- wp:post-terms {"term":"post_tag"} /-->
 		</div>
 		<!-- /wp:group -->
 

@@ -56,7 +56,7 @@
 						<div class="wp-block-group">
 							<!-- wp:post-date {"format":"M j, Y","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /-->
 
-							<!-- wp:post-terms {"term":"post_tag","className":"has-hashtag-prefix","textColor":"contrast-medium"} /-->
+							<!-- wp:post-terms {"term":"post_tag","className":"has-hashtag-prefix"} /-->
 						</div>
 						<!-- /wp:group -->
 					</div>
