@@ -126,8 +126,6 @@ Run static analysis:
 composer analyze
 ```
 
-You can also run preconfigured tasks using VS Code. See `.vscode/tasks.json` for task definitions. Keyboard shortcuts need to be set manually.
-
 For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > Shanti follows the official [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/).
