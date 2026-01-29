@@ -101,3 +101,8 @@ body.admin-bar .wp-block-template-part.is-style-transparent {
 	color: var(--wp--preset--color--primary);
 	font-size: 1.5em;
 }
+
+/* Inline comment form: bottom spacing when replying to a comment */
+.wp-block-comment-template .wp-block-post-comments-form {
+	margin-bottom: var(--wp--preset--spacing--x-large) !important;
+}
