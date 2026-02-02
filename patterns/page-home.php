@@ -28,7 +28,7 @@
 			<!-- wp:group {"align":"wide","layout":{"inherit":false}} -->
 			<div class="wp-block-group alignwide">
 
-				<!-- wp:pattern {"slug":"shanti/section-header"} /-->
+				<!-- wp:pattern {"slug":"shanti/hidden-section-header"} /-->
 
 				<!-- wp:pattern {"slug":"shanti/posts-grid-3-cols"} /-->
 
