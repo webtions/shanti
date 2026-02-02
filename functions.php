@@ -249,7 +249,7 @@ if (!function_exists('shanti_default_featured_image')) {
 		if (empty($html)) {
 			$default_image = get_template_directory_uri() . '/assets/images/default-thumbnail.svg';
 			$html = sprintf(
-				'<figure class="wp-block-post-featured-image" style="border: 1px solid var(--wp--preset--color--contrast); box-shadow: 8px 8px 0px var(--wp--preset--color--primary);"><img src="%s" alt="%s" class="wp-post-image" /></figure>',
+				'<figure class="wp-block-post-featured-image"><img src="%s" alt="%s" class="wp-post-image" /></figure>',
 				esc_url($default_image),
 				esc_attr(get_the_title($post_id))
 			);
