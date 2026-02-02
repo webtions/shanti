@@ -23,12 +23,7 @@
 
 		<!-- wp:post-excerpt {"excerptLength":34,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|large"}}}} /-->
 
-		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-		<div class="wp-block-group">
-			<!-- wp:post-date {"format":"M j, Y"} /-->
-			<!-- wp:post-terms {"term":"post_tag"} /-->
-		</div>
-		<!-- /wp:group -->
+		<!-- wp:pattern {"slug":"shanti/hidden-post-meta"} /-->
 
 	</div>
 	<!-- /wp:group -->
