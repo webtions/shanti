@@ -2,7 +2,7 @@
 /**
  * Title: Posts Grid (3 Columns)
  * Slug: shanti/posts-query-loop
- * Categories: shanti-blog
+ * Categories: shanti-posts
  * Block Types: core/query
  * Inserter: true
  * Description: Query loop for index and archive pages with 3-column grid layout

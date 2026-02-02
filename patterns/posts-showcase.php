@@ -2,7 +2,7 @@
 /**
  * Title: Posts showcase
  * Slug: shanti/posts-showcase
- * Categories: shanti-blog
+ * Categories: shanti-posts
  * Inserter: true
  * Description: Showcase section with text and info alongside a 2×2 posts grid.
  */

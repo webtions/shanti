@@ -2,6 +2,7 @@
 /**
  * Title: 404
  * Slug: shanti/hidden-404
+ * Categories: shanti-general
  * Inserter: no
  */
 ?>

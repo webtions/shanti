@@ -2,7 +2,7 @@
 /**
  * Title: Posts Grid (3 Columns)
  * Slug: shanti/posts-grid-3-cols
- * Categories: shanti-blog
+ * Categories: shanti-posts
  * Inserter: true
  */
 ?>

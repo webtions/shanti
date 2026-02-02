@@ -2,7 +2,7 @@
 /**
  * Title: Posts List (1 Column)
  * Slug: shanti/posts-list
- * Categories: shanti-blog
+ * Categories: shanti-posts
  * Block Types: core/query
  * Inserter: true
  * Description: Query loop for search results with single-column list layout

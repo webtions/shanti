@@ -2,7 +2,7 @@
 /**
  * Title: Comments
  * Slug: shanti/comments
- * Categories: shanti-blog
+ * Categories: shanti-posts
  * Block Types: core/comments
  * Inserter: false
  * Description: Comments area with comments list, pagination, and comment form

@@ -2,7 +2,7 @@
 /**
  * Title: Related posts.
  * Slug: shanti/posts-related
- * Categories: shanti-blog
+ * Categories: shanti-posts
  * Inserter: true
  */
 ?>
