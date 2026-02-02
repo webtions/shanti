@@ -22,7 +22,6 @@ a {
 	text-underline-offset: 0.15em !important;
 }
 
-
 /* Navigation: emphasize current/active item */
 .wp-block-navigation em {
 	font-weight: var(--wp--custom--font-weight--semi-bold);
@@ -75,7 +74,7 @@ body.admin-bar .wp-block-template-part.is-style-transparent {
 }
 
 /* Icon system - CSS mask based */
- .shanti-icon {
+.shanti-icon {
 	display: inline-block;
 	width: 1em;
 	height: 1em;
@@ -139,4 +138,12 @@ body.admin-bar .wp-block-template-part.is-style-transparent {
 /* Inline comment form: bottom spacing when replying to a comment */
 .wp-block-comment-template .wp-block-post-comments-form {
 	margin-bottom: var(--wp--preset--spacing--x-large) !important;
+}
+
+/* Post meta (date + terms): stack on mobile */
+@media screen and (max-width: 600px) {
+	.wp-block-group:has(.wp-block-post-date):has(.wp-block-post-terms) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
