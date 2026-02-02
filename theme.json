@@ -68,7 +68,7 @@
 				},
 				{
 					"slug": "accent-light",
-					"color": "#F9F3E3",
+					"color": "#FCF9F2",
 					"name": "Accent Light"
 				},
 				{
@@ -492,8 +492,12 @@
 			},
 			"core/post-featured-image": {
 				"border": {
-					"radius": "0"
+					"radius": "0",
+					"width": "1px",
+					"style": "solid",
+					"color": "var(--wp--preset--color--primary)"
 				},
+				"shadow": "var(--wp--preset--shadow--hard)",
 				"spacing": {
 					"margin": {
 						"bottom": "var(--wp--preset--spacing--small)",
