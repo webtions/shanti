@@ -106,18 +106,12 @@
 			],
 			"duotone": [
 				{
-					"colors": [
-						"#000000",
-						"#F8CD5F"
-					],
+					"colors": ["#000000", "#F8CD5F"],
 					"slug": "foreground-primary",
 					"name": "Black and Yellow"
 				},
 				{
-					"colors": [
-						"#4E4E60",
-						"#FFFFFF"
-					],
+					"colors": ["#4E4E60", "#FFFFFF"],
 					"slug": "dark-grayscale",
 					"name": "Dark and Grayscale"
 				}
@@ -136,17 +130,13 @@
 					"fontFamily": "\"Montserrat\", sans-serif",
 					"fontFace": [
 						{
-							"src": [
-								"file:./assets/fonts/Montserrat-VariableFont_wght.ttf"
-							],
+							"src": ["file:./assets/fonts/Montserrat-VariableFont_wght.ttf"],
 							"fontWeight": "100 900",
 							"fontStyle": "normal",
 							"fontFamily": "\"Montserrat\""
 						},
 						{
-							"src": [
-								"file:./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf"
-							],
+							"src": ["file:./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf"],
 							"fontWeight": "100 900",
 							"fontStyle": "italic",
 							"fontFamily": "\"Montserrat\""
@@ -159,17 +149,13 @@
 					"fontFamily": "\"Playfair Display\", serif",
 					"fontFace": [
 						{
-							"src": [
-								"file:./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf"
-							],
+							"src": ["file:./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf"],
 							"fontWeight": "400 900",
 							"fontStyle": "normal",
 							"fontFamily": "\"Playfair Display\""
 						},
 						{
-							"src": [
-								"file:./assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf"
-							],
+							"src": ["file:./assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf"],
 							"fontWeight": "400 900",
 							"fontStyle": "italic",
 							"fontFamily": "\"Playfair Display\""
@@ -193,14 +179,14 @@
 					}
 				},
 				{
-				"name": "Small",
-				"size": "1.125rem",
-				"slug": "small",
-				"fluid": {
-					"min": "1rem",
-					"max": "1.125rem"
-				}
-			},
+					"name": "Small",
+					"size": "1.125rem",
+					"slug": "small",
+					"fluid": {
+						"min": "1rem",
+						"max": "1.125rem"
+					}
+				},
 				{
 					"name": "Medium",
 					"size": "1.25rem",
@@ -253,14 +239,7 @@
 			"blockGap": true,
 			"margin": true,
 			"padding": true,
-			"units": [
-				"px",
-				"em",
-				"rem",
-				"vh",
-				"vw",
-				"%"
-			],
+			"units": ["px", "em", "rem", "vh", "vw", "%"],
 			"spacingSizes": [
 				{
 					"name": "X-Small",
@@ -322,11 +301,11 @@
 					"slug": "natural",
 					"shadow": "6px 6px 9px rgba(0, 0, 0, 0.2)"
 				},
-			{
-				"name": "Hard Shadow",
-				"slug": "hard",
-				"shadow": "8px 8px 0px var(--wp--preset--color--primary)"
-			}
+				{
+					"name": "Hard Shadow",
+					"slug": "hard",
+					"shadow": "8px 8px 0px var(--wp--preset--color--primary)"
+				}
 			]
 		},
 		"custom": {
@@ -416,7 +395,7 @@
 							"fontWeight": "var(--wp--custom--font-weight--semi-bold)",
 							"textDecoration": "underline"
 						},
-            "css": ":hover { text-decoration: none; } "
+						"css": ":hover { text-decoration: none; } "
 					}
 				}
 			},
@@ -547,7 +526,7 @@
 					}
 				}
 			},
-		"core/post-date": {
+			"core/post-date": {
 				"color": {
 					"text": "var(--wp--preset--color--contrast-medium)"
 				},
@@ -618,7 +597,7 @@
 			},
 			"core/post-excerpt": {
 				"typography": {
-				"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--preset--font-size--medium)"
 				},
 				"color": {
 					"text": "var(--wp--preset--color--contrast-medium)"
@@ -1166,28 +1145,19 @@
 	},
 	"customTemplates": [
 		{
-			"name": "page-front",
-			"title": "Front Page",
-			"postTypes": [
-				"page",
-				"post"
-			]
+			"name": "page-transparent-header",
+			"title": "Page (Transparent Header)",
+			"postTypes": ["page", "post"]
 		},
 		{
 			"name": "blank",
 			"title": "Blank template",
-			"postTypes": [
-				"page",
-				"post"
-			]
+			"postTypes": ["page", "post"]
 		},
 		{
 			"name": "no-title",
 			"title": "No Title",
-			"postTypes": [
-				"page",
-				"post"
-			]
+			"postTypes": ["page", "post"]
 		}
 	],
 	"templateParts": [

@@ -129,9 +129,15 @@ if (!function_exists('shanti_register_block_pattern_categories')) {
 	function shanti_register_block_pattern_categories()
 	{
 		register_block_pattern_category(
-			'shanti-blog',
+			'shanti-posts',
 			array(
-				'label' => __('Shanti Blog', 'shanti'),
+				'label' => __('Shanti Posts', 'shanti'),
+			)
+		);
+		register_block_pattern_category(
+			'shanti-page',
+			array(
+				'label' => __('Shanti Page', 'shanti'),
 			)
 		);
 		register_block_pattern_category(
