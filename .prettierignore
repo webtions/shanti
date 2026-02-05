@@ -6,6 +6,10 @@ vendor
 # Languages handled by other tools
 *.php
 
+# Block theme templates and parts (Prettier can break block comment/JSON formatting)
+templates/
+parts/
+
 # Minified assets
 *.min.js
 *.min.css
