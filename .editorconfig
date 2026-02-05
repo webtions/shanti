@@ -17,8 +17,8 @@ trim_trailing_whitespace = false
 
 # JSON files (npm, composer, config)
 [*.json]
-indent_style = space
-indent_size = 2
+indent_style = tab
+indent_size = 4
 
 # YAML files (CI/CD, composer extras)
 [*.yml]
@@ -28,6 +28,7 @@ indent_size = 2
 # CSS/SCSS/JS should follow tabs if you're formatting them manually or via Prettier
 [*.{css,scss,js}]
 indent_style = tab
+indent_size = 4
 
 # EditorConfig should not format minified files
 [*.min.{js,css}]
