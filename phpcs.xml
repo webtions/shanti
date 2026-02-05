@@ -28,9 +28,6 @@
 	<rule ref="WordPress-Docs"/>
 	<rule ref="WordPress-Extra"/>
 
-	<!-- Add specific rules explicitly if needed -->
-	<rule ref="WordPress.CodeAnalysis.EmptyStatement"/>
-
 	<!-- Downgrade strict rules to warnings -->
 	<rule ref="WordPress.PHP.YodaConditions.NotYoda">
 		<type>warning</type>
@@ -57,11 +54,6 @@
 
 	<!-- Skip file naming rule (we won't rename existing files) -->
 	<rule ref="WordPress.Files.FileName">
-		<exclude-pattern>*</exclude-pattern>
-	</rule>
-
-	<!-- Skip 'assignment in while condition' warning -->
-	<rule ref="WordPress.CodeAnalysis.AssignmentInCondition.FoundInWhileCondition">
 		<exclude-pattern>*</exclude-pattern>
 	</rule>
 </ruleset>
