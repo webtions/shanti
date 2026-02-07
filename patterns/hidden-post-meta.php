@@ -5,7 +5,10 @@
  * Categories: shanti-general
  * Inserter: false
  * Description: Date and terms row for post cards.
+ *
+ * @package Shanti
  */
+
 ?>
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
