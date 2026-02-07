@@ -238,3 +238,28 @@ if ( ! function_exists( 'shanti_default_featured_image' ) ) {
 	}
 }
 add_filter( 'post_thumbnail_html', 'shanti_default_featured_image', 10, 5 );
+
+if ( ! function_exists( 'shanti_hide_share_post_pattern_without_plugin' ) ) {
+	/**
+	 * Hide the Share Post pattern output when the Outermost Social Sharing block is not registered.
+	 *
+	 * The share-post pattern is referenced in single post templates; if the plugin is inactive
+	 * (or deactivated after the pattern was registered), this prevents the section from rendering.
+	 *
+	 * @param string $block_content The block content.
+	 * @param array  $block         The full block, including name and attributes.
+	 * @return string The block content or empty string to hide the pattern.
+	 */
+	function shanti_hide_share_post_pattern_without_plugin( $block_content, $block ) {
+		if ( isset( $block['blockName'] ) && 'core/pattern' === $block['blockName']
+			&& isset( $block['attrs']['slug'] ) && 'shanti/share-post' === $block['attrs']['slug'] ) {
+
+			$registry = \WP_Block_Type_Registry::get_instance();
+			if ( ! $registry->is_registered( 'outermost/social-sharing' ) ) {
+				return '';
+			}
+		}
+		return $block_content;
+	}
+}
+add_filter( 'render_block', 'shanti_hide_share_post_pattern_without_plugin', 10, 2 );
