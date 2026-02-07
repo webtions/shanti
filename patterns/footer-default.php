@@ -5,7 +5,10 @@
  * Categories: shanti-footer
  * Block Types: core/template-part/footer
  * Inserter: true
+ *
+ * @package Shanti
  */
+
 ?>
 
 <!-- wp:group {"metadata":{"name":"footer-wrapper"},"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|xx-large","bottom":"var:preset|spacing|xx-large","left":"var:preset|spacing|outer","right":"var:preset|spacing|outer"}}},"layout":{"type":"default"}} -->
