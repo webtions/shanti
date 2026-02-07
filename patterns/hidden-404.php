@@ -4,13 +4,16 @@
  * Slug: shanti/hidden-404
  * Categories: shanti-general
  * Inserter: no
+ *
+ * @package Shanti
  */
+
 ?>
-<!-- wp:cover {"url":"<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/shanti-cover.svg","dimRatio":0,"align":"wide","contentPosition":"center center","isDark":false,"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/shanti-cover.svg","dimRatio":0,"align":"wide","contentPosition":"center center","isDark":false,"layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignwide is-light"><span aria-hidden="true"
 		class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img
 		class="wp-block-cover__image-background" alt=""
-		src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/shanti-cover.svg"
+		src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/shanti-cover.svg"
 		data-object-fit="cover" />
 	<div class="wp-block-cover__inner-container">
 		<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}}},"layout":{"type":"constrained"}} -->
