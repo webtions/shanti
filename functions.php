@@ -226,7 +226,7 @@ if ( ! function_exists( 'shanti_default_featured_image' ) ) {
 	 * @return string The filtered post thumbnail HTML.
 	 */
 	function shanti_default_featured_image( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
-		if ( empty( $html ) ) {
+		if ( empty( $html ) && 'post' === get_post_type( $post_id ) ) {
 			$default_image = get_template_directory_uri() . '/assets/images/default-thumbnail.svg';
 			$html          = sprintf(
 				'<figure class="wp-block-post-featured-image"><img src="%s" alt="%s" class="wp-post-image" /></figure>',
