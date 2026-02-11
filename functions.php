@@ -1,158 +1,60 @@
 <?php
 /**
- * Theme functions and definitions for the Shanti WordPress theme.
+ * Theme functions for the Shanti WordPress theme.
  *
  * @package Shanti
+ * @author  Harish Chouhan
+ * @license GNU General Public License v2 or later
+ * @link    https://themeist.com/themes/wordpress/shanti/
  */
 
+// Set up theme defaults and register support.
 if ( ! function_exists( 'shanti_setup' ) ) {
 	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
-	 *
-	 * @return void
+	 * Set up theme defaults and register support for various WordPress features.
 	 */
 	function shanti_setup() {
 
-		// Make theme available for translation.
-		load_theme_textdomain( 'shanti', get_template_directory() . '/languages' );
-
-		// Register Navigation menus.
-		register_nav_menus(
-			array(
-				'primary' => esc_html__( 'Primary Menu', 'shanti' ),
-			)
-		);
-
-		// Add theme supports.
-		add_theme_support( 'wp-block-styles' );
-		add_theme_support( 'responsive-embeds' );
-		add_theme_support( 'custom-units' );
-		add_theme_support( 'appearance-tools' );
-		add_theme_support( 'editor-styles' );
-
 		// Remove core block patterns.
 		remove_theme_support( 'core-block-patterns' );
+
+		// Enqueue editor styles and fonts.
+		add_editor_style( 'style.css' );
 	}
 }
 add_action( 'after_setup_theme', 'shanti_setup' );
 
-
+// Enqueue front-end stylesheet.
 if ( ! function_exists( 'shanti_enqueue_styles' ) ) {
 	/**
-	 * Enqueue front-end styles.
-	 *
-	 * @return void
+	 * Enqueue front-end stylesheet.
 	 */
 	function shanti_enqueue_styles() {
-		wp_enqueue_style(
-			'shanti-style',
-			get_theme_file_uri( 'style.css' ),
-			array(),
-			wp_get_theme()->get( 'Version' )
-		);
+		wp_enqueue_style( 'shanti-style', get_theme_file_uri( 'style.css' ), array(), wp_get_theme()->get( 'Version' ) );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'shanti_enqueue_styles' );
 
-
-if ( ! function_exists( 'shanti_editor_style' ) ) {
-	/**
-	 * Enqueue editor styles.
-	 *
-	 * @return void
-	 */
-	function shanti_editor_style() {
-		add_editor_style( get_theme_file_uri( 'style.css' ) );
-	}
-}
-add_action( 'after_setup_theme', 'shanti_editor_style' );
-
-
-if ( ! function_exists( 'shanti_enqueue_editor_font_styles' ) ) {
-	/**
-	 * Enqueue inline font styles in the editor, if defined.
-	 *
-	 * @return void
-	 */
-	function shanti_enqueue_editor_font_styles() {
-		if ( function_exists( 'shanti_font_styles' ) ) {
-			wp_add_inline_style( 'wp-block-library', shanti_font_styles() );
-		}
-	}
-}
-add_action( 'enqueue_block_editor_assets', 'shanti_enqueue_editor_font_styles' );
-
-
-if ( ! function_exists( 'shanti_restore_customizer' ) ) {
-	/**
-	 * Restore Customizer support.
-	 *
-	 * Some features (like site identity) still rely on the Customizer.
-	 *
-	 * @return void
-	 */
-	function shanti_restore_customizer() {
-		// No-op callback to ensure Customizer loads.
-	}
-}
-add_action( 'customize_register', 'shanti_restore_customizer' );
-
+// Register block pattern categories.
 if ( ! function_exists( 'shanti_register_block_pattern_categories' ) ) {
 	/**
 	 * Register block pattern categories.
-	 *
-	 * @return void
 	 */
 	function shanti_register_block_pattern_categories() {
-		register_block_pattern_category(
-			'shanti-posts',
-			array(
-				'label' => __( 'Shanti Posts', 'shanti' ),
-			)
-		);
-		register_block_pattern_category(
-			'shanti-page',
-			array(
-				'label' => __( 'Shanti Page', 'shanti' ),
-			)
-		);
-		register_block_pattern_category(
-			'shanti-footer',
-			array(
-				'label' => __( 'Shanti Footer', 'shanti' ),
-			)
-		);
-		register_block_pattern_category(
-			'shanti-general',
-			array(
-				'label' => __( 'Shanti General', 'shanti' ),
-			)
-		);
-		register_block_pattern_category(
-			'shanti-hero',
-			array(
-				'label' => __( 'Shanti Hero', 'shanti' ),
-			)
-		);
-		register_block_pattern_category(
-			'shanti-header',
-			array(
-				'label' => __( 'Shanti Header', 'shanti' ),
-			)
-		);
+		register_block_pattern_category( 'shanti-posts', array( 'label' => __( 'Shanti Posts', 'shanti' ) ) );
+		register_block_pattern_category( 'shanti-page', array( 'label' => __( 'Shanti Page', 'shanti' ) ) );
+		register_block_pattern_category( 'shanti-footer', array( 'label' => __( 'Shanti Footer', 'shanti' ) ) );
+		register_block_pattern_category( 'shanti-general', array( 'label' => __( 'Shanti General', 'shanti' ) ) );
+		register_block_pattern_category( 'shanti-hero', array( 'label' => __( 'Shanti Hero', 'shanti' ) ) );
+		register_block_pattern_category( 'shanti-header', array( 'label' => __( 'Shanti Header', 'shanti' ) ) );
 	}
 }
 add_action( 'init', 'shanti_register_block_pattern_categories' );
 
+// Register block styles.
 if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 	/**
 	 * Register block styles.
-	 *
-	 * @return void
 	 */
 	function shanti_register_block_styles() {
 
@@ -184,46 +86,51 @@ if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 add_action( 'init', 'shanti_register_block_styles' );
 
 
-// Add Appearance > Shanti Info menu item
-add_action(
-	'admin_menu',
-	function () {
+// Add Appearance > Recommended Plugins menu item.
+if ( ! function_exists( 'shanti_add_theme_info_page' ) ) {
+	/**
+	 * Register the Recommended Plugins submenu under Appearance.
+	 */
+	function shanti_add_theme_info_page() {
 		add_theme_page(
-			'Shanti Theme Info',
-			'Shanti Info',
+			__( 'Recommended Plugins', 'shanti' ),
+			__( 'Recommended Plugins', 'shanti' ),
 			'manage_options',
 			'shanti-info',
 			'shanti_theme_info_page'
 		);
 	}
-);
+}
+add_action( 'admin_menu', 'shanti_add_theme_info_page' );
 
-// Enqueue scripts + load content file only for that page
-add_action(
-	'admin_enqueue_scripts',
-	function ( $hook ) {
-		if ( $hook === 'appearance_page_shanti-info' ) {
-			wp_enqueue_style( 'plugin-install' );
-			wp_enqueue_script( 'plugin-install' );
-			wp_enqueue_script( 'updates' );
-			add_thickbox();
-
-			// Load the page render code
-			require_once get_theme_file_path( 'includes/theme-info.php' );
+// Enqueue assets and load theme info page content.
+if ( ! function_exists( 'shanti_enqueue_theme_info_assets' ) ) {
+	/**
+	 * Enqueue styles/scripts and load theme-info.php only on the Recommended Plugins page.
+	 *
+	 * @param string $hook The current admin page hook.
+	 */
+	function shanti_enqueue_theme_info_assets( $hook ) {
+		if ( 'appearance_page_shanti-info' !== $hook ) {
+			return;
 		}
+		wp_enqueue_style( 'plugin-install' );
+		require_once get_theme_file_path( 'includes/theme-info.php' );
 	}
-);
+}
+add_action( 'admin_enqueue_scripts', 'shanti_enqueue_theme_info_assets' );
 
+// Default featured image for posts when none set.
 if ( ! function_exists( 'shanti_default_featured_image' ) ) {
 	/**
-	 * Provide a default featured image when none is set.
+	 * Provide a default featured image for posts when none is set.
 	 *
-	 * @param string       $html              The post thumbnail HTML.
-	 * @param int          $post_id           The post ID.
-	 * @param int          $post_thumbnail_id The post thumbnail ID.
-	 * @param string|array $size              The post thumbnail size.
-	 * @param string|array $attr              Query string or array of attributes.
-	 * @return string The filtered post thumbnail HTML.
+	 * @param string       $html              Post thumbnail HTML.
+	 * @param int          $post_id           Post ID.
+	 * @param int          $post_thumbnail_id Post thumbnail ID.
+	 * @param string|array $size              Thumbnail size.
+	 * @param string|array $attr              Attributes.
+	 * @return string Filtered HTML.
 	 */
 	function shanti_default_featured_image( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
 		if ( empty( $html ) && 'post' === get_post_type( $post_id ) ) {
@@ -239,16 +146,14 @@ if ( ! function_exists( 'shanti_default_featured_image' ) ) {
 }
 add_filter( 'post_thumbnail_html', 'shanti_default_featured_image', 10, 5 );
 
+// Hide Share Post pattern when social sharing block not registered.
 if ( ! function_exists( 'shanti_hide_share_post_pattern_without_plugin' ) ) {
 	/**
-	 * Hide the Share Post pattern output when the Outermost Social Sharing block is not registered.
+	 * Hide the Share Post pattern when the Outermost Social Sharing block is not registered.
 	 *
-	 * The share-post pattern is referenced in single post templates; if the plugin is inactive
-	 * (or deactivated after the pattern was registered), this prevents the section from rendering.
-	 *
-	 * @param string $block_content The block content.
-	 * @param array  $block         The full block, including name and attributes.
-	 * @return string The block content or empty string to hide the pattern.
+	 * @param string $block_content Block content.
+	 * @param array  $block         Block name and attributes.
+	 * @return string Block content or empty string.
 	 */
 	function shanti_hide_share_post_pattern_without_plugin( $block_content, $block ) {
 		if ( isset( $block['blockName'] ) && 'core/pattern' === $block['blockName']
