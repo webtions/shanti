@@ -199,8 +199,6 @@
 		"spacing": {
 			"defaultSpacingSizes": false,
 			"blockGap": true,
-			"margin": true,
-			"padding": true,
 			"spacingSizes": [
 				{
 					"name": "X-Small",
@@ -234,7 +232,7 @@
 				},
 				{
 					"name": "Outer",
-					"size": "clamp(1.875rem, 5vw, 5rem)",
+					"size": "clamp(3rem, 6vw, 5rem)",
 					"slug": "outer"
 				}
 			],
@@ -619,11 +617,6 @@
 			"core/gallery": {
 				"spacing": {
 					"blockGap": "var:preset|spacing|x-small"
-				}
-			},
-			"core/group": {
-				"spacing": {
-					"padding": "0px"
 				}
 			},
 			"core/heading": {
@@ -1211,7 +1204,7 @@
 		{
 			"title": "Sidebar",
 			"name": "sidebar",
-			"area": "sidebar"
+			"area": "uncategorized"
 		}
 	],
 	"customTemplates": [
