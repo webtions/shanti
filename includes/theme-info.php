@@ -2,13 +2,13 @@
 /**
  * Theme Info page for the Shanti theme.
  *
- * @package ShantiTheme
+ * @package Shanti
  */
 
 /**
- * Render the admin page under Appearance > Shanti Info.
+ * Render the admin page under Appearance > Recommended Plugins.
  *
- * Displays theme information and recommended plugins.
+ * Displays recommended plugins and more plugins we recommend.
  *
  * @return void
  */
@@ -30,6 +30,7 @@ function shanti_theme_info_page() {
 		display: flex;
 		flex: 1 1 calc(33.333% - 24px);
 		min-width: 280px;
+		max-width: 380px;
 		align-items: flex-start;
 		gap: 20px;
 		padding: 20px;
@@ -116,6 +117,37 @@ function shanti_theme_info_page() {
 		text-decoration: underline;
 	}
 
+	.shanti-theme-link-wrap {
+		margin: 8px 0 24px;
+	}
+
+	.shanti-theme-link {
+		text-decoration: none;
+	}
+
+	.shanti-theme-link .dashicons {
+		font-size: 16px;
+		width: 16px;
+		height: 16px;
+		margin-left: 4px;
+		vertical-align: middle;
+	}
+
+	.shanti-recommended-intro {
+		margin: 0 0 16px;
+		color: #50575e;
+		font-size: 14px;
+		line-height: 1.6;
+	}
+
+	.shanti-section-divider {
+		margin: 48px 0 0;
+	}
+
+	.shanti-plugins-more {
+		margin-top: 24px;
+	}
+
 	@media (max-width: 768px) {
 		.shanti-plugin-card {
 			flex: 1 1 100%;
@@ -131,46 +163,113 @@ function shanti_theme_info_page() {
 	}
 </style>
 
-	<div class="wrap">
-		<h1><?php esc_html_e( 'Shanti Theme Info', 'shanti' ); ?></h1>
+	<?php
+			$recommended_slugs = array( 'build-mode', 'i-recommend-this', 'social-sharing-block', 'safe-svg' );
+			$suggested_slugs   = array( 'custom-favicon', 'koko-analytics' );
 
-		<p><?php esc_html_e( 'A clean and fast WordPress block theme crafted for simplicity and clarity.', 'shanti' ); ?></p>
-		<p>
-			<strong><?php esc_html_e( 'Version:', 'shanti' ); ?></strong>
-			<?php echo esc_html( wp_get_theme()->get( 'Version' ) ); ?><br>
-			<strong><?php esc_html_e( 'Author:', 'shanti' ); ?></strong>
-			<?php echo esc_html( wp_get_theme()->get( 'Author' ) ); ?><br>
-			<strong><?php esc_html_e( 'Theme URI:', 'shanti' ); ?></strong>
-			<a href="<?php echo esc_url( wp_get_theme()->get( 'ThemeURI' ) ); ?>" target="_blank" rel="noopener">
-				<?php echo esc_html( wp_get_theme()->get( 'ThemeURI' ) ); ?>
+	if ( ! function_exists( 'plugins_api' ) ) {
+		require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
+	}
+
+	if ( ! function_exists( 'install_plugin_install_status' ) ) {
+		require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
+	}
+
+	if ( ! function_exists( 'is_plugin_active' ) ) {
+		require_once ABSPATH . 'wp-admin/includes/plugin.php';
+	}
+
+			$recommended_plugins = array();
+	foreach ( $recommended_slugs as $slug ) {
+		$slug          = sanitize_key( $slug );
+		$transient_key = 'shanti_plugin_info_' . $slug;
+		$plugin        = get_transient( $transient_key );
+		if ( false === $plugin ) {
+			$plugin = plugins_api(
+				'plugin_information',
+				array(
+					'slug'   => $slug,
+					'fields' => array(
+						'short_description' => true,
+						'icons'             => true,
+					),
+				)
+			);
+			if ( is_wp_error( $plugin ) || ! is_object( $plugin ) ) {
+				continue;
+			}
+			set_transient( $transient_key, $plugin, HOUR_IN_SECONDS );
+		}
+		$icon = '';
+		if ( ! empty( $plugin->icons ) && is_array( $plugin->icons ) ) {
+			$icon = isset( $plugin->icons['default'] ) ? $plugin->icons['default'] : ( isset( $plugin->icons['1x'] ) ? $plugin->icons['1x'] : '' );
+		}
+		$recommended_plugins[] = array(
+			'plugin' => $plugin,
+			'icon'   => $icon,
+		);
+	}
+	?>
+
+	<div class="wrap">
+		<h1><?php esc_html_e( 'Recommended Plugins', 'shanti' ); ?></h1>
+		<p class="shanti-recommended-intro">
+			<?php esc_html_e( 'Shanti is designed to work seamlessly with the plugins below. We highly recommend them, especially Social Sharing Block and I Recommend This, which have enhanced integration with the theme.', 'shanti' ); ?>
+		</p>
+		<?php
+		$theme_uri = wp_get_theme()->get( 'ThemeURI' );
+		if ( $theme_uri ) :
+			?>
+		<p class="shanti-theme-link-wrap">
+			<a href="<?php echo esc_url( $theme_uri ); ?>" class="button button-primary shanti-theme-link" target="_blank" rel="noopener">
+				<?php esc_html_e( 'View Shanti theme page', 'shanti' ); ?>
+				<span class="dashicons dashicons-external" aria-hidden="true"></span>
 			</a>
 		</p>
+		<?php endif; ?>
 
 		<hr>
 
 		<h2><?php esc_html_e( 'Recommended Plugins', 'shanti' ); ?></h2>
 		<div class="shanti-plugin-cards">
 			<?php
-			$plugin_slugs = array(
-				'i-recommend-this',
-				'custom-favicon',
-				'koko-analytics',
-			);
-
-			if ( ! function_exists( 'plugins_api' ) ) {
-				require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
+			foreach ( $recommended_plugins as $item ) {
+				$plugin         = $item['plugin'];
+				$icon           = $item['icon'];
+				$requires_php   = isset( $plugin->requires_php ) ? $plugin->requires_php : '';
+				$requires_wp    = isset( $plugin->requires ) ? $plugin->requires : '';
+				$compatible_php = is_php_version_compatible( $requires_php );
+				$compatible_wp  = is_wp_version_compatible( $requires_wp );
+				?>
+			<div class="shanti-plugin-card">
+				<div class="shanti-plugin-icon">
+					<?php if ( $icon ) : ?>
+						<img src="<?php echo esc_url( $icon ); ?>" alt="">
+					<?php endif; ?>
+				</div>
+				<div class="shanti-plugin-details">
+					<h3><?php echo esc_html( $plugin->name ); ?></h3>
+					<p><?php echo wp_kses_post( $plugin->short_description ); ?></p>
+					<div class="plugin-actions">
+						<?php
+						echo wp_kses_post( wp_get_plugin_action_button( $plugin->name, $plugin, $compatible_php, $compatible_wp ) );
+						?>
+					</div>
+				</div>
+			</div>
+				<?php
 			}
+			?>
+		</div>
 
-			if ( ! function_exists( 'install_plugin_install_status' ) ) {
-				require_once ABSPATH . 'wp-admin/includes/plugin-install.php';
-			}
+		<hr class="shanti-section-divider">
 
-			if ( ! function_exists( 'is_plugin_active' ) ) {
-				require_once ABSPATH . 'wp-admin/includes/plugin.php';
-			}
-
-			foreach ( $plugin_slugs as $slug ) {
-				$slug = sanitize_key( $slug );
+		<div class="shanti-plugins-more">
+		<h2><?php esc_html_e( 'More plugins we recommend', 'shanti' ); ?></h2>
+		<div class="shanti-plugin-cards">
+			<?php
+			foreach ( $suggested_slugs as $slug ) {
+				$slug          = sanitize_key( $slug );
 				$transient_key = 'shanti_plugin_info_' . $slug;
 
 				$plugin = get_transient( $transient_key );
@@ -216,39 +315,11 @@ function shanti_theme_info_page() {
 
 						<div class="plugin-actions">
 							<?php
-							$status = install_plugin_install_status( $plugin );
-
-							switch ( $status['status'] ) {
-								case 'install':
-								case 'update_available':
-									?>
-									<a class="button button-primary"
-									   data-slug="<?php echo esc_attr( $plugin->slug ); ?>"
-									   data-name="<?php echo esc_attr( $plugin->name ); ?>"
-									   href="<?php echo esc_url( $status['url'] ); ?>"
-									   target="_blank" rel="noopener">
-										<?php
-										echo ( 'install' === $status['status'] )
-											? esc_html__( 'Install Now', 'shanti' )
-											: esc_html__( 'Update Now', 'shanti' );
-										?>
-									</a>
-									<?php
-									break;
-
-								case 'latest_installed':
-								case 'newer_installed':
-									$plugin_file = $plugin->slug . '/' . $plugin->slug . '.php';
-
-									if ( is_plugin_active( $plugin_file ) ) {
-										echo '<span class="active-label">' . esc_html__( 'Active', 'shanti' ) . '</span>';
-									} else {
-										echo '<span class="active-label">' . esc_html__( 'Not Active', 'shanti' ) . '</span>';
-										echo '<a class="manage-link" href="' . esc_url( admin_url( 'plugins.php' ) ) . '" target="_blank" rel="noopener">'
-											. esc_html__( 'Manage Plugin', 'shanti' ) . '</a>';
-									}
-									break;
-							}
+							$requires_php   = isset( $plugin->requires_php ) ? $plugin->requires_php : '';
+							$requires_wp    = isset( $plugin->requires ) ? $plugin->requires : '';
+							$compatible_php = is_php_version_compatible( $requires_php );
+							$compatible_wp  = is_wp_version_compatible( $requires_wp );
+							echo wp_kses_post( wp_get_plugin_action_button( $plugin->name, $plugin, $compatible_php, $compatible_wp ) );
 							?>
 						</div>
 					</div>
@@ -256,6 +327,7 @@ function shanti_theme_info_page() {
 				<?php
 			}
 			?>
+		</div>
 		</div>
 	</div>
 	<?php
