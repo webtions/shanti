@@ -45,6 +45,11 @@
 		<type>warning</type>
 	</rule>
 
+	<!-- Ignore unused parameters (e.g. filter/action callback signatures) -->
+	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter">
+		<exclude name="Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed"/>
+	</rule>
+
 	<!-- Exclude third-party and non-source folders -->
 	<exclude-pattern>vendor/*</exclude-pattern>
 	<exclude-pattern>node_modules/*</exclude-pattern>
