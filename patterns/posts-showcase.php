@@ -5,17 +5,19 @@
  * Categories: shanti-posts
  * Inserter: true
  * Description: Showcase section with text and info alongside a 2×2 posts grid.
+ *
+ * @package Shanti
  */
+
 ?>
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var(--wp--preset--spacing--outer)","right":"var(--wp--preset--spacing--outer)"}}},"backgroundColor":"accent-light","layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|outer","bottom":"var:preset|spacing|outer","left":"var:preset|spacing|outer","right":"var:preset|spacing|outer"}}},"backgroundColor":"accent-light","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-accent-light-background-color has-background"
-	style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--outer);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--outer)">
-	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignwide"
-		style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)">
-		<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|x-large"}}}} -->
-		<div class="wp-block-columns alignwide"><!-- wp:column {"width":"33.33%"} -->
+	style="padding-top:var(--wp--preset--spacing--outer);padding-bottom:var(--wp--preset--spacing--outer);padding-left:var(--wp--preset--spacing--outer);padding-right:var(--wp--preset--spacing--outer)">
+
+	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|x-large"}}} -->
+	<div class="wp-block-columns alignwide">
+		<!-- wp:column {"width":"33.33%"} -->
 			<div class="wp-block-column" style="flex-basis:33.33%">
 				<!-- wp:heading {"level":2,"fontSize":"xx-large"} -->
 				<h2 class="wp-block-heading has-xx-large-font-size">Featured</h2>
@@ -46,7 +48,7 @@
 					<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|x-large"}},"layout":{"type":"grid","columnCount":2}} -->
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 					<div class="wp-block-group">
-						<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/5","width":"100%"} /-->
+						<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/5"} /-->
 
 						<!-- wp:post-title {"level":3,"isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"fontSize":"x-large"} /-->
 
@@ -60,9 +62,8 @@
 				<!-- /wp:query -->
 			</div>
 			<!-- /wp:column -->
-		</div>
-		<!-- /wp:columns -->
 	</div>
-	<!-- /wp:group -->
+	<!-- /wp:columns -->
+
 </div>
 <!-- /wp:group -->
