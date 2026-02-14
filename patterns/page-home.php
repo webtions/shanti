@@ -1,49 +1,31 @@
 <?php
 /**
- * Title: Home page content
+ * Title: Homepage
  * Slug: shanti/page-home
  * Categories: shanti-page
- * Template Types: front-page, home
+ * Keywords: home, front page, layout
+ * Block Types: core/post-content
+ * Post Types: page
+ * Viewport width: 1600
+ * Description: Homepage pattern with fullscreen hero cover & featured posts.
  * Inserter: true
+ *
+ * @package Shanti
  */
-?>
 
+?>
+<!-- wp:pattern {"slug":"shanti/hero-cover"} /-->
 <!-- wp:group {"align":"full","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull">
+<!-- wp:pattern {"slug":"shanti/hero-cover"} /-->
+</div>
+<!-- /wp:group -->
 
-	<!-- wp:group {"align":"full","layout":{"type":"default"}} -->
-	<div class="wp-block-group alignfull">
-		<!-- wp:pattern {"slug":"shanti/hero-cover"} /-->
-	</div>
-	<!-- /wp:group -->
+<!-- wp:group {"anchor":"home-content","align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<div id="home-content" class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0">
+	<!-- wp:pattern {"slug":"shanti/posts-showcase"} /-->
 
-	<!-- wp:group {"layout":{"type":"constrained"},"style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"left":"var(--wp--preset--spacing--outer)","right":"var(--wp--preset--spacing--outer)"}}}} -->
-	<div class="wp-block-group" style="margin-top: 0; margin-bottom: 0; padding-left: var(--wp--preset--spacing--outer); padding-right: var(--wp--preset--spacing--outer);">
-
-		<!-- wp:pattern {"slug":"shanti/posts-showcase"} /-->
-
-		<!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
-		<div class="wp-block-group alignwide" id="site-content">
-
-			<!-- wp:group {"align":"wide","layout":{"inherit":false}} -->
-			<div class="wp-block-group alignwide">
-
-				<!-- wp:pattern {"slug":"shanti/hidden-section-header"} /-->
-
-				<!-- wp:pattern {"slug":"shanti/posts-grid-3-cols"} /-->
-
-				<!-- wp:spacer {"height":"40px"} -->
-				<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-				<!-- /wp:spacer -->
-
-			</div>
-			<!-- /wp:group -->
-
-		</div>
-		<!-- /wp:group -->
-
-	</div>
-	<!-- /wp:group -->
+	<!-- wp:pattern {"slug":"shanti/posts-grid-3-cols"} /-->
 
 </div>
 <!-- /wp:group -->
