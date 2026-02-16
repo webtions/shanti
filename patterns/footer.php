@@ -20,8 +20,8 @@
 	<div class="wp-block-group alignwide">
 		<!-- wp:group {"metadata":{"name":"footer-wrapper"},"style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
-			<!-- wp:separator {"className":"is-style-wavy","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"foreground"} -->
-			<hr class="wp-block-separator has-text-color has-foreground-color has-alpha-channel-opacity has-foreground-background-color has-background is-style-wavy" style="margin-top:0;margin-bottom:0"/>
+			<!-- wp:separator {"className":"is-style-wavy","backgroundColor":"foreground"} -->
+			<hr class="wp-block-separator has-text-color has-foreground-color has-alpha-channel-opacity has-foreground-background-color has-background is-style-wavy" />
 			<!-- /wp:separator -->
 
 			<!-- wp:group {"metadata":{"name":"footer-inner-wrapper"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
