@@ -1,9 +1,12 @@
 <?php
 /**
- * Title: Footer
+ * Title: Centered Footer
+ * Description: Footer with centered social links.
  * Slug: shanti/footer
  * Categories: shanti-footer
  * Block Types: core/template-part/footer
+ * Post Types: wp_template
+ * Viewport width: 1600
  * Inserter: true
  *
  * @package Shanti
@@ -11,14 +14,15 @@
 
 ?>
 
-<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|80","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:0">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
 	<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
-		<!-- wp:group {"metadata":{"name":"footer-wrapper"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"},"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
-		<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
-			<!-- wp:separator {"className":"is-style-wavy","backgroundColor":"primary"} -->
-			<hr class="wp-block-separator has-text-color has-primary-color has-alpha-channel-opacity has-primary-background-color has-background is-style-wavy"/>
+		<!-- wp:group {"metadata":{"name":"footer-wrapper"},"style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
+		<div class="wp-block-group">
+			<!-- wp:separator {"className":"is-style-wavy","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"primary"} -->
+			<hr class="wp-block-separator has-text-color has-foreground-color has-alpha-channel-opacity has-primary-foreground
+-color has-background is-style-wavy" style="margin-top:0;margin-bottom:0"/>
 			<!-- /wp:separator -->
 
 			<!-- wp:group {"metadata":{"name":"footer-inner-wrapper"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
