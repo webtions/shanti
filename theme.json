@@ -386,9 +386,9 @@
 		"spacing": {
 			"blockGap": "var:preset|spacing|50",
 			"padding": {
-				"top": "0",
+				"top": "0px",
 				"right": "var:preset|spacing|80",
-				"bottom": "0",
+				"bottom": "0px",
 				"left": "var:preset|spacing|80"
 			}
 		},
@@ -660,7 +660,7 @@
 					"fontWeight": "var:custom|font-weight|regular"
 				},
 				"spacing": {
-					"blockGap": "var:preset|spacing|30"
+					"blockGap": "var:preset|spacing|60"
 				},
 				"elements": {
 					"link": {
@@ -974,6 +974,9 @@
 			"core/social-links": {
 				"spacing": {
 					"blockGap": "var:preset|spacing|20"
+				},
+				"typography": {
+					"fontSize": "var:preset|font-size|large"
 				}
 			},
 			"core/spacer": {
