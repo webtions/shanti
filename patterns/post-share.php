@@ -1,18 +1,21 @@
 <?php
 /**
  * Title: Share post
- * Slug: shanti/share-post
- * Categories: shanti-posts
- * Inserter: true
  * Description: Share this post section with social sharing icons.
+ * Slug: shanti/post-share
+ * Categories: text
+ * Keywords: share, social, post
+ * Template Types: single
+ * Viewport Width: 1600
+ * Inserter: true
  *
  * @package Shanti
  */
 
 ?>
 
-<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xx-large"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="margin-bottom: var(--wp--preset--spacing--xx-large)">
+<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="margin-bottom: var(--wp--preset--spacing--70)">
 	<!-- wp:heading {"textAlign":"center","fontSize":"large"} -->
 	<h2 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Share this post', 'shanti' ); ?></h2>
 	<!-- /wp:heading -->

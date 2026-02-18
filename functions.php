@@ -41,12 +41,28 @@ if ( ! function_exists( 'shanti_register_block_pattern_categories' ) ) {
 	 * Register block pattern categories.
 	 */
 	function shanti_register_block_pattern_categories() {
-		register_block_pattern_category( 'shanti-posts', array( 'label' => __( 'Shanti Posts', 'shanti' ) ) );
-		register_block_pattern_category( 'shanti-page', array( 'label' => __( 'Shanti Page', 'shanti' ) ) );
-		register_block_pattern_category( 'shanti-footer', array( 'label' => __( 'Shanti Footer', 'shanti' ) ) );
-		register_block_pattern_category( 'shanti-general', array( 'label' => __( 'Shanti General', 'shanti' ) ) );
-		register_block_pattern_category( 'shanti-hero', array( 'label' => __( 'Shanti Hero', 'shanti' ) ) );
-		register_block_pattern_category( 'shanti-header', array( 'label' => __( 'Shanti Header', 'shanti' ) ) );
+		$categories = array(
+			'shanti-posts'   => array(
+				'label'       => __( 'Posts', 'shanti' ),
+				'description' => __( 'A collection of post layouts and query patterns.', 'shanti' ),
+			),
+			'shanti-page'    => array(
+				'label'       => __( 'Pages', 'shanti' ),
+				'description' => __( 'A collection of full page layouts.', 'shanti' ),
+			),
+			'shanti-general' => array(
+				'label'       => __( 'General', 'shanti' ),
+				'description' => __( 'A collection of general-purpose patterns.', 'shanti' ),
+			),
+			'shanti-hero'    => array(
+				'label'       => __( 'Hero', 'shanti' ),
+				'description' => __( 'A collection of hero and banner patterns.', 'shanti' ),
+			),
+		);
+
+		foreach ( $categories as $name => $properties ) {
+			register_block_pattern_category( $name, $properties );
+		}
 	}
 }
 add_action( 'init', 'shanti_register_block_pattern_categories' );
@@ -68,6 +84,10 @@ if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 			'core/button'        => array(
 				'ghost' => __( 'Ghost', 'shanti' ),
 			),
+			'core/separator'     => array(
+				'wavy' => __( 'Wavy', 'shanti' ),
+			),
+
 		);
 
 		foreach ( $block_styles as $block => $styles ) {
@@ -146,18 +166,18 @@ if ( ! function_exists( 'shanti_default_featured_image' ) ) {
 }
 add_filter( 'post_thumbnail_html', 'shanti_default_featured_image', 10, 5 );
 
-// Hide Share Post pattern when social sharing block not registered.
-if ( ! function_exists( 'shanti_hide_share_post_pattern_without_plugin' ) ) {
+// Hide Post Share pattern when social sharing block not registered.
+if ( ! function_exists( 'shanti_hide_post_share_pattern_without_plugin' ) ) {
 	/**
-	 * Hide the Share Post pattern when the Outermost Social Sharing block is not registered.
+	 * Hide the Post Share pattern when the Outermost Social Sharing block is not registered.
 	 *
 	 * @param string $block_content Block content.
 	 * @param array  $block         Block name and attributes.
 	 * @return string Block content or empty string.
 	 */
-	function shanti_hide_share_post_pattern_without_plugin( $block_content, $block ) {
+	function shanti_hide_post_share_pattern_without_plugin( $block_content, $block ) {
 		if ( isset( $block['blockName'] ) && 'core/pattern' === $block['blockName']
-			&& isset( $block['attrs']['slug'] ) && 'shanti/share-post' === $block['attrs']['slug'] ) {
+			&& isset( $block['attrs']['slug'] ) && 'shanti/post-share' === $block['attrs']['slug'] ) {
 
 			$registry = \WP_Block_Type_Registry::get_instance();
 			if ( ! $registry->is_registered( 'outermost/social-sharing' ) ) {
@@ -167,4 +187,4 @@ if ( ! function_exists( 'shanti_hide_share_post_pattern_without_plugin' ) ) {
 		return $block_content;
 	}
 }
-add_filter( 'render_block', 'shanti_hide_share_post_pattern_without_plugin', 10, 2 );
+add_filter( 'render_block', 'shanti_hide_post_share_pattern_without_plugin', 10, 2 );
