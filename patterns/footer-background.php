@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Footer (With background)
+ * Title: Footer (Background)
  * Description: Footer with centered social links and a background color.
- * Slug: shanti/footer-with-background
+ * Slug: shanti/footer-background
  * Categories: footer
  * Keywords: footer, social, links
  * Block Types: core/template-part/footer
