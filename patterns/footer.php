@@ -1,12 +1,13 @@
 <?php
 /**
- * Title: Centered Footer
+ * Title: Footer
  * Description: Footer with centered social links.
  * Slug: shanti/footer
- * Categories: shanti-footer
+ * Categories: footer
+ * Keywords: footer, social, links
  * Block Types: core/template-part/footer
  * Post Types: wp_template
- * Viewport width: 1600
+ * Viewport Width: 1600
  * Inserter: true
  *
  * @package Shanti
