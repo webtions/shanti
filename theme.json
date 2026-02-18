@@ -1228,7 +1228,7 @@
 			"name": "blank",
 			"postTypes": ["page"],
 			"title": "Page: Blank",
-			"description": "DO NOT REMOVE: This is for high-conversion marketing pages."
+			"description": "Blank page template"
 		},
 		{
 			"name": "page-no-title",
@@ -1236,9 +1236,9 @@
 			"title": "Page: No Title"
 		},
 		{
-			"name": "page-with-sidebar",
+			"name": "page-sidebar",
 			"postTypes": ["page", "post"],
-			"title": "Page: Withh right sidebar"
+			"title": "Page: With Sidebar"
 		},
 		{
 			"name": "single-standard",
