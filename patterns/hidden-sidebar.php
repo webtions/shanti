@@ -3,7 +3,7 @@
  * Title: Sidebar
  * Description: Default sidebar content for page templates with sidebar.
  * Slug: shanti/hidden-sidebar
- * Categories: shanti-general
+ * Categories: text
  * Keywords: sidebar, contact
  * Block Types: core/template-part/sidebar
  * Post Types: wp_template
