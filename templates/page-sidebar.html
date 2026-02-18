@@ -1,0 +1,55 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"site-header"} /-->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Page Body"},"className":"site-content","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group site-content" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)">
+
+	<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignwide">
+
+		<!-- wp:columns {"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"blockGap":"var:preset|spacing|70"}}} -->
+		<div class="wp-block-columns alignfull" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+			<!-- wp:column {"width":"66.66%"} -->
+			<div class="wp-block-column" style="flex-basis:66.66%">
+
+				<!-- wp:group {"tagName":"article","metadata":{"name":"Article"},"layout":{"type":"constrained","justifyContent":"left"}} -->
+				<article class="wp-block-group">
+
+					<!-- wp:group {"metadata":{"name":"Title Area"},"align":"wide","className":"entry-header","style":{"spacing":{"padding":{"bottom":"0"}}}} -->
+					<div class="wp-block-group alignwide entry-header" style="padding-bottom:0">
+
+						<!-- wp:post-title {"level":1,"fontFamily":"secondary"} /-->
+
+					</div>
+					<!-- /wp:group -->
+
+					<!-- wp:separator {"className":"is-style-wavy"} -->
+					<hr class="wp-block-separator has-alpha-channel-opacity is-style-wavy"/>
+					<!-- /wp:separator -->
+
+					<!-- wp:post-content {"align":"wide","layout":{"type":"constrained","justifyContent":"left"}} /-->
+
+				</article>
+				<!-- /wp:group -->
+
+			</div>
+			<!-- /wp:column -->
+
+			<!-- wp:column {"width":"33.33%"} -->
+			<div class="wp-block-column" style="flex-basis:33.33%">
+
+				<!-- wp:template-part {"slug":"sidebar","theme":"shanti"} /-->
+
+			</div>
+			<!-- /wp:column -->
+
+		</div>
+		<!-- /wp:columns -->
+
+	</div>
+	<!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"site-footer"} /-->
