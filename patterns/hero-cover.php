@@ -1,8 +1,12 @@
 <?php
 /**
  * Title: Cover with text and background image
+ * Description: Full-width hero cover with heading and background image.
  * Slug: shanti/hero-cover
- * Categories: shanti-hero
+ * Categories: featured
+ * Keywords: hero, cover, banner
+ * Block Types: core/post-content
+ * Viewport Width: 1600
  * Inserter: true
  *
  * @package Shanti
