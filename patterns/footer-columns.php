@@ -3,10 +3,11 @@
  * Title: Footer with columns
  * Description: Footer columns with site title, tagline, search, social and links.
  * Slug: shanti/footer-columns
- * Categories: shanti-footer
+ * Categories: footer
+ * Keywords: footer, columns, social, links
  * Block Types: core/template-part/footer
  * Post Types: wp_template
- * Viewport width: 1600
+ * Viewport Width: 1600
  * Inserter: true
  *
  * @package Shanti
@@ -47,18 +48,28 @@
 							<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 							<div class="wp-block-group" style="padding-right:0;padding-left:0">
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large"} -->
-								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700">About</h3>
+								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700">Explore</h3>
 								<!-- /wp:heading -->
-								<!-- wp:navigation {"ref":1812,"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"Stories"} /-->
+								<!-- wp:navigation {"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"Explore"} -->
+								<!-- wp:navigation-link {"label":"About","url":"#","kind":"custom"} /-->
+								<!-- wp:navigation-link {"label":"Contact","url":"#","kind":"custom"} /-->
+								<!-- wp:navigation-link {"label":"Newsletter","url":"#","kind":"custom"} /-->
+								<!-- wp:navigation-link {"label":"Archive","url":"#","kind":"custom"} /-->
+								<!-- /wp:navigation -->
 							</div>
 							<!-- /wp:group -->
 
 							<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 							<div class="wp-block-group" style="padding-right:0;padding-left:0">
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large"} -->
-								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700">Shanti</h3>
+								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700">Categories</h3>
 								<!-- /wp:heading -->
-								<!-- wp:navigation {"ref":1815,"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"Stories"} /-->
+								<!-- wp:navigation {"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"Categories"} -->
+								<!-- wp:navigation-link {"label":"Journal","url":"#","kind":"custom"} /-->
+								<!-- wp:navigation-link {"label":"Travel","url":"#","kind":"custom"} /-->
+								<!-- wp:navigation-link {"label":"Reading","url":"#","kind":"custom"} /-->
+								<!-- wp:navigation-link {"label":"Notes","url":"#","kind":"custom"} /-->
+								<!-- /wp:navigation -->
 							</div>
 							<!-- /wp:group -->
 
