@@ -22,7 +22,7 @@
 		<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"small"} -->
-			<p class="has-text-align-center has-small-font-size" style="font-style:normal;font-weight:500"><?php echo esc_html__( 'A quiet corner for words and ideas.', 'shanti' ); ?></p>
+			<p class="has-text-align-center has-small-font-size" style="font-style:normal;font-weight:500"><?php echo esc_html_x( 'A quiet corner for words and ideas.', 'Header top bar text', 'shanti' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
