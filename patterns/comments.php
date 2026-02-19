@@ -21,7 +21,7 @@
 	<!-- wp:comments {"className":"wp-block-comments-query-loop","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"0"}}}} -->
 	<div class="wp-block-comments wp-block-comments-query-loop" style="margin-top: var(--wp--preset--spacing--60); margin-bottom: 0">
 		<!-- wp:heading {"fontSize":"x-large"} -->
-		<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'Comments', 'shanti' ); ?></h2>
+		<h2 class="wp-block-heading has-x-large-font-size"><?php echo esc_html_x( 'Comments', 'Comments section heading', 'shanti' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:comments-title {"level":3,"fontSize":"large"} /-->
