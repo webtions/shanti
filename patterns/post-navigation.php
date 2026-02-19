@@ -21,13 +21,13 @@
 	<div class="wp-block-columns alignwide">
 		<!-- wp:column {"width":"50%"} -->
 		<div class="wp-block-column" style="flex-basis:50%">
-			<!-- wp:post-navigation-link {"type":"previous","label":"Previous ","showTitle":true,"linkLabel":true,"arrow":"arrow","fontSize":"medium"} /-->
+			<!-- wp:post-navigation-link {"type":"previous","label":"<?php echo esc_attr( _x( 'Previous ', 'Post navigation label', 'shanti' ) ); ?>","showTitle":true,"linkLabel":true,"arrow":"arrow","fontSize":"medium"} /-->
 		</div>
 		<!-- /wp:column -->
 
 		<!-- wp:column {"width":"50%"} -->
 		<div class="wp-block-column" style="flex-basis:50%">
-			<!-- wp:post-navigation-link {"textAlign":"right","label":"Next ","showTitle":true,"arrow":"arrow","fontSize":"medium"} /-->
+			<!-- wp:post-navigation-link {"textAlign":"right","label":"<?php echo esc_attr( _x( 'Next ', 'Post navigation label', 'shanti' ) ); ?>","showTitle":true,"arrow":"arrow","fontSize":"medium"} /-->
 		</div>
 		<!-- /wp:column -->
 	</div>
