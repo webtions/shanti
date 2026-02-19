@@ -48,7 +48,7 @@
 							<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 							<div class="wp-block-group" style="padding-right:0;padding-left:0">
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large"} -->
-								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700">Explore</h3>
+								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html_x( 'Explore', 'Footer column heading', 'shanti' ); ?></h3>
 								<!-- /wp:heading -->
 								<!-- wp:navigation {"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"Explore"} -->
 								<!-- wp:navigation-link {"label":"About","url":"#","kind":"custom"} /-->
@@ -62,7 +62,7 @@
 							<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 							<div class="wp-block-group" style="padding-right:0;padding-left:0">
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large"} -->
-								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700">Categories</h3>
+								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html_x( 'Categories', 'Footer column heading', 'shanti' ); ?></h3>
 								<!-- /wp:heading -->
 								<!-- wp:navigation {"overlayMenu":"never","style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"fontSize":"medium","layout":{"type":"flex","orientation":"vertical"},"ariaLabel":"Categories"} -->
 								<!-- wp:navigation-link {"label":"Journal","url":"#","kind":"custom"} /-->
@@ -76,7 +76,7 @@
 							<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 							<div class="wp-block-group" style="padding-right:0;padding-left:0">
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large"} -->
-								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700">Social</h3>
+								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html_x( 'Social', 'Footer column heading', 'shanti' ); ?></h3>
 								<!-- /wp:heading -->
 								<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#000000","openInNewTab":true,"showLabels":true,"className":"is-style-logos-only","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap"}} -->
 								<ul class="wp-block-social-links has-visible-labels has-icon-color is-style-logos-only">
