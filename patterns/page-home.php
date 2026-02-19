@@ -1,20 +1,21 @@
 <?php
 /**
  * Title: Homepage
+ * Description: Homepage pattern with fullscreen hero cover & featured posts.
  * Slug: shanti/page-home
  * Categories: shanti-page
  * Keywords: home, front page, layout
  * Block Types: core/post-content
- * Post Types: page
- * Viewport width: 1600
- * Description: Homepage pattern with fullscreen hero cover & featured posts.
+ * Post Types: page, wp_template
+ * Template Types: page, front-page
+ * Viewport Width: 1600
  * Inserter: true
  *
  * @package Shanti
  */
 
 ?>
-<!-- wp:pattern {"slug":"shanti/hero-cover"} /-->
+
 <!-- wp:group {"align":"full","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull">
 <!-- wp:pattern {"slug":"shanti/hero-cover"} /-->
