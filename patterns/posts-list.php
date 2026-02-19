@@ -6,20 +6,23 @@
  * Block Types: core/query
  * Inserter: true
  * Description: Query loop for search results with single-column list layout
+ *
+ * @package Shanti
  */
+
 ?>
 
 <!-- wp:query {"query":{"inherit":true},"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-query alignwide">
 
-	<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|x-large"}},"layout":{"type":"default"}} -->
+	<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
 
-	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
+	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
 
-		<!-- wp:post-title {"level":2,"isLink":true,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|small"}}},"fontSize":"x-large"} /-->
+		<!-- wp:post-title {"level":2,"isLink":true,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}},"fontSize":"x-large"} /-->
 
-		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|x-small","margin":{"bottom":"var:preset|spacing|small"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 		<div class="wp-block-group">
 			<!-- wp:post-date {"format":"M j, Y"} /-->
 			<!-- wp:post-terms {"term":"post_tag"} /-->
@@ -34,14 +37,14 @@
 	<!-- /wp:post-template -->
 
 	<!-- wp:query-no-results -->
-	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"layout":{"type":"constrained"}} -->
+	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
 		<!-- wp:heading {"fontSize":"large"} -->
-		<h2 class="wp-block-heading has-large-font-size">Nothing Found</h2>
+		<h2 class="wp-block-heading has-large-font-size"><?php echo esc_html_x( 'Nothing Found', 'Empty query message', 'shanti' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph -->
-		<p>Sorry, no posts matched your criteria. Try searching for something else.</p>
+		<p><?php echo esc_html_x( 'Sorry, no posts matched your criteria. Try searching for something else.', 'Empty query body', 'shanti' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
