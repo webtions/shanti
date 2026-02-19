@@ -22,7 +22,7 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"fontSize":"small"} -->
-	<p class="has-small-font-size"><?php esc_html_e( 'Welcome to my corner of the web. I write about my daily observations, personal growth, and the things that inspire me to keep creating.', 'shanti' ); ?></p>
+	<p class="has-small-font-size"><?php echo esc_html_x( 'Welcome to my corner of the web. I write about my daily observations, personal growth, and the things that inspire me to keep creating.', 'Sidebar intro text', 'shanti' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:separator {"className":"is-style-wavy","style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
@@ -34,11 +34,11 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"fontSize":"small"} -->
-	<p class="has-small-font-size"><?php esc_html_e( 'If you enjoy my writing, feel free to reach out via email or subscribe to the monthly newsletter.', 'shanti' ); ?></p>
+	<p class="has-small-font-size"><?php echo esc_html_x( 'If you enjoy my writing, feel free to reach out via email or subscribe to the monthly newsletter.', 'Sidebar newsletter text', 'shanti' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:paragraph {"fontSize":"x-small"} -->
-	<p class="has-x-small-font-size"><strong><?php esc_html_e( 'Contact:', 'shanti' ); ?></strong> hello@example.com</p>
+	<p class="has-x-small-font-size"><strong><?php echo esc_html_x( 'Contact:', 'Sidebar contact label', 'shanti' ); ?></strong> hello@example.com</p>
 	<!-- /wp:paragraph -->
 
 </div>
