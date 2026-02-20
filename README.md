@@ -40,30 +40,39 @@ The theme includes a set of templates, reusable parts, and block patterns design
 
 - **_index.html_** – Fallback template for all content
 - **_single.html_** – Default template for single posts
+- **_single-standard.html_** – Alternative single post layout with center-aligned wide featured image
 - **_page.html_** – Default template for static pages
-- **_page-front.html_** – Custom template for the homepage
-- **_archive.html_** – Template for archives (categories, etc.)
+- **_page-transparent-header.html_** – Page template with transparent header (any page or post)
+- **_page-sidebar.html_** – Page template with sidebar
+- **_page-no-title.html_** – Template without the post/page title
 - **_search.html_** – Search results template
 - **_404.html_** – Template for not found pages
 - **_blank.html_** – A completely empty canvas (no header/footer)
-- **_no-title.html_** – Template without the post/page title
 
 ### Template Parts
 
 - **_header.html_** – Site header
 - **_footer.html_** – Site footer
+- **_sidebar.html_** – Sidebar (used by page-sidebar template)
 
 ### Block Patterns
 
-- **_footer-default.php_** – Default footer block layout
-- **_general-heading.php_** – Standalone heading block
-- **_header-default.php_** – Default header block layout
+- **_header.php_** – Default header block layout
+- **_header-top-bar.php_** – Header with top bar
+- **_footer.php_** – Default footer block layout
+- **_footer-columns.php_** – Footer with columns
+- **_footer-columns-background.php_** – Footer with columns and background
+- **_footer-background.php_** – Footer with background
 - **_hero-cover.php_** – Fullscreen hero section with background image
-- **_posts-featured.php_** – Sticky post followed by grid layout
-- **_posts-gallery.php_** – Grid of image-focused posts
-- **_posts-grid.php_** – Standard post grid
-- **_posts.php_** – Classic post list layout
-- **_posts.related.php_** – Related post suggestions
+- **_page-home.php_** – Home page content (hero, posts showcase, grid)
+- **_post-navigation.php_** – Previous/next post links
+- **_post-share.php_** – Social sharing section for single posts
+- **_comments.php_** – Comments list, pagination, and comment form
+- **_posts-showcase.php_** – Featured post and grid
+- **_posts-grid-3-cols.php_** – Three-column post grid
+- **_posts-list.php_** – Classic post list
+- **_posts-query-loop.php_** – Query loop post list
+- **_posts-related.php_** – Related post suggestions
 
 ---
 
@@ -82,7 +91,7 @@ Download and activate like any standard WordPress theme.
 
 ### Latest Version
 
-- [Download shanti-0.1.0.zip](https://github.com/webtions/shanti/releases/latest)
+- [Download Shanti](https://github.com/webtions/shanti/releases/latest)
 
 Or clone the repo:
 
@@ -95,6 +104,8 @@ Then activate it via **Appearance → Themes** in your WordPress dashboard.
 ---
 
 ## Development Setup
+
+<details><summary>Click to expand</summary>
 
 To contribute, test, or lint the theme:
 
@@ -130,21 +141,58 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 > Shanti follows the official [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/).
 
+</details>
+
 ---
 
 ## Changelog
 
 <details><summary>Click to expand</summary>
 
+### 0.3.0 (2026-02-20)
+
+**New Features:**
+
+- Added page template without title (page-no-title) and page with sidebar template
+- Added sidebar template part and hidden-sidebar pattern
+- Added header pattern with top bar and footer variants (footer-columns, footer-columns-background, footer-background)
+- Added post-navigation and Share Post patterns; single template uses both
+- Added comments pattern (list, pagination, comment form) and single-standard template
+- Added page-home pattern for front page; front page now uses pattern instead of dedicated template
+- Added hidden patterns for 404, post meta, section header, and sidebar
+- Added Recommended Plugins page under Appearance
+- Added ghost button style, wavy separator mask style, and icon system
+- Applied default featured image only to posts, not pages
+
+**Improvements:**
+
+- Refactored theme.json to preset/custom shorthand; primary/secondary font slugs, root padding, image lightbox
+- Refined style.css: link thickness and offset, :focus-visible, text-wrap, navigation outline, hero padding, admin bar variable
+- Centralized featured image, date, category, and tag styling in theme.json
+- Single template: 2-column header (title/date + image), separators around navigation, comments pattern
+- Search template: query title, search form, posts-list pattern
+- Unified post meta (date + terms) via hidden-post-meta pattern across grid, query loop, showcase, and related
+- Set excerpt length to 34 words in post patterns; category above title, tags below content
+- Renamed and aligned pattern slugs and headers (footer.php, header.php, post-share, etc.)
+- Made pattern strings translation-ready (esc_html_x, translatable labels)
+- Normalized spacing with numeric presets and consistent main wrapper across templates
+- Simplified theme setup and dev tooling (composer, PHPCS, PHPStan, EditorConfig, Prettier)
+
+**Removed:**
+
+- Archive template; general-heading and legacy post patterns removed or renamed
+
 ### 0.2.0 (2026-01-23)
 
 **New Features:**
+
 - Added default featured image fallback with diagonal stripe pattern
 - Added gallery and related posts patterns
 - Added font pairing support with multiple typography presets
 - Added variable font files (Crimson Pro, Open Sans, Montserrat, Playfair Display)
 
 **Improvements:**
+
 - Implemented standardized cross-theme font size system (7-size scale)
 - Consolidated spacing system to 7 semantic presets
 - Refined footer pattern with spacing presets
@@ -154,6 +202,7 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 - Increased wide layout width and added new accent color
 
 **Bug Fixes:**
+
 - Fixed spacing consistency in post grid patterns
 - Fixed duplicate wrapper in front page template
 - Fixed FSE editor issues in multiple patterns
