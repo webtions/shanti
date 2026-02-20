@@ -8,7 +8,7 @@
 			"fontFamilies": [
 				{
 					"name": "Crimson Pro",
-					"slug": "crimson-pro",
+					"slug": "secondary",
 					"fontFamily": "\"Crimson Pro\", serif",
 					"fontFace": [
 						{
@@ -31,7 +31,7 @@
 				},
 				{
 					"name": "Open Sans",
-					"slug": "open-sans",
+					"slug": "primary",
 					"fontFamily": "\"Open Sans\", sans-serif",
 					"fontFace": [
 						{
