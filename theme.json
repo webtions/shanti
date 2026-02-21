@@ -773,8 +773,7 @@
 			"core/post-template": {
 				"spacing": {
 					"blockGap": "var:preset|spacing|50"
-				},
-				"css": "&.is-layout-grid { align-items: start; }"
+				}
 			},
 			"core/post-terms": {
 				"color": {
@@ -1041,13 +1040,13 @@
 			"core/term-description": {
 				"spacing": {
 					"margin": {
-						"top": "-20px",
+						"top": "var:preset|spacing|50",
 						"bottom": "var:preset|spacing|50"
 					}
 				},
 				"typography": {
-					"fontSize": "var:preset|font-size|medium",
-					"lineHeight": "var:custom|line-height|small"
+					"fontSize": "var:preset|font-size|large",
+					"lineHeight": "var:custom|line-height|medium"
 				}
 			}
 		},
