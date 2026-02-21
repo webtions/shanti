@@ -56,6 +56,17 @@ b {
 }
 
 /*
+ * Prevent long URLs in excerpts and post content from causing horizontal scroll on mobile.
+ */
+.wp-block-post-excerpt p,
+.wp-block-post-excerpt a,
+.wp-block-post-content p,
+.wp-block-post-content a {
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+/*
  * Change the position of the more block on the front, by making it a block level element.
  * https://github.com/WordPress/gutenberg/issues/65934
  */
@@ -177,6 +188,11 @@ body.admin-bar .wp-block-template-part.is-style-transparent {
 .wp-block-query-pagination-previous-arrow {
 	color: var(--wp--preset--color--primary);
 	font-size: 1.5em;
+}
+
+/* Hide query pagination wrapper when there is only one page (index, archive, search) */
+body.has-no-query-pagination .query-pagination {
+	display: none;
 }
 
 /* Single: left column constrained group stays left-aligned (content size from theme.json) */
