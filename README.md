@@ -149,6 +149,25 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
+### 0.4.0 (2026-02-27)
+
+**New Features:**
+
+- Added dedicated home and archive templates that use the posts-grid pattern for the main blog listing
+- Added hidden-blog-heading pattern so the index template has an accessible blog heading without changing the visual layout
+- Introduced additional query layouts: posts-stacked, posts-list-compact, posts-latest (three-column latest posts without pagination), and refined posts-list
+
+**Improvements:**
+
+- Simplified the index template and aligned home, archive, and search templates around shared query patterns and consistent site-content spacing
+- Updated query patterns to use the core posts pattern category where appropriate for better discoverability in the inserter
+- Standardized pagination wrappers with a query-pagination group and wavy separator styling across grid and list layouts
+- Tweaked theme.json to remove a post-template grid align-items override and improved term-description spacing and typography
+
+**Bug Fixes:**
+
+- Hide the query pagination wrapper when there is only a single page of results by adding a body class and CSS rule, reducing visual noise on small archives
+
 ### 0.3.0 (2026-02-20)
 
 **New Features:**
