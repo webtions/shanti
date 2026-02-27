@@ -2,7 +2,7 @@
 /**
  * Title: Posts List (1 Column)
  * Slug: shanti/posts-list
- * Categories: shanti-posts
+ * Categories: posts
  * Block Types: core/query
  * Inserter: true
  * Description: Query loop for search results with single-column list layout
@@ -51,11 +51,11 @@
 	<!-- /wp:query-no-results -->
 
 	<!-- wp:separator {"className":"is-style-wide","style":{"border":{"width":"0 0 4px 0"}}} -->
-	<hr class="wp-block-separator is-style-wide" style="border-width:0 0 4px 0"/>
+	<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" style="border-width:0 0 4px 0"/>
 	<!-- /wp:separator -->
 
-	<!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group alignwide">
+	<!-- wp:group {"className":"query-pagination","align":"wide","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group query-pagination alignwide">
 		<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
 		<!-- wp:query-pagination-previous {"fontSize":"medium"} /-->
 		<!-- wp:query-pagination-numbers /-->
@@ -65,7 +65,7 @@
 	<!-- /wp:group -->
 
 	<!-- wp:separator {"className":"is-style-wide","style":{"border":{"width":"0 0 4px 0"}}} -->
-	<hr class="wp-block-separator is-style-wide" style="border-width:0 0 4px 0"/>
+	<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" style="border-width:0 0 4px 0"/>
 	<!-- /wp:separator -->
 
 </div>
