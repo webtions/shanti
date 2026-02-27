@@ -67,6 +67,23 @@ if ( ! function_exists( 'shanti_register_block_pattern_categories' ) ) {
 }
 add_action( 'init', 'shanti_register_block_pattern_categories' );
 
+// Add body class when main query has no pagination (one page only).
+if ( ! function_exists( 'shanti_query_pagination_body_class' ) ) {
+	/**
+	 * Add body class when there is no query pagination (single page of results).
+	 *
+	 * Used with CSS to hide the .query-pagination wrapper on index, archive, and search.
+	 */
+	function shanti_query_pagination_body_class( $classes ) {
+		global $wp_query;
+		if ( ( is_home() || is_archive() || is_search() ) && $wp_query->max_num_pages < 2 ) {
+			$classes[] = 'has-no-query-pagination';
+		}
+		return $classes;
+	}
+}
+add_filter( 'body_class', 'shanti_query_pagination_body_class' );
+
 // Register block styles.
 if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 	/**

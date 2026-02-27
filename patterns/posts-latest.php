@@ -1,10 +1,10 @@
 <?php
 /**
- * Title: Posts Grid (3 Columns)
- * Slug: shanti/posts-grid-3-cols
+ * Title: Posts Latest
+ * Description: Latest posts in a three-column grid (no pagination). For home or section blocks.
+ * Slug: shanti/posts-latest
  * Categories: shanti-posts
  * Inserter: true
- * Description: “Latest Posts” section with three-column grid (featured image, title, excerpt, meta). Self-contained spacing.
  *
  * @package Shanti
  */

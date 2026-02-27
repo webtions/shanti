@@ -1,35 +1,34 @@
 <?php
 /**
- * Title: Posts List (1 Column)
- * Slug: shanti/posts-list
+ * Title: Posts Stacked
+ * Description: Query loop with one post per row: featured image, title, excerpt, and meta.
+ * Slug: shanti/posts-stacked
  * Categories: posts
+ * Keywords: query, loop, posts, blog, stacked, one column
  * Block Types: core/query
+ * Viewport Width: 1200
  * Inserter: true
- * Description: Query loop for search results with single-column list layout
  *
  * @package Shanti
  */
 
 ?>
 
-<!-- wp:query {"query":{"inherit":true},"align":"wide","layout":{"type":"default"}} -->
+<!-- wp:query {"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[]},"align":"wide","layout":{"type":"default"}} -->
 <div class="wp-block-query alignwide">
 
 	<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"default"}} -->
 
-	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group">
+	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|40","padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
+
+		<!-- wp:post-featured-image {"isLink":true,"aspectRatio":"3/2","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} /-->
 
 		<!-- wp:post-title {"level":2,"isLink":true,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}},"fontSize":"x-large"} /-->
 
-		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"bottom":"var:preset|spacing|30"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-		<div class="wp-block-group">
-			<!-- wp:post-date {"format":"M j, Y"} /-->
-			<!-- wp:post-terms {"term":"post_tag"} /-->
-		</div>
-		<!-- /wp:group -->
+		<!-- wp:post-excerpt {"excerptLength":55,"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|30"}}}} /-->
 
-		<!-- wp:post-excerpt {"excerptLength":34,"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} /-->
+		<!-- wp:pattern {"slug":"shanti/hidden-post-meta"} /-->
 
 	</div>
 	<!-- /wp:group -->

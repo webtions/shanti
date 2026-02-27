@@ -7,7 +7,7 @@ Description: A purpose-built block theme for personal blogs, designed around por
 Requires at least: 6.7
 Tested up to: 6.9
 Requires PHP: 7.4
-Version: 0.3.0
+Version: 0.4.0
 License: GNU General Public License v3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Text Domain: shanti
@@ -53,6 +53,17 @@ figcaption {
 strong,
 b {
 	font-weight: var(--wp--custom--font-weight--semi-bold);
+}
+
+/*
+ * Prevent long URLs in excerpts and post content from causing horizontal scroll on mobile.
+ */
+.wp-block-post-excerpt p,
+.wp-block-post-excerpt a,
+.wp-block-post-content p,
+.wp-block-post-content a {
+	overflow-wrap: break-word;
+	word-break: break-word;
 }
 
 /*
@@ -177,6 +188,11 @@ body.admin-bar .wp-block-template-part.is-style-transparent {
 .wp-block-query-pagination-previous-arrow {
 	color: var(--wp--preset--color--primary);
 	font-size: 1.5em;
+}
+
+/* Hide query pagination wrapper when there is only one page (index, archive, search) */
+body.has-no-query-pagination .query-pagination {
+	display: none;
 }
 
 /* Single: left column constrained group stays left-aligned (content size from theme.json) */

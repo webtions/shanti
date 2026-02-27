@@ -26,7 +26,7 @@
 <div id="home-content" class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0">
 	<!-- wp:pattern {"slug":"shanti/posts-showcase"} /-->
 
-	<!-- wp:pattern {"slug":"shanti/posts-grid-3-cols"} /-->
+	<!-- wp:pattern {"slug":"shanti/posts-latest"} /-->
 
 </div>
 <!-- /wp:group -->
