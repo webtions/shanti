@@ -69,9 +69,9 @@ The theme includes a set of templates, reusable parts, and block patterns design
 - **_post-share.php_** – Social sharing section for single posts
 - **_comments.php_** – Comments list, pagination, and comment form
 - **_posts-showcase.php_** – Featured post and grid
-- **_posts-grid-3-cols.php_** – Three-column post grid
+- **_posts-latest.php_** – Latest posts in a 3-column grid (no pagination)
 - **_posts-list.php_** – Classic post list
-- **_posts-query-loop.php_** – Query loop post list
+- **_posts-grid.php_** – Default query loop (3-column grid)
 - **_posts-related.php_** – Related post suggestions
 
 ---
