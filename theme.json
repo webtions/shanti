@@ -36,7 +36,7 @@
 				},
 				{
 					"slug": "secondary",
-					"color": "#FFFCF5",
+					"color": "#FCF9F2",
 					"name": "Secondary"
 				},
 				{
@@ -50,11 +50,6 @@
 					"name": "Contrast Medium"
 				},
 				{
-					"slug": "base-secondary",
-					"color": "#F8F7FC",
-					"name": "Base Secondary"
-				},
-				{
 					"slug": "border-light",
 					"color": "#E3E3F0",
 					"name": "Border Light"
@@ -63,11 +58,6 @@
 					"slug": "border-dark",
 					"color": "#000000",
 					"name": "Border Dark"
-				},
-				{
-					"slug": "accent-light",
-					"color": "#FCF9F2",
-					"name": "Accent Light"
 				},
 				{
 					"slug": "transparent",
@@ -467,7 +457,7 @@
 					"fontSize": "var:preset|font-size|small"
 				},
 				"color": {
-					"background": "var:preset|color|base-secondary"
+					"background": "var:preset|color|base"
 				},
 				"spacing": {
 					"padding": {
@@ -488,7 +478,7 @@
 					"radius": "4px"
 				},
 				"color": {
-					"background": "var:preset|color|base-secondary",
+					"background": "var:preset|color|base",
 					"text": "var:preset|color|contrast"
 				},
 				"spacing": {
@@ -831,7 +821,7 @@
 					"style": "solid"
 				},
 				"color": {
-					"background": "var:preset|color|base-secondary",
+					"background": "var:preset|color|base",
 					"text": "var:preset|color|contrast"
 				},
 				"spacing": {
