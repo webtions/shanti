@@ -21,8 +21,8 @@
 	<div class="wp-block-group alignwide">
 		<!-- wp:group {"metadata":{"name":"footer-wrapper"},"style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
-			<!-- wp:separator {"className":"is-style-wavy","backgroundColor":"foreground"} -->
-			<hr class="wp-block-separator has-text-color has-foreground-color has-alpha-channel-opacity has-foreground-background-color has-background is-style-wavy" />
+			<!-- wp:separator {"className":"is-style-wavy","backgroundColor":"contrast"} -->
+			<hr class="wp-block-separator has-text-color has-contrast-color has-alpha-channel-opacity has-contrast-background-color has-background is-style-wavy" />
 			<!-- /wp:separator -->
 
 			<!-- wp:group {"metadata":{"name":"footer-inner-wrapper"},"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"default"}} -->
@@ -33,7 +33,7 @@
 					<h3 class="wp-block-heading has-text-align-center has-large-font-size" id="stay-in-touch"><?php echo esc_html_x( 'Stay in touch', 'Footer heading', 'shanti' ); ?></h3>
 					<!-- /wp:heading -->
 
-					<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#000000","openInNewTab":true,"size":"has-large-icon-size","className":"has-icon-color has-icon-background-color is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"0px","bottomRight":"0px"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+					<!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#000000","openInNewTab":true,"size":"has-large-icon-size","className":"has-icon-color has-icon-background-color is-style-logos-only","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|60","left":"var:preset|spacing|60"}},"border":{"radius":{"topLeft":"0px","topRight":"0px","bottomLeft":"0px","bottomRight":"0px"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
 					<ul class="wp-block-social-links has-large-icon-size has-icon-color has-icon-background-color is-style-logos-only" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:0px">
 						<!-- wp:social-link {"url":"#","service":"instagram"} /-->
 						<!-- wp:social-link {"url":"#","service":"facebook"} /-->

@@ -74,7 +74,7 @@
 								<!-- wp:heading {"level":3,"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"large"} -->
 								<h3 class="wp-block-heading has-large-font-size" style="font-style:normal;font-weight:700"><?php echo esc_html_x( 'Social', 'Footer column heading', 'shanti' ); ?></h3>
 								<!-- /wp:heading -->
-								<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#000000","openInNewTab":true,"showLabels":true,"className":"is-style-logos-only","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap"}} -->
+								<!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#000000","openInNewTab":true,"showLabels":true,"className":"is-style-logos-only","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}},"layout":{"type":"flex","orientation":"vertical","flexWrap":"wrap"}} -->
 								<ul class="wp-block-social-links has-visible-labels has-icon-color is-style-logos-only">
 									<!-- wp:social-link {"url":"#","service":"instagram"} /-->
 									<!-- wp:social-link {"url":"#","service":"tiktok"} /-->
@@ -91,8 +91,8 @@
 				</div>
 				<!-- /wp:columns -->
 
-				<!-- wp:separator {"className":"is-style-wavy","backgroundColor":"foreground"} -->
-				<hr class="wp-block-separator has-text-color has-foreground-color has-alpha-channel-opacity has-foreground-background-color has-background is-style-wavy"/>
+				<!-- wp:separator {"className":"is-style-wavy","backgroundColor":"contrast"} -->
+				<hr class="wp-block-separator has-text-color has-contrast-color has-alpha-channel-opacity has-contrast-background-color has-background is-style-wavy"/>
 				<!-- /wp:separator -->
 
 				<!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"8px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->

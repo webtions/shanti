@@ -20,7 +20,7 @@
 	<h2 class="wp-block-heading has-text-align-center has-large-font-size"><?php echo esc_html_x( 'Share this post', 'Share section heading', 'shanti' ); ?></h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:outermost/social-sharing {"iconColor":"foreground","iconColorValue":"#000000","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
+	<!-- wp:outermost/social-sharing {"iconColor":"contrast","iconColorValue":"#000000","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
 	<ul class="wp-block-outermost-social-sharing has-icon-color is-style-logos-only">
 		<!-- wp:outermost/social-sharing-link {"service":"facebook"} /-->
 
