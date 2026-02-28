@@ -59,11 +59,6 @@
 					"color": "#E3E3F0",
 					"name": "Border Light"
 				},
-				{
-					"slug": "transparent",
-					"color": "transparent",
-					"name": "Transparent"
-				}
 			],
 			"gradients": [
 				{
