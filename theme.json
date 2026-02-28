@@ -31,7 +31,7 @@
 				},
 				{
 					"slug": "primary",
-					"color": "#F8CD5F",
+					"color": "#FFB500",
 					"name": "Primary"
 				},
 				{
@@ -40,9 +40,14 @@
 					"name": "Secondary"
 				},
 				{
-					"slug": "tertiary",
-					"color": "#F4F6FA",
-					"name": "Tertiary"
+					"slug": "accent-1",
+					"color": "#2E2A5E",
+					"name": "Accent 1"
+				},
+				{
+					"slug": "accent-2",
+					"color": "#E6E4F5",
+					"name": "Accent 2"
 				},
 				{
 					"slug": "contrast-medium",
@@ -53,11 +58,6 @@
 					"slug": "border-light",
 					"color": "#E3E3F0",
 					"name": "Border Light"
-				},
-				{
-					"slug": "border-dark",
-					"color": "#000000",
-					"name": "Border Dark"
 				},
 				{
 					"slug": "transparent",
@@ -1164,7 +1164,7 @@
 			"textInput": {
 				"border": {
 					"radius": "0",
-					"color": "var:preset|color|border-dark",
+					"color": "var:preset|color|contrast",
 					"width": "1px",
 					"style": "solid"
 				},
