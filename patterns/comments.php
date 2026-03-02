@@ -41,7 +41,7 @@
 					<div class="wp-block-group">
 						<!-- wp:comment-date /-->
 
-						<!-- wp:comment-edit-link {"fontSize":"small","textColor":"contrast-medium"} /-->
+						<!-- wp:comment-edit-link {"fontSize":"small","textColor":"contrast-alt"} /-->
 					</div>
 					<!-- /wp:group -->
 

@@ -228,7 +228,7 @@ body.has-no-query-pagination .query-pagination {
 }
 
 .shanti-meta-sep {
-	color: var(--wp--preset--color--contrast-medium);
+	color: var(--wp--preset--color--contrast-alt);
 }
 
 /* Inline comment form: bottom spacing when replying to a comment */

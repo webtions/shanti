@@ -25,8 +25,8 @@
 				<h2 class="wp-block-heading has-xx-large-font-size"><?php echo esc_html_x( 'Featured', 'Section heading', 'shanti' ); ?></h2>
 				<!-- /wp:heading -->
 
-				<!-- wp:paragraph {"textColor":"contrast-medium"} -->
-				<p class="has-contrast-medium-color has-text-color"><?php echo esc_html_x( 'Highlight your latest or featured posts with a custom heading and call-to-action button. Customize the query to show posts from a specific category or tag.', 'Posts showcase description', 'shanti' ); ?></p>
+				<!-- wp:paragraph {"textColor":"contrast-alt"} -->
+				<p class="has-contrast-alt-color has-text-color"><?php echo esc_html_x( 'Highlight your latest or featured posts with a custom heading and call-to-action button. Customize the query to show posts from a specific category or tag.', 'Posts showcase description', 'shanti' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:buttons -->
