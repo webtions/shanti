@@ -149,6 +149,17 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
+### 0.5.0 (2026-03-02)
+
+**Improvements:**
+
+- Simplified the color palette to six core presets (`base`, `contrast`, `contrast-alt`, `primary`, `secondary`, `tertiary`) and removed unused or overlapping tokens such as `foreground`, `background`, `base-secondary`, `accent-light`, extra accent colors, and `border-dark`.
+- Renamed the background preset to `base` and standardized `contrast` as the primary text color across templates, patterns, and global styles.
+- Introduced `contrast-alt` for secondary/meta text and wired it into captions, post meta, author/date blocks, and form placeholders for consistent typography.
+- Introduced `tertiary` as the shared border/divider color and updated tag cloud, preformatted blocks, inputs, and other UI elements to use it.
+- Updated gradients to be fully preset-driven, adding `primary-to-secondary` and `base-to-tertiary` and renaming existing gradients (`background-to-secondary` → `base-to-secondary`, etc.) to match the new palette.
+- Aligned the “Black and Yellow” duotone filter with the current primary color so it stays in sync with the brand yellow.
+
 ### 0.4.0 (2026-02-27)
 
 **New Features:**
