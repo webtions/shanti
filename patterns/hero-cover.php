@@ -29,7 +29,7 @@
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"className":"scroll-to","textColor":"secondary","fontSize":"large"} -->
-					<p class="scroll-to has-secondary-color has-text-color has-large-font-size"><a href="#site-content">↓</a></p>
+					<p class="scroll-to has-secondary-color has-text-color has-large-font-size"><a href="#home-content">↓</a></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
