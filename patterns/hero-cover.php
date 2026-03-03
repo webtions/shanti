@@ -14,9 +14,9 @@
 
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/shanti-cover.svg' ) ); ?>","dimRatio":0,"minHeight":600,"isDark":false,"align":"full","className":"shanti-header-cover is-style-fullscreen","style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/shanti-cover.svg","dimRatio":0,"minHeight":600,"isDark":false,"align":"full","className":"shanti-header-cover is-style-fullscreen","style":{"spacing":{"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignfull is-light shanti-header-cover is-style-fullscreen" style="margin-top:0;min-height:600px">
-	<img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/shanti-cover.svg' ) ); ?>" data-object-fit="cover"/>
+	<img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/shanti-cover.svg" data-object-fit="cover"/>
 	<span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
 		<div class="wp-block-cover__inner-container">
 
