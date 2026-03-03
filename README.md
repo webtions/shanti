@@ -149,7 +149,20 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
-### 0.5.0 (2026-03-02)
+### 0.6.0 (04-02-2026)
+
+**New Patterns:**
+
+- Add call to action pattern.
+- Add author box pattern for posts.
+
+**Improvements:**
+
+- Update primary color to `#F8CD5F` in the color palette.
+- Use template directory URI for hero cover image URLs.
+- Update hero cover scroll link target to match the content section.
+
+### 0.5.0 (03-02-2026)
 
 **Improvements:**
 
@@ -160,7 +173,7 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 - Updated gradients to be fully preset-driven, adding `primary-to-secondary` and `base-to-tertiary` and renaming existing gradients (`background-to-secondary` → `base-to-secondary`, etc.) to match the new palette.
 - Aligned the “Black and Yellow” duotone filter with the current primary color so it stays in sync with the brand yellow.
 
-### 0.4.0 (2026-02-27)
+### 0.4.0 (27-02-2026)
 
 **New Features:**
 
@@ -179,7 +192,7 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - Hide the query pagination wrapper when there is only a single page of results by adding a body class and CSS rule, reducing visual noise on small archives
 
-### 0.3.0 (2026-02-20)
+### 0.3.0 (20-02-2026)
 
 **New Features:**
 
@@ -212,7 +225,7 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - Archive template; general-heading and legacy post patterns removed or renamed
 
-### 0.2.0 (2026-01-23)
+### 0.2.0 (23-01-2026)
 
 **New Features:**
 
@@ -237,11 +250,11 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 - Fixed duplicate wrapper in front page template
 - Fixed FSE editor issues in multiple patterns
 
-### 0.1.0 (2025-07-18)
+### 0.1.0 (18-07-2025)
 
 - Work in progress – more updates coming soon
 
-### 0.0.1 (2021-12-29)
+### 0.0.1 (29-12-2021)
 
 - Initial release (based on Twenty Twenty-Two)
 
