@@ -9,7 +9,7 @@
 			"palette": [
 				{
 					"slug": "base",
-					"color": "#FBFEFF",
+					"color": "#FFFFFF",
 					"name": "Base"
 				},
 				{
@@ -72,7 +72,7 @@
 					"name": "Contrast and Primary"
 				},
 				{
-					"colors": ["#4f6b75", "#FBFEFF"],
+					"colors": ["#4f6b75", "#FFFFFF"],
 					"slug": "dark-grayscale",
 					"name": "Contrast Alt and Base"
 				}
