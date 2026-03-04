@@ -1,0 +1,88 @@
+{
+	"version": 3,
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Citrus",
+	"slug": "citrus",
+	"description": "Fresh palette with lemon, lime and orange accents.",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"color": "#FFFEF7",
+					"name": "Base"
+				},
+				{
+					"slug": "contrast",
+					"color": "#2F2F1F",
+					"name": "Contrast"
+				},
+				{
+					"slug": "contrast-alt",
+					"color": "#6B7050",
+					"name": "Contrast Alt"
+				},
+				{
+					"slug": "primary",
+					"color": "#CFEF3A",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#FFFBE6",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#c9d96a",
+					"name": "F5A623"
+				}
+			],
+			"gradients": [
+				{
+					"slug": "base-to-secondary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--base), var(--wp--preset--color--secondary))",
+					"name": "Base to Secondary"
+				},
+				{
+					"slug": "secondary-to-base",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--secondary), var(--wp--preset--color--base))",
+					"name": "Secondary to Base"
+				},
+				{
+					"slug": "primary-glow",
+					"gradient": "radial-gradient(circle at center, color-mix(in srgb, var(--wp--preset--color--primary) 15%, transparent) 0%, transparent 70%)",
+					"name": "Primary Glow"
+				},
+				{
+					"slug": "primary-to-secondary",
+					"gradient": "linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%)",
+					"name": "Primary to Secondary"
+				},
+				{
+					"slug": "base-to-tertiary",
+					"gradient": "linear-gradient(to top, var(--wp--preset--color--tertiary) 0%, var(--wp--preset--color--base) 100%)",
+					"name": "Base to Tertiary"
+				}
+			],
+			"duotone": [
+				{
+					"colors": ["#2F2F1F", "#CFEF3A"],
+					"slug": "contrast-primary",
+					"name": "Contrast and Primary"
+				},
+				{
+					"colors": ["#6B7050", "#FFFEF7"],
+					"slug": "dark-grayscale",
+					"name": "Contrast Alt and Base"
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var:preset|color|base",
+			"text": "var:preset|color|contrast"
+		}
+	}
+}
