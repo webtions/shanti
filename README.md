@@ -149,6 +149,19 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
+### 0.7.0 (05-03-2026)
+
+**New Features:**
+
+- Add Clay, Dark, Sea, and Citrus color style variations.
+- Add social profile landing page pattern.
+
+**Improvements:**
+
+- Update categories of post-related patterns.
+- Use contrast color for hero cover heading.
+- Rename duotone presets to Contrast and Primary, Contrast Alt and Base.
+
 ### 0.6.0 (04-02-2026)
 
 **New Patterns:**
