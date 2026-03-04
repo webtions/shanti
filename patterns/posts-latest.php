@@ -3,7 +3,7 @@
  * Title: Posts Latest
  * Description: Latest posts in a three-column grid (no pagination). For home or section blocks.
  * Slug: shanti/posts-latest
- * Categories: shanti-posts
+ * Categories: posts
  * Inserter: true
  *
  * @package Shanti

@@ -2,7 +2,7 @@
 /**
  * Title: Related posts.
  * Slug: shanti/posts-related
- * Categories: shanti-posts
+ * Categories: posts
  * Inserter: true
  *
  * @package Shanti

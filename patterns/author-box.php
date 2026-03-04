@@ -3,7 +3,7 @@
  * Title: Author box
  * Description: Author box with avatar, name, bio, and links.
  * Slug: shanti/author-box
- * Categories: text, posts
+ * Categories: text
  * Keywords: author, bio, profile, user
  * Block Types:
  * Post Types:
