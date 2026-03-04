@@ -81,12 +81,12 @@
 				{
 					"colors": ["#000000", "#FFB500"],
 					"slug": "contrast-primary",
-					"name": "Black and Yellow"
+					"name": "Contrast and Primary"
 				},
 				{
 					"colors": ["#4E4E60", "#FFFFFF"],
 					"slug": "dark-grayscale",
-					"name": "Dark and Grayscale"
+					"name": "Contrast Alt and Base"
 				}
 			]
 		},
