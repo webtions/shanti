@@ -24,8 +24,8 @@
 			<div class="wp-block-group alignwide">
 				<!-- wp:group {"className":"constrain-text"} -->
 				<div class="wp-block-group constrain-text">
-					<!-- wp:heading {"fontSize":"x-large"} -->
-					<h2 class="wp-block-heading has-x-large-font-size"><?php echo esc_html_x( 'A minimalist purpose-built blog theme for WordPress powered by blocks.', 'Hero tagline', 'shanti' ); ?></h2>
+					<!-- wp:heading {"fontSize":"x-large","textColor":"contrast"} -->
+					<h2 class="wp-block-heading has-contrast-color has-text-color has-x-large-font-size"><?php echo esc_html_x( 'A minimalist purpose-built blog theme for WordPress powered by blocks.', 'Hero tagline', 'shanti' ); ?></h2>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"className":"scroll-to","textColor":"secondary","fontSize":"large"} -->
