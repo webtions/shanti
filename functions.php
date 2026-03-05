@@ -73,6 +73,9 @@ if ( ! function_exists( 'shanti_query_pagination_body_class' ) ) {
 	 * Add body class when there is no query pagination (single page of results).
 	 *
 	 * Used with CSS to hide the .query-pagination wrapper on index, archive, and search.
+	 *
+	 * @param string[] $classes An array of body class names.
+	 * @return string[] Modified array of body class names.
 	 */
 	function shanti_query_pagination_body_class( $classes ) {
 		global $wp_query;
@@ -123,15 +126,15 @@ if ( ! function_exists( 'shanti_register_block_styles' ) ) {
 add_action( 'init', 'shanti_register_block_styles' );
 
 
-// Add Appearance > Recommended Plugins menu item.
+// Add Appearance > Theme Info menu item.
 if ( ! function_exists( 'shanti_add_theme_info_page' ) ) {
 	/**
-	 * Register the Recommended Plugins submenu under Appearance.
+	 * Register the Theme Info submenu under Appearance.
 	 */
 	function shanti_add_theme_info_page() {
 		add_theme_page(
-			__( 'Recommended Plugins', 'shanti' ),
-			__( 'Recommended Plugins', 'shanti' ),
+			__( 'Theme Info', 'shanti' ),
+			__( 'Theme Info', 'shanti' ),
 			'manage_options',
 			'shanti-info',
 			'shanti_theme_info_page'
@@ -143,7 +146,7 @@ add_action( 'admin_menu', 'shanti_add_theme_info_page' );
 // Enqueue assets and load theme info page content.
 if ( ! function_exists( 'shanti_enqueue_theme_info_assets' ) ) {
 	/**
-	 * Enqueue styles/scripts and load theme-info.php only on the Recommended Plugins page.
+	 * Enqueue styles/scripts and load theme-info.php only on the Theme Info page.
 	 *
 	 * @param string $hook The current admin page hook.
 	 */
