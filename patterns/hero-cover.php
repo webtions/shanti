@@ -5,7 +5,6 @@
  * Slug: shanti/hero-cover
  * Categories: featured
  * Keywords: hero, cover, banner
- * Block Types: core/post-content
  * Viewport Width: 1600
  * Inserter: true
  *
