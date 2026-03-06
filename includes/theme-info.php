@@ -6,9 +6,9 @@
  */
 
 /**
- * Render the admin page under Appearance > Recommended Plugins.
+ * Render the admin page under Appearance > Theme Info.
  *
- * Displays recommended plugins and more plugins we recommend.
+ * Displays theme intro, recommended plugins, and more plugins we recommend.
  *
  * @return void
  */
@@ -16,7 +16,7 @@ function shanti_theme_info_page() {
 	?>
 <style>
 	/**
-	 * Styles for Recommended Plugins section in Shanti Theme Info admin page.
+	 * Styles for Theme Info admin page (recommended plugins section).
 	 */
 
 	.shanti-plugin-cards {
@@ -133,6 +133,7 @@ function shanti_theme_info_page() {
 		vertical-align: middle;
 	}
 
+	.shanti-theme-intro,
 	.shanti-recommended-intro {
 		margin: 0 0 16px;
 		color: #50575e;
@@ -212,9 +213,9 @@ function shanti_theme_info_page() {
 	?>
 
 	<div class="wrap">
-		<h1><?php esc_html_e( 'Recommended Plugins', 'shanti' ); ?></h1>
-		<p class="shanti-recommended-intro">
-			<?php esc_html_e( 'Shanti is designed to work seamlessly with the plugins below. We highly recommend them, especially Social Sharing Block and I Recommend This, which have enhanced integration with the theme.', 'shanti' ); ?>
+		<h1><?php esc_html_e( 'Theme Info', 'shanti' ); ?></h1>
+		<p class="shanti-theme-intro">
+			<?php esc_html_e( 'Shanti is a clean block theme for personal websites and blogs, built to work fully with the WordPress site editor. Visit the theme page to explore the theme and see how everything works.', 'shanti' ); ?>
 		</p>
 		<?php
 		$theme_uri = wp_get_theme()->get( 'ThemeURI' );
@@ -222,7 +223,7 @@ function shanti_theme_info_page() {
 			?>
 		<p class="shanti-theme-link-wrap">
 			<a href="<?php echo esc_url( $theme_uri ); ?>" class="button button-primary shanti-theme-link" target="_blank" rel="noopener">
-				<?php esc_html_e( 'View Shanti theme page', 'shanti' ); ?>
+				<?php esc_html_e( 'View Theme Page', 'shanti' ); ?>
 				<span class="dashicons dashicons-external" aria-hidden="true"></span>
 			</a>
 		</p>
@@ -231,6 +232,9 @@ function shanti_theme_info_page() {
 		<hr>
 
 		<h2><?php esc_html_e( 'Recommended Plugins', 'shanti' ); ?></h2>
+		<p class="shanti-recommended-intro">
+			<?php esc_html_e( 'Shanti is designed to work seamlessly with the plugins below. We highly recommend them, especially Social Sharing Block and I Recommend This, which have enhanced integration with the theme.', 'shanti' ); ?>
+		</p>
 		<div class="shanti-plugin-cards">
 			<?php
 			foreach ( $recommended_plugins as $item ) {
