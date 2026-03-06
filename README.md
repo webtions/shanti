@@ -39,13 +39,14 @@ The theme includes a set of templates, reusable parts, and block patterns design
 ### Templates
 
 - **_index.html_** – Fallback template for all content
+- **_home.html_** – Blog posts index
 - **_single.html_** – Default template for single posts
-- **_single-standard.html_** – Alternative single post layout with center-aligned wide featured image
+- **_archive.html_** – Archive (categories, tags, dates, authors)
 - **_page.html_** – Default template for static pages
 - **_page-transparent-header.html_** – Page template with transparent header (any page or post)
 - **_page-sidebar.html_** – Page template with sidebar
 - **_page-no-title.html_** – Template without the post/page title
-- **_search.html_** – Search results template
+- **_search.html_** – Search results template (uses template-search pattern)
 - **_404.html_** – Template for not found pages
 - **_blank.html_** – A completely empty canvas (no header/footer)
 
@@ -57,22 +58,49 @@ The theme includes a set of templates, reusable parts, and block patterns design
 
 ### Block Patterns
 
+**Header & footer**
+
 - **_header.php_** – Default header block layout
 - **_header-top-bar.php_** – Header with top bar
 - **_footer.php_** – Default footer block layout
 - **_footer-columns.php_** – Footer with columns
 - **_footer-columns-background.php_** – Footer with columns and background
 - **_footer-background.php_** – Footer with background
+
+**Pages & sections**
+
 - **_hero-cover.php_** – Fullscreen hero section with background image
 - **_page-home.php_** – Home page content (hero, posts showcase, grid)
+- **_page-social-profile.php_** – Social profile landing page
+- **_call-to-action.php_** – Call to action section
+- **_author-box.php_** – Author box
+
+**Post & comments**
+
 - **_post-navigation.php_** – Previous/next post links
 - **_post-share.php_** – Social sharing section for single posts
 - **_comments.php_** – Comments list, pagination, and comment form
+
+**Query loops & post layouts**
+
 - **_feature-showcase-posts.php_** – Featured posts showcase and grid
 - **_posts-latest.php_** – Latest posts in a 3-column grid (no pagination)
 - **_posts-list.php_** – Classic post list
+- **_posts-list-compact.php_** – Compact post list (title and date)
+- **_posts-stacked.php_** – Stacked post layout with large image
 - **_posts-grid.php_** – Default query loop (3-column grid)
 - **_more-posts.php_** – More posts section
+
+**Hidden patterns** (not in inserter; used by templates or other patterns)
+
+- **_template-search.php_** – Full search template content (header, main, footer, query list)
+- **_hidden-blog-post-card.php_** – Single post card (used in grids/lists)
+- **_hidden-blog-heading.php_** – Blog section heading
+- **_hidden-query-pagination.php_** – Query pagination (prev/next, wavy separator)
+- **_hidden-query-no-results.php_** – Message when a query has no posts
+- **_hidden-sidebar.php_** – Sidebar block content
+- **_hidden-post-meta.php_** – Post meta (date and terms)
+- **_hidden-404.php_** – 404 page block content
 
 ---
 
@@ -151,8 +179,35 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### 0.8.0 (06-03-2026)
 
-- WordPress.org release.
+**Admin**
+
 - Rename Appearance submenu to Theme Info; add theme intro and move recommended-plugins copy under its heading.
+
+**Templates**
+
+- Remove single-standard template and its entry from theme.json.
+- Simplify search template to a single pattern reference (template-search).
+
+**New patterns**
+
+- Add hidden template-search pattern (full search page: header, main with query title and search form, inlined posts list, search-specific no-results message, footer).
+- Add hidden-blog-post-card pattern; use it in posts-grid, posts-latest, feature-showcase-posts, and more-posts.
+- Add hidden-query-pagination and hidden-query-no-results; use in posts-grid, posts-list, and posts-stacked.
+
+**Pattern changes**
+
+- Rename posts-showcase to feature-showcase-posts; update page-home and references.
+- Inline “Latest Posts” heading in posts-latest; remove hidden-section-header pattern.
+- posts-list: simplify layout (block gap, alignment), use hidden pagination and no-results.
+- posts-list-compact: simplify to two-column title/date layout; use hidden no-results.
+- posts-stacked: refactor to two-column layout; use hidden pagination and no-results.
+- posts-grid: increase block gap; use blog post card and hidden pagination/no-results.
+- post-navigation: name the block and use base color for border.
+- Use more-posts pattern in single post template.
+
+**Cleanup**
+
+- Remove block types from hero-cover pattern header; remove featured from social profile pattern categories.
 
 ### 0.7.0 (05-03-2026)
 
