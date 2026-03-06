@@ -1208,11 +1208,6 @@
 			"name": "page-sidebar",
 			"postTypes": ["page", "post"],
 			"title": "Page: With Sidebar"
-		},
-		{
-			"name": "single-standard",
-			"postTypes": ["post"],
-			"title": "Posts (With Horizontal Image)"
 		}
 	]
 }
