@@ -3,7 +3,7 @@
  * Title: Social profile landing page
  * Description: A link-in-bio style page with profile image, short bio, and social links.
  * Slug: shanti/page-social-profile
- * Categories: shanti-page, featured
+ * Categories: shanti-page
  * Keywords: social, profile, link in bio, landing, links, avatar, bio
  * Block Types: core/post-content
  * Post Types: page, wp_template
