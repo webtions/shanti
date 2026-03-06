@@ -1,5 +1,6 @@
-=== Shanti ===
+=== Shanti WordPress Block Theme ===
 Contributors: hchouhan
+Tags: blog, block-patterns, custom-colors, custom-logo, custom-menu, full-site-editing, one-column, theme-options, translation-ready
 Requires at least: 6.7
 Tested up to: 6.8
 Requires PHP: 7.4
@@ -12,17 +13,18 @@ A minimalist purpose-built blog theme for WordPress powered by blocks.
 == Description ==
 A purpose-built block theme for personal blogs, built around portrait featured images and crafted for calm, readable storytelling.
 
-Shanti is designed for individuals who use blogging as a way to document their lives, travels, and thoughts. It avoids the visual clutter found in many modern themes and instead focuses on simplicity, generous spacing, and typography that invites reading.
+Shanti is designed for individuals who use blogging as a way to document their lives, travels, and thoughts. It focuses on simplicity, generous spacing, and typography that invites reading.
 
 Built entirely with WordPress blocks and Full Site Editing, Shanti gives you full creative control — while staying out of the way of your words.
 
+Theme page: https://themeist.com/themes/wordpress/shanti/
 GitHub repository: https://github.com/webtions/shanti
 
 == Changelog ==
 
 = 1.0.0 =
-2026-02-06
-* First Stable Version
+07-02-2026
+* First stable version
 
 
 == Copyright ==
@@ -44,3 +46,4 @@ GitHub: https://github.com/JulietaUla/Montserrat
 "shanti-cover.svg"
 Created by Harish Chouhan
 License: GPLv3 or later
+
