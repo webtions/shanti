@@ -13,7 +13,14 @@
 
 <!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--80);margin-bottom:var(--wp--preset--spacing--80)">
-	<!-- wp:pattern {"slug":"shanti/hidden-section-header"} /-->
+
+	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group alignwide" style="margin-top:0;margin-bottom:0;">
+		<!-- wp:heading {"align":"wide"} -->
+		<h2 class="wp-block-heading alignwide"><?php echo esc_html_x( 'Latest Posts', 'Section heading', 'shanti' ); ?></h2>
+		<!-- /wp:heading -->
+	</div>
+	<!-- /wp:group -->
 
 	<!-- wp:query {"queryId":3,"query":{"perPage":3,"postType":"post","order":"desc","orderBy":"date"},"align":"wide","layout":{"type":"default"}} -->
 	<div class="wp-block-query alignwide">
