@@ -46,7 +46,7 @@
 				<!-- wp:query {"query":{"perPage":4,"postType":"post","order":"desc","orderBy":"date"},"align":"wide","layout":{"type":"default"}} -->
 				<div class="wp-block-query alignwide">
 					<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"grid","columnCount":2}} -->
-					<!-- wp:pattern {"slug":"shanti/blog-post-card"} /-->
+					<!-- wp:pattern {"slug":"shanti/hidden-blog-post-card"} /-->
 					<!-- /wp:post-template -->
 				</div>
 				<!-- /wp:query -->

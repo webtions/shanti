@@ -19,7 +19,7 @@
 <div class="wp-block-query alignwide">
 
 	<!-- wp:post-template {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"grid","columnCount":3}} -->
-	<!-- wp:pattern {"slug":"shanti/blog-post-card"} /-->
+	<!-- wp:pattern {"slug":"shanti/hidden-blog-post-card"} /-->
 	<!-- /wp:post-template -->
 
 	<!-- wp:pattern {"slug":"shanti/hidden-query-no-results"} /-->
