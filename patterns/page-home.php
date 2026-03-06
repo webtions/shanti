@@ -24,7 +24,7 @@
 
 <!-- wp:group {"anchor":"home-content","align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div id="home-content" class="wp-block-group alignfull" style="margin-top:0;margin-bottom:0">
-	<!-- wp:pattern {"slug":"shanti/posts-showcase"} /-->
+	<!-- wp:pattern {"slug":"shanti/feature-showcase-posts"} /-->
 
 	<!-- wp:pattern {"slug":"shanti/posts-latest"} /-->
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Posts showcase
+ * Title: Feature showcase (posts)
  * Description: Showcase section with text and info alongside a 2×2 posts grid.
- * Slug: shanti/posts-showcase
+ * Slug: shanti/feature-showcase-posts
  * Categories: featured
  * Keywords: footer, social, links
  * Viewport width: 1600

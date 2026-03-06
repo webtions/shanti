@@ -68,11 +68,11 @@ The theme includes a set of templates, reusable parts, and block patterns design
 - **_post-navigation.php_** – Previous/next post links
 - **_post-share.php_** – Social sharing section for single posts
 - **_comments.php_** – Comments list, pagination, and comment form
-- **_posts-showcase.php_** – Featured post and grid
+- **_feature-showcase-posts.php_** – Featured posts showcase and grid
 - **_posts-latest.php_** – Latest posts in a 3-column grid (no pagination)
 - **_posts-list.php_** – Classic post list
 - **_posts-grid.php_** – Default query loop (3-column grid)
-- **_posts-related.php_** – Related post suggestions
+- **_more-posts.php_** – More posts section
 
 ---
 
@@ -148,6 +148,11 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Changelog
 
 <details><summary>Click to expand</summary>
+
+### 0.8.0 (06-03-2026)
+
+- WordPress.org release.
+- Rename Appearance submenu to Theme Info; add theme intro and move recommended-plugins copy under its heading.
 
 ### 0.7.0 (05-03-2026)
 
