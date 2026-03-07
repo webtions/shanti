@@ -1,6 +1,6 @@
 /*
 Theme Name: Shanti
-Theme URI: https://themeist.com/themes/wordpress/shanti/
+Theme URI: https://themeist.com/themes/shanti/
 Author: Themeist
 Author URI: https://themeist.com
 Description: A purpose-built block theme for personal blogs, designed around portrait featured images and crafted for clear, readable content. Shanti is ideal for documenting life, travel, or thoughts — with simple layouts, generous spacing, and no visual clutter. Built entirely with WordPress blocks and Full Site Editing, it gives you full creative control while letting your words take center stage.
@@ -14,6 +14,11 @@ Text Domain: shanti
 Domain Path: /languages
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
+
+/* Smooth scrolling for in-page links */
+html {
+	scroll-behavior: smooth;
+}
 
 /* Base: Links & focus */
 

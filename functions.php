@@ -5,7 +5,7 @@
  * @package Shanti
  * @author  Harish Chouhan
  * @license GNU General Public License v2 or later
- * @link    https://themeist.com/themes/wordpress/shanti/
+ * @link    https://themeist.com/themes/shanti/
  */
 
 // Set up theme defaults and register support.

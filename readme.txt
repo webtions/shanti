@@ -17,7 +17,7 @@ Shanti is designed for individuals who use blogging as a way to document their l
 
 Built entirely with WordPress blocks and Full Site Editing, Shanti gives you full creative control — while staying out of the way of your words.
 
-Theme page: https://themeist.com/themes/wordpress/shanti/
+Theme page: https://themeist.com/themes/shanti/
 GitHub repository: https://github.com/webtions/shanti
 
 == Changelog ==
