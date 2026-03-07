@@ -1,0 +1,956 @@
+# Copyright (C) 2026 Themeist
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Shanti 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/shanti\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-03-07T03:25:52+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: shanti\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Shanti"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://themeist.com/themes/shanti/"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A purpose-built block theme for personal blogs, designed around portrait featured images and crafted for clear, readable content. Shanti is ideal for documenting life, travel, or thoughts — with simple layouts, generous spacing, and no visual clutter. Built entirely with WordPress blocks and Full Site Editing, it gives you full creative control while letting your words take center stage."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Themeist"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://themeist.com"
+msgstr ""
+
+#: functions.php:46
+msgid "Posts"
+msgstr ""
+
+#: functions.php:47
+msgid "A collection of post layouts and query patterns."
+msgstr ""
+
+#: functions.php:50
+msgid "Pages"
+msgstr ""
+
+#: functions.php:51
+msgid "A collection of full page layouts."
+msgstr ""
+
+#: functions.php:54
+msgid "General"
+msgstr ""
+
+#: functions.php:55
+msgid "A collection of general-purpose patterns."
+msgstr ""
+
+#: functions.php:58
+msgid "Hero"
+msgstr ""
+
+#: functions.php:59
+msgid "A collection of hero and banner patterns."
+msgstr ""
+
+#: functions.php:99
+msgid "FullScreen"
+msgstr ""
+
+#: functions.php:102
+msgid "Transparent"
+msgstr ""
+
+#: functions.php:105
+msgid "Ghost"
+msgstr ""
+
+#: functions.php:108
+msgid "Wavy"
+msgstr ""
+
+#: functions.php:136
+#: functions.php:137
+#: includes/theme-info.php:216
+msgid "Theme Info"
+msgstr ""
+
+#: includes/theme-info.php:218
+msgid "Shanti is a clean block theme for personal websites and blogs, built to work fully with the WordPress site editor. Visit the theme page to explore the theme and see how everything works."
+msgstr ""
+
+#: includes/theme-info.php:226
+msgid "View Theme Page"
+msgstr ""
+
+#: includes/theme-info.php:234
+msgid "Recommended Plugins"
+msgstr ""
+
+#: includes/theme-info.php:236
+msgid "Shanti is designed to work seamlessly with the plugins below. We highly recommend them, especially Social Sharing Block and I Recommend This, which have enhanced integration with the theme."
+msgstr ""
+
+#: includes/theme-info.php:272
+msgid "More plugins we recommend"
+msgstr ""
+
+#: index.php:9
+msgid "This theme was built for the WordPress experimental full site editing feature. You need to install and activate the Gutenberg plugin to make it work. "
+msgstr ""
+
+#: patterns/author-box.php
+msgctxt "Pattern title"
+msgid "Author box"
+msgstr ""
+
+#: patterns/author-box.php
+msgctxt "Pattern description"
+msgid "Author box with avatar, name, bio, and links."
+msgstr ""
+
+#: patterns/call-to-action.php
+msgctxt "Pattern title"
+msgid "Call To Action"
+msgstr ""
+
+#: patterns/call-to-action.php
+msgctxt "Pattern description"
+msgid "A call to action with text and a button."
+msgstr ""
+
+#: patterns/call-to-action.php:29
+msgctxt "CTA heading"
+msgid "Ready to get started?"
+msgstr ""
+
+#: patterns/call-to-action.php:33
+msgctxt "CTA description"
+msgid "Use this section to highlight an offer, download, or important link."
+msgstr ""
+
+#: patterns/call-to-action.php:42
+msgctxt "CTA primary button label"
+msgid "Learn more"
+msgstr ""
+
+#: patterns/call-to-action.php:48
+msgctxt "CTA secondary button label"
+msgid "Get started"
+msgstr ""
+
+#: patterns/comments.php
+msgctxt "Pattern title"
+msgid "Comments"
+msgstr ""
+
+#: patterns/comments.php
+msgctxt "Pattern description"
+msgid "Comments area with comments list, pagination, and comment form"
+msgstr ""
+
+#: patterns/comments.php:24
+msgctxt "Comments section heading"
+msgid "Comments"
+msgstr ""
+
+#: patterns/feature-showcase-posts.php
+msgctxt "Pattern title"
+msgid "Feature showcase (posts)"
+msgstr ""
+
+#: patterns/feature-showcase-posts.php
+msgctxt "Pattern description"
+msgid "Showcase section with text and info alongside a 2×2 posts grid."
+msgstr ""
+
+#: patterns/feature-showcase-posts.php:25
+msgctxt "Section heading"
+msgid "Featured"
+msgstr ""
+
+#: patterns/feature-showcase-posts.php:29
+msgctxt "Posts showcase description"
+msgid "Highlight your latest or featured posts with a custom heading and call-to-action button. Customize the query to show posts from a specific category or tag."
+msgstr ""
+
+#: patterns/feature-showcase-posts.php:36
+msgctxt "Button label"
+msgid "View all"
+msgstr ""
+
+#: patterns/footer-background.php
+msgctxt "Pattern title"
+msgid "Footer (Background)"
+msgstr ""
+
+#: patterns/footer-background.php
+msgctxt "Pattern description"
+msgid "Footer with centered social links and a background color."
+msgstr ""
+
+#: patterns/footer-background.php:30
+#: patterns/footer.php:33
+msgctxt "Footer heading"
+msgid "Stay in touch"
+msgstr ""
+
+#. translators: %s: Shanti theme link.
+#: patterns/footer-background.php:57
+#: patterns/footer-columns-background.php:115
+#: patterns/footer-columns.php:119
+#: patterns/footer.php:60
+#, php-format
+msgid "Made with %s"
+msgstr ""
+
+#: patterns/footer-background.php:58
+#: patterns/footer-columns-background.php:116
+#: patterns/footer-columns.php:120
+#: patterns/footer.php:61
+msgid "Shanti Theme"
+msgstr ""
+
+#: patterns/footer-columns-background.php
+msgctxt "Pattern title"
+msgid "Footer with columns (Background)"
+msgstr ""
+
+#: patterns/footer-columns-background.php
+msgctxt "Pattern description"
+msgid "Footer columns with site title, tagline, search, social and links, with a background color."
+msgstr ""
+
+#: patterns/footer-columns-background.php:47
+#: patterns/footer-columns.php:51
+msgctxt "Footer column heading"
+msgid "Explore"
+msgstr ""
+
+#: patterns/footer-columns-background.php:61
+#: patterns/footer-columns.php:65
+msgctxt "Footer column heading"
+msgid "Categories"
+msgstr ""
+
+#: patterns/footer-columns-background.php:75
+#: patterns/footer-columns.php:79
+msgctxt "Footer column heading"
+msgid "Social"
+msgstr ""
+
+#: patterns/footer-columns.php
+msgctxt "Pattern title"
+msgid "Footer with columns"
+msgstr ""
+
+#: patterns/footer-columns.php
+msgctxt "Pattern description"
+msgid "Footer columns with site title, tagline, search, social and links."
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern description"
+msgid "Footer with centered social links."
+msgstr ""
+
+#: patterns/header-top-bar.php
+msgctxt "Pattern title"
+msgid "Header (Top bar)"
+msgstr ""
+
+#: patterns/header-top-bar.php
+msgctxt "Pattern description"
+msgid "Header with a top bar and nav."
+msgstr ""
+
+#: patterns/header-top-bar.php:25
+msgctxt "Header top bar text"
+msgid "A quiet corner for words and ideas."
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern description"
+msgid "Header with nav"
+msgstr ""
+
+#: patterns/hero-cover.php
+msgctxt "Pattern title"
+msgid "Cover with text and background image"
+msgstr ""
+
+#: patterns/hero-cover.php
+msgctxt "Pattern description"
+msgid "Full-width hero cover with heading and background image."
+msgstr ""
+
+#: patterns/hero-cover.php:27
+msgctxt "Hero tagline"
+msgid "A minimalist purpose-built blog theme for WordPress powered by blocks."
+msgstr ""
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "404"
+msgstr ""
+
+#: patterns/hidden-404.php
+msgctxt "Pattern description"
+msgid "Content for the 404 not found page."
+msgstr ""
+
+#: patterns/hidden-404.php:21
+msgctxt "404 page heading"
+msgid "404"
+msgstr ""
+
+#: patterns/hidden-404.php:25
+msgctxt "404 page body text"
+msgid "This page no longer exists. The rest of the site is still here. Use the search, or return to the homepage."
+msgstr ""
+
+#: patterns/hidden-404.php:32
+msgid "Search"
+msgstr ""
+
+#: patterns/hidden-404.php:40
+msgctxt "404 page button"
+msgid "Return to Homepage"
+msgstr ""
+
+#: patterns/hidden-blog-heading.php
+msgctxt "Pattern title"
+msgid "Hidden blog heading"
+msgstr ""
+
+#: patterns/hidden-blog-heading.php
+msgctxt "Pattern description"
+msgid "Visually hidden heading for the index template (accessibility)."
+msgstr ""
+
+#: patterns/hidden-blog-heading.php:13
+msgid "Blog"
+msgstr ""
+
+#: patterns/hidden-blog-post-card.php
+msgctxt "Pattern title"
+msgid "Blog post card"
+msgstr ""
+
+#: patterns/hidden-blog-post-card.php
+msgctxt "Pattern description"
+msgid "Reusable post card for query loops — featured image, title, excerpt, and meta. Use inside a Query block's post template."
+msgstr ""
+
+#: patterns/hidden-post-meta.php
+msgctxt "Pattern title"
+msgid "Post meta (date + terms)"
+msgstr ""
+
+#: patterns/hidden-post-meta.php
+msgctxt "Pattern description"
+msgid "Date and terms row for post cards."
+msgstr ""
+
+#: patterns/hidden-query-no-results.php
+msgctxt "Pattern title"
+msgid "Query no results"
+msgstr ""
+
+#: patterns/hidden-query-no-results.php
+msgctxt "Pattern description"
+msgid "Message shown when a query returns no posts."
+msgstr ""
+
+#: patterns/hidden-query-no-results.php:18
+msgctxt "No query results message"
+msgid "No posts to show yet."
+msgstr ""
+
+#: patterns/hidden-query-pagination.php
+msgctxt "Pattern title"
+msgid "Query pagination"
+msgstr ""
+
+#: patterns/hidden-query-pagination.php
+msgctxt "Pattern description"
+msgid "Wavy separator and prev/next links for query loops."
+msgstr ""
+
+#: patterns/hidden-sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr ""
+
+#: patterns/hidden-sidebar.php
+msgctxt "Pattern description"
+msgid "Default sidebar content for page templates with sidebar."
+msgstr ""
+
+#: patterns/hidden-sidebar.php:21
+msgctxt "Sidebar heading"
+msgid "Sample Content"
+msgstr ""
+
+#: patterns/hidden-sidebar.php:25
+msgctxt "Sidebar intro text"
+msgid "Welcome to my corner of the web. I write about my daily observations, personal growth, and the things that inspire me to keep creating."
+msgstr ""
+
+#: patterns/hidden-sidebar.php:33
+msgctxt "Sidebar subheading"
+msgid "Stay in Touch"
+msgstr ""
+
+#: patterns/hidden-sidebar.php:37
+msgctxt "Sidebar newsletter text"
+msgid "If you enjoy my writing, feel free to reach out via email or subscribe to the monthly newsletter."
+msgstr ""
+
+#: patterns/hidden-sidebar.php:41
+msgctxt "Sidebar contact label"
+msgid "Contact:"
+msgstr ""
+
+#: patterns/more-posts.php
+msgctxt "Pattern title"
+msgid "More posts"
+msgstr ""
+
+#: patterns/more-posts.php
+msgctxt "Pattern description"
+msgid "Displays a list of posts with image, title, excerpt, and meta. For use below single post content."
+msgstr ""
+
+#: patterns/more-posts.php:27
+msgid "More posts"
+msgstr ""
+
+#: patterns/page-home.php
+msgctxt "Pattern title"
+msgid "Homepage"
+msgstr ""
+
+#: patterns/page-home.php
+msgctxt "Pattern description"
+msgid "Homepage pattern with fullscreen hero cover & featured posts."
+msgstr ""
+
+#: patterns/page-social-profile.php
+msgctxt "Pattern title"
+msgid "Social profile landing page"
+msgstr ""
+
+#: patterns/page-social-profile.php
+msgctxt "Pattern description"
+msgid "A link-in-bio style page with profile image, short bio, and social links."
+msgstr ""
+
+#: patterns/page-social-profile.php:31
+msgctxt "Social profile pattern: placeholder for name"
+msgid "Your Name"
+msgstr ""
+
+#: patterns/page-social-profile.php:35
+msgid "Use this page as a landing page for your social profiles. Share this link in your bio so people can find your website, latest posts, and important links in one place."
+msgstr ""
+
+#: patterns/page-social-profile.php:61
+msgctxt "Social profile pattern: button label"
+msgid "Visit Website"
+msgstr ""
+
+#: patterns/page-social-profile.php:67
+msgctxt "Social profile pattern: button label"
+msgid "About"
+msgstr ""
+
+#: patterns/page-social-profile.php:73
+msgctxt "Social profile pattern: button label"
+msgid "Blog"
+msgstr ""
+
+#: patterns/page-social-profile.php:79
+msgctxt "Social profile pattern: button label"
+msgid "Contact"
+msgstr ""
+
+#: patterns/post-navigation.php
+msgctxt "Pattern title"
+msgid "Post navigation"
+msgstr ""
+
+#: patterns/post-navigation.php
+msgctxt "Pattern description"
+msgid "Previous and next post links in a two-column layout."
+msgstr ""
+
+#: patterns/post-navigation.php:24
+msgctxt "Post navigation label"
+msgid "Previous "
+msgstr ""
+
+#: patterns/post-navigation.php:30
+msgctxt "Post navigation label"
+msgid "Next "
+msgstr ""
+
+#: patterns/post-share.php
+msgctxt "Pattern title"
+msgid "Share post"
+msgstr ""
+
+#: patterns/post-share.php
+msgctxt "Pattern description"
+msgid "Share this post section with social sharing icons."
+msgstr ""
+
+#: patterns/post-share.php:20
+msgctxt "Share section heading"
+msgid "Share this post"
+msgstr ""
+
+#: patterns/post-share.php:27
+msgctxt "Social share label"
+msgid "Share on X"
+msgstr ""
+
+#: patterns/posts-grid.php
+msgctxt "Pattern title"
+msgid "Posts Grid"
+msgstr ""
+
+#: patterns/posts-grid.php
+msgctxt "Pattern description"
+msgid "Default query loop for index and archive pages with 3-column grid layout."
+msgstr ""
+
+#: patterns/posts-latest.php
+msgctxt "Pattern title"
+msgid "Posts Latest"
+msgstr ""
+
+#: patterns/posts-latest.php
+msgctxt "Pattern description"
+msgid "Latest posts in a three-column grid (no pagination). For home or section blocks."
+msgstr ""
+
+#: patterns/posts-latest.php:20
+msgctxt "Section heading"
+msgid "Latest Posts"
+msgstr ""
+
+#: patterns/posts-list-compact.php
+msgctxt "Pattern title"
+msgid "Posts List (Compact)"
+msgstr ""
+
+#: patterns/posts-list-compact.php
+msgctxt "Pattern description"
+msgid "Query loop in a compact list with a separator between each post."
+msgstr ""
+
+#: patterns/posts-list.php
+msgctxt "Pattern title"
+msgid "Posts List"
+msgstr ""
+
+#: patterns/posts-list.php
+msgctxt "Pattern description"
+msgid "Query loop for search results with single-column list layout"
+msgstr ""
+
+#: patterns/posts-stacked.php
+msgctxt "Pattern title"
+msgid "Posts Stacked"
+msgstr ""
+
+#: patterns/posts-stacked.php
+msgctxt "Pattern description"
+msgid "Query loop with one post per row: image and content in two columns."
+msgstr ""
+
+#: patterns/template-search.php
+msgctxt "Pattern title"
+msgid "Template Search"
+msgstr ""
+
+#: patterns/template-search.php
+msgctxt "Pattern description"
+msgid "Search template content (header, main, footer) with inlined posts list. For use in template parts or full-page assembly."
+msgstr ""
+
+#: patterns/template-search.php:52
+msgctxt "No search results message"
+msgid "No results found. Try different keywords."
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Color name"
+msgid "Base"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Color name"
+msgid "Contrast Alt"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr ""
+
+#: theme.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Gradient name"
+msgid "Base to Secondary"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Gradient name"
+msgid "Secondary to Base"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Gradient name"
+msgid "Primary Glow"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Gradient name"
+msgid "Primary to Secondary"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Gradient name"
+msgid "Base to Tertiary"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Duotone name"
+msgid "Contrast and Primary"
+msgstr ""
+
+#: theme.json
+#: styles/color/citrus.json
+#: styles/color/clay.json
+#: styles/color/dark.json
+#: styles/color/sea.json
+msgctxt "Duotone name"
+msgid "Contrast Alt and Base"
+msgstr ""
+
+#: theme.json
+msgctxt "Aspect ratio name"
+msgid "Portrait (Default)"
+msgstr ""
+
+#: theme.json
+msgctxt "Aspect ratio name"
+msgid "Classic"
+msgstr ""
+
+#: theme.json
+msgctxt "Aspect ratio name"
+msgid "Square"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Light"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Natural"
+msgstr ""
+
+#: theme.json
+msgctxt "Shadow name"
+msgid "Hard Shadow"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "3XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XS"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "S"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "M"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "L"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "2XL"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Montserrat"
+msgstr ""
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Playfair Display"
+msgstr ""
+
+#: theme.json
+#: styles/typography/typography-preset-1.json
+msgctxt "Font family name"
+msgid "Monospace"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Small"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "2X Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Font size name"
+msgid "3X Large"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page: Transparent Header"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page: Blank"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page: No Title"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page: With Sidebar"
+msgstr ""
+
+#: styles/color/citrus.json
+msgctxt "Style variation name"
+msgid "Citrus"
+msgstr ""
+
+#: styles/color/citrus.json
+msgctxt "Style variation description"
+msgid "Fresh palette with lemon, lime and orange accents."
+msgstr ""
+
+#: styles/color/citrus.json
+msgctxt "Color name"
+msgid "F5A623"
+msgstr ""
+
+#: styles/color/clay.json
+msgctxt "Style variation name"
+msgid "Clay"
+msgstr ""
+
+#: styles/color/clay.json
+msgctxt "Style variation description"
+msgid "Warm clay palette with terracotta accent"
+msgstr ""
+
+#: styles/color/dark.json
+msgctxt "Style variation name"
+msgid "Dark"
+msgstr ""
+
+#: styles/color/dark.json
+msgctxt "Style variation description"
+msgid "Dark palette with light text and warm accent"
+msgstr ""
+
+#: styles/color/sea.json
+msgctxt "Style variation name"
+msgid "Sea"
+msgstr ""
+
+#: styles/color/sea.json
+msgctxt "Style variation description"
+msgid "Cool palette with ocean blue accents."
+msgstr ""
+
+#: styles/typography/typography-preset-1.json
+msgctxt "Style variation name"
+msgid "Crimson Pro & Open Sans"
+msgstr ""
+
+#: styles/typography/typography-preset-1.json
+msgctxt "Font family name"
+msgid "Crimson Pro"
+msgstr ""
+
+#: styles/typography/typography-preset-1.json
+msgctxt "Font family name"
+msgid "Open Sans"
+msgstr ""

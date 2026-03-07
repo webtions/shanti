@@ -2,9 +2,9 @@
 Contributors: hchouhan
 Tags: blog, block-patterns, custom-colors, custom-logo, custom-menu, full-site-editing, one-column, theme-options, translation-ready
 Requires at least: 6.7
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -22,9 +22,13 @@ GitHub repository: https://github.com/webtions/shanti
 
 == Changelog ==
 
+= 1.0.1 =
+07-03-2026
+- Regenerate translation template (languages/shanti.pot).
+
 = 1.0.0 =
-07-02-2026
-* First stable version
+07-03-2026
+- First stable version
 
 
 == Copyright ==

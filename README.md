@@ -177,6 +177,10 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
+### 1.0.1 (07-03-2026)
+
+- Regenerate translation template (languages/shanti.pot).
+
 ### 1.0.0 (07-03-2026)
 
 **First stable release.**
