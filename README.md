@@ -177,6 +177,16 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
+### 1.0.0 (07-03-2026)
+
+**First stable release.**
+
+**Improvements:**
+
+- Add smooth scrolling for in-page anchor links (style.css).
+- Update theme page link to https://themeist.com/themes/shanti/ (style.css, readme.txt, functions.php).
+- Add theme page link and tags to readme.txt.
+
 ### 0.8.0 (06-03-2026)
 
 **Admin**
