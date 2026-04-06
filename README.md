@@ -177,6 +177,11 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
+### 1.0.2 (06-04-2026)
+
+- List all bundled fonts with license and source in readme.txt (WordPress.org review).
+- Replace theme screenshot with demo-style hero text (WordPress.org review).
+
 ### 1.0.1 (07-03-2026)
 
 - Regenerate translation template (languages/shanti.pot).
