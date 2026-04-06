@@ -45,6 +45,24 @@ License: SIL Open Font License, 1.1 — https://opensource.org/licenses/OFL-1.1
 Source: https://fonts.google.com/specimen/Montserrat
 GitHub: https://github.com/JulietaUla/Montserrat
 
+Playfair Display
+Copyright 2017 The Playfair Display Project Authors
+License: SIL Open Font License, 1.1 — https://opensource.org/licenses/OFL-1.1
+Source: https://fonts.google.com/specimen/Playfair+Display
+GitHub: https://github.com/clauseggers/Playfair
+
+Open Sans
+Copyright 2020 The Open Sans Project Authors
+License: SIL Open Font License, 1.1 — https://opensource.org/licenses/OFL-1.1
+Source: https://fonts.google.com/specimen/Open+Sans
+GitHub: https://github.com/googlefonts/opensans
+
+Crimson Pro
+Copyright 2010 The Crimson Pro Project Authors
+License: SIL Open Font License, 1.1 — https://opensource.org/licenses/OFL-1.1
+Source: https://fonts.google.com/specimen/Crimson+Pro
+GitHub: https://github.com/Fonthausen/CrimsonPro
+
 === Images ===
 
 "shanti-cover.svg"
