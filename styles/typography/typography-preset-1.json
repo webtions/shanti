@@ -15,7 +15,7 @@
 							"src": [
 								"file:./assets/fonts/OpenSans-VariableFont_wdth,wght.woff2"
 							],
-							"fontWeight": "300 800",
+							"fontWeight": "400 800",
 							"fontStyle": "normal",
 							"fontDisplay": "block",
 							"fontFamily": "\"Open Sans\""
@@ -31,7 +31,7 @@
 							"src": [
 								"file:./assets/fonts/CrimsonPro-VariableFont_wght.woff2"
 							],
-							"fontWeight": "200 900",
+							"fontWeight": "400 700",
 							"fontStyle": "normal",
 							"fontDisplay": "block",
 							"fontFamily": "\"Crimson Pro\""
