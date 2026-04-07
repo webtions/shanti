@@ -177,6 +177,11 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
+### 1.0.3 (07-04-2026)
+
+- Bundle variable fonts as WOFF2 only and remove TTF files for a smaller package.
+- Set font-display to block on bundled font faces in theme.json and typography style variations.
+
 ### 1.0.2 (06-04-2026)
 
 - List all bundled fonts with license and source in readme.txt (WordPress.org review).
