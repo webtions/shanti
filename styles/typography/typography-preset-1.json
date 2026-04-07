@@ -13,18 +13,20 @@
 					"fontFace": [
 						{
 							"src": [
-								"file:./assets/fonts/CrimsonPro-VariableFont_wght.ttf"
+								"file:./assets/fonts/CrimsonPro-VariableFont_wght.woff2"
 							],
 							"fontWeight": "200 900",
 							"fontStyle": "normal",
+							"fontDisplay": "block",
 							"fontFamily": "\"Crimson Pro\""
 						},
 						{
 							"src": [
-								"file:./assets/fonts/CrimsonPro-Italic-VariableFont_wght.ttf"
+								"file:./assets/fonts/CrimsonPro-Italic-VariableFont_wght.woff2"
 							],
 							"fontWeight": "200 900",
 							"fontStyle": "italic",
+							"fontDisplay": "block",
 							"fontFamily": "\"Crimson Pro\""
 						}
 					]
@@ -36,18 +38,20 @@
 					"fontFace": [
 						{
 							"src": [
-								"file:./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf"
+								"file:./assets/fonts/OpenSans-VariableFont_wdth,wght.woff2"
 							],
 							"fontWeight": "300 800",
 							"fontStyle": "normal",
+							"fontDisplay": "block",
 							"fontFamily": "\"Open Sans\""
 						},
 						{
 							"src": [
-								"file:./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf"
+								"file:./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2"
 							],
 							"fontWeight": "300 800",
 							"fontStyle": "italic",
+							"fontDisplay": "block",
 							"fontFamily": "\"Open Sans\""
 						}
 					]
