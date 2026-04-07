@@ -4,13 +4,6 @@
 	"settings": {
 		"appearanceTools": true,
 		"useRootPaddingAwareAlignments": true,
-		"blocks": {
-			"core/image": {
-				"lightbox": {
-					"enabled": true
-				}
-			}
-		},
 		"color": {
 			"custom": true,
 			"customDuotone": true,
@@ -238,18 +231,9 @@
 							"src": [
 								"file:./assets/fonts/Montserrat-VariableFont_wght.woff2"
 							],
-							"fontWeight": "100 900",
+							"fontWeight": "400 900",
 							"fontStyle": "normal",
 							"fontDisplay": "block",
-							"fontFamily": "\"Montserrat\""
-						},
-						{
-							"src": [
-								"file:./assets/fonts/Montserrat-Italic-VariableFont_wght.woff2"
-							],
-							"fontWeight": "100 900",
-							"fontDisplay": "block",
-							"fontStyle": "italic",
 							"fontFamily": "\"Montserrat\""
 						}
 					]
@@ -263,18 +247,9 @@
 							"src": [
 								"file:./assets/fonts/PlayfairDisplay-VariableFont_wght.woff2"
 							],
-							"fontWeight": "400 900",
+							"fontWeight": "400 700",
 							"fontDisplay": "block",
 							"fontStyle": "normal",
-							"fontFamily": "\"Playfair Display\""
-						},
-						{
-							"src": [
-								"file:./assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.woff2"
-							],
-							"fontWeight": "400 900",
-							"fontDisplay": "block",
-							"fontStyle": "italic",
 							"fontFamily": "\"Playfair Display\""
 						}
 					]
