@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-04-07T05:40:21+00:00\n"
+"POT-Creation-Date: 2026-04-11T08:50:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: shanti\n"
@@ -513,16 +513,6 @@ msgctxt "Pattern description"
 msgid "Previous and next post links in a two-column layout."
 msgstr ""
 
-#: patterns/post-navigation.php:24
-msgctxt "Post navigation label"
-msgid "Previous "
-msgstr ""
-
-#: patterns/post-navigation.php:30
-msgctxt "Post navigation label"
-msgid "Next "
-msgstr ""
-
 #: patterns/post-share.php
 msgctxt "Pattern title"
 msgid "Share post"
@@ -947,10 +937,10 @@ msgstr ""
 
 #: styles/typography/typography-preset-1.json
 msgctxt "Font family name"
-msgid "Crimson Pro"
+msgid "Open Sans"
 msgstr ""
 
 #: styles/typography/typography-preset-1.json
 msgctxt "Font family name"
-msgid "Open Sans"
+msgid "Crimson Pro"
 msgstr ""
