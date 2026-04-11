@@ -4,7 +4,7 @@ Tags: blog, block-patterns, custom-colors, custom-logo, custom-menu, full-site-e
 Requires at least: 6.7
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -21,6 +21,13 @@ Theme page: https://themeist.com/themes/shanti/
 GitHub repository: https://github.com/webtions/shanti
 
 == Changelog ==
+
+= 1.0.4 =
+11-04-2026
+- Align typography style variation preset 1 with theme.json (font slugs, heading sizes, and variable font weight ranges); remove unused italic faces and slim bundled font files.
+- Use the 3X Large typography preset for single post titles.
+- Refine the single post template with wavy separators and preset spacing, including the post tags row.
+- Remove visible Previous and Next labels from post navigation links.
 
 = 1.0.3 =
 07-04-2026
