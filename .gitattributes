@@ -30,8 +30,10 @@ phpci.yml               export-ignore
 phpunit.xml             export-ignore
 composer.json           export-ignore
 composer.lock           export-ignore
-package.json            export-ignore
-package-lock.json       export-ignore
+package.json            text eol=lf export-ignore
+package-lock.json       text eol=lf export-ignore
+theme-utils.mjs         text eol=lf export-ignore
+.nvmrc                  text eol=lf export-ignore
 Gruntfile.js            export-ignore
 .vscode/                export-ignore
 .github/                export-ignore
