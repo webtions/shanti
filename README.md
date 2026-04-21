@@ -177,7 +177,7 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
-### 1.0.4 (11-04-2026)
+### 1.0.4 (21-04-2026)
 
 - Align typography style variation preset 1 with theme.json (font slugs, heading sizes, and variable font weight ranges); remove unused italic faces and slim bundled font files.
 - Use the 3X Large typography preset for single post titles.
