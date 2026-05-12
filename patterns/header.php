@@ -23,9 +23,10 @@
 		<!-- wp:group {"align":"wide","className":"is-layout-flex","layout":{"type":"flex","justifyContent":"space-between","orientation":"horizontal"}} -->
 		<div class="wp-block-group alignwide is-layout-flex">
 
-		<!-- wp:group {"className":"is-layout-flex","layout":{"type":"flex"}} -->
+		<!-- wp:group {"className":"is-layout-flex","layout":{"type":"flex","verticalAlignment":"center"}} -->
 		<div class="wp-block-group is-layout-flex">
 			<!-- wp:site-logo /-->
+			<!-- wp:site-title {"level":0} /-->
 		</div>
 		<!-- /wp:group -->
 
