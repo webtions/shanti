@@ -23,11 +23,17 @@ GitHub repository: https://github.com/webtions/shanti
 == Changelog ==
 
 = 1.0.4 =
-21-04-2026
-- Align typography style variation preset 1 with theme.json (font slugs, heading sizes, and variable font weight ranges); remove unused italic faces and slim bundled font files.
+12-05-2026
+- Align font slugs in typography style variation preset 1 with theme.json.
+- Align heading sizes in typography style variation preset 1 with theme.json.
+- Align variable font weight ranges in typography style variation preset 1 with theme.json.
+- Remove unused italic faces from bundled fonts.
+- Slim bundled font files.
 - Use the 3X Large typography preset for single post titles.
 - Refine the single post template with wavy separators and preset spacing, including the post tags row.
 - Remove visible Previous and Next labels from post navigation links.
+- Show the site title next to the site logo in the header and header-top-bar patterns.
+- Add a System Fonts typography style variation with serif headings and sans-serif body text.
 
 = 1.0.3 =
 07-04-2026
