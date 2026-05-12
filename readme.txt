@@ -4,7 +4,7 @@ Tags: blog, block-patterns, custom-colors, custom-logo, custom-menu, full-site-e
 Requires at least: 6.7
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.4
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -22,7 +22,7 @@ GitHub repository: https://github.com/webtions/shanti
 
 == Changelog ==
 
-= 1.0.4 =
+= 1.1.0 =
 12-05-2026
 - Align font slugs in typography style variation preset 1 with theme.json.
 - Align heading sizes in typography style variation preset 1 with theme.json.

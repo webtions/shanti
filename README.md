@@ -177,7 +177,7 @@ For detailed contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 <details><summary>Click to expand</summary>
 
-### 1.0.4 (12-05-2026)
+### 1.1.0 (12-05-2026)
 
 - Align font slugs in typography style variation preset 1 with theme.json.
 - Align heading sizes in typography style variation preset 1 with theme.json.
